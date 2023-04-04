@@ -224,20 +224,6 @@
   </url>
   
   <url>
-    <loc>https://shenchunping.github.io/tags/Cordova/</loc>
-    <lastmod>2023-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://shenchunping.github.io/tags/JS/</loc>
-    <lastmod>2023-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://shenchunping.github.io/tags/Linux/</loc>
     <lastmod>2023-04-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -287,6 +273,20 @@
   </url>
   
   <url>
+    <loc>https://shenchunping.github.io/tags/Cordova/</loc>
+    <lastmod>2023-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://shenchunping.github.io/tags/JS/</loc>
+    <lastmod>2023-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>https://shenchunping.github.io/tags/Mac/</loc>
     <lastmod>2023-04-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -317,14 +317,14 @@
   </url>
   
   <url>
-    <loc>https://shenchunping.github.io/categories/JS/</loc>
+    <loc>https://shenchunping.github.io/categories/Linux/</loc>
     <lastmod>2023-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://shenchunping.github.io/categories/Linux/</loc>
+    <loc>https://shenchunping.github.io/categories/JS/</loc>
     <lastmod>2023-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
