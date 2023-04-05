@@ -3,11 +3,11 @@
   <title>Coder 沈春平</title>
   
   <subtitle>学习笔记</subtitle>
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="https://coder.shenchunping.cn/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="https://coder.shenchunping.cn/"/>
   <updated>2023-04-05T07:54:14.528Z</updated>
-  <id>http://example.com/</id>
+  <id>https://coder.shenchunping.cn/</id>
   
   <author>
     <name>沈春平</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>05-Linux-Mysql安装</title>
-    <link href="http://example.com/2023-04-05-20230405/05-Linux-Mysql%E5%AE%89%E8%A3%85.html"/>
-    <id>http://example.com/2023-04-05-20230405/05-Linux-Mysql%E5%AE%89%E8%A3%85.html</id>
+    <link href="https://coder.shenchunping.cn/2023-04-05-20230405/05-Linux-Mysql%E5%AE%89%E8%A3%85.html"/>
+    <id>https://coder.shenchunping.cn/2023-04-05-20230405/05-Linux-Mysql%E5%AE%89%E8%A3%85.html</id>
     <published>2023-04-05T07:06:39.000Z</published>
     <updated>2023-04-05T07:54:14.528Z</updated>
     
@@ -36,19 +36,19 @@
     
     
     
-    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/tags/Linux/"/>
     
-    <category term="MySql" scheme="http://example.com/tags/MySql/"/>
+    <category term="MySql" scheme="https://coder.shenchunping.cn/tags/MySql/"/>
     
   </entry>
   
   <entry>
     <title>04-Linux-JDK安装</title>
-    <link href="http://example.com/2023-04-05-20230405/04-Linux-JDK%E5%AE%89%E8%A3%85.html"/>
-    <id>http://example.com/2023-04-05-20230405/04-Linux-JDK%E5%AE%89%E8%A3%85.html</id>
+    <link href="https://coder.shenchunping.cn/2023-04-05-20230405/04-Linux-JDK%E5%AE%89%E8%A3%85.html"/>
+    <id>https://coder.shenchunping.cn/2023-04-05-20230405/04-Linux-JDK%E5%AE%89%E8%A3%85.html</id>
     <published>2023-04-05T07:00:39.000Z</published>
     <updated>2023-04-05T07:05:38.351Z</updated>
     
@@ -63,19 +63,19 @@
     
     
     
-    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/tags/Linux/"/>
     
-    <category term="JDK" scheme="http://example.com/tags/JDK/"/>
+    <category term="JDK" scheme="https://coder.shenchunping.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>03-Linux-Redis源码安装</title>
-    <link href="http://example.com/2023-04-05-20230405/03-Linux-Redis%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85.html"/>
-    <id>http://example.com/2023-04-05-20230405/03-Linux-Redis%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85.html</id>
+    <link href="https://coder.shenchunping.cn/2023-04-05-20230405/03-Linux-Redis%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85.html"/>
+    <id>https://coder.shenchunping.cn/2023-04-05-20230405/03-Linux-Redis%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85.html</id>
     <published>2023-04-05T06:54:38.000Z</published>
     <updated>2023-04-05T06:56:54.556Z</updated>
     
@@ -89,19 +89,19 @@
     
     
     
-    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/tags/Linux/"/>
     
-    <category term="Redis" scheme="http://example.com/tags/Redis/"/>
+    <category term="Redis" scheme="https://coder.shenchunping.cn/tags/Redis/"/>
     
   </entry>
   
   <entry>
     <title>02-Linux-挂载磁盘</title>
-    <link href="http://example.com/2023-04-05-20230405/02-Linux-%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98.html"/>
-    <id>http://example.com/2023-04-05-20230405/02-Linux-%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98.html</id>
+    <link href="https://coder.shenchunping.cn/2023-04-05-20230405/02-Linux-%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98.html"/>
+    <id>https://coder.shenchunping.cn/2023-04-05-20230405/02-Linux-%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98.html</id>
     <published>2023-04-05T06:44:35.000Z</published>
     <updated>2023-04-05T06:50:24.524Z</updated>
     
@@ -115,19 +115,19 @@
     
     
     
-    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/tags/Linux/"/>
     
-    <category term="磁盘挂载" scheme="http://example.com/tags/%E7%A3%81%E7%9B%98%E6%8C%82%E8%BD%BD/"/>
+    <category term="磁盘挂载" scheme="https://coder.shenchunping.cn/tags/%E7%A3%81%E7%9B%98%E6%8C%82%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
     <title>01-Linux-Ubuntu服务器休眠</title>
-    <link href="http://example.com/2023-04-05-20230405/01-Linux-Ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%91%E7%9C%A0.html"/>
-    <id>http://example.com/2023-04-05-20230405/01-Linux-Ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%91%E7%9C%A0.html</id>
+    <link href="https://coder.shenchunping.cn/2023-04-05-20230405/01-Linux-Ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%91%E7%9C%A0.html"/>
+    <id>https://coder.shenchunping.cn/2023-04-05-20230405/01-Linux-Ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%91%E7%9C%A0.html</id>
     <published>2023-04-05T06:26:13.000Z</published>
     <updated>2023-04-05T06:29:12.404Z</updated>
     
@@ -141,21 +141,21 @@
     
     
     
-    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/tags/Linux/"/>
     
-    <category term="Ubuntu" scheme="http://example.com/tags/Ubuntu/"/>
+    <category term="Ubuntu" scheme="https://coder.shenchunping.cn/tags/Ubuntu/"/>
     
-    <category term="休眠" scheme="http://example.com/tags/%E4%BC%91%E7%9C%A0/"/>
+    <category term="休眠" scheme="https://coder.shenchunping.cn/tags/%E4%BC%91%E7%9C%A0/"/>
     
   </entry>
   
   <entry>
     <title>key和pem生成HTTPS证书</title>
-    <link href="http://example.com/2023-04-04-20180806/11-Linux-key%E5%92%8Cpem%E7%94%9F%E6%88%90HTTPS%E8%AF%81%E4%B9%A6.html"/>
-    <id>http://example.com/2023-04-04-20180806/11-Linux-key%E5%92%8Cpem%E7%94%9F%E6%88%90HTTPS%E8%AF%81%E4%B9%A6.html</id>
+    <link href="https://coder.shenchunping.cn/2023-04-04-20180806/11-Linux-key%E5%92%8Cpem%E7%94%9F%E6%88%90HTTPS%E8%AF%81%E4%B9%A6.html"/>
+    <id>https://coder.shenchunping.cn/2023-04-04-20180806/11-Linux-key%E5%92%8Cpem%E7%94%9F%E6%88%90HTTPS%E8%AF%81%E4%B9%A6.html</id>
     <published>2023-04-04T01:46:14.496Z</published>
     <updated>2023-04-05T04:40:32.962Z</updated>
     
@@ -169,19 +169,19 @@
     
     
     
-    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/categories/Linux/"/>
     
     
-    <category term="HTTPS" scheme="http://example.com/tags/HTTPS/"/>
+    <category term="HTTPS" scheme="https://coder.shenchunping.cn/tags/HTTPS/"/>
     
-    <category term="证书" scheme="http://example.com/tags/%E8%AF%81%E4%B9%A6/"/>
+    <category term="证书" scheme="https://coder.shenchunping.cn/tags/%E8%AF%81%E4%B9%A6/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu 安装&#39;为知笔记&#39;</title>
-    <link href="http://example.com/2023-04-04-20190325/01-Linux-Ubuntu-%E5%AE%89%E8%A3%85-%E4%B8%BA%E7%9F%A5%E7%AC%94%E8%AE%B0.html"/>
-    <id>http://example.com/2023-04-04-20190325/01-Linux-Ubuntu-%E5%AE%89%E8%A3%85-%E4%B8%BA%E7%9F%A5%E7%AC%94%E8%AE%B0.html</id>
+    <link href="https://coder.shenchunping.cn/2023-04-04-20190325/01-Linux-Ubuntu-%E5%AE%89%E8%A3%85-%E4%B8%BA%E7%9F%A5%E7%AC%94%E8%AE%B0.html"/>
+    <id>https://coder.shenchunping.cn/2023-04-04-20190325/01-Linux-Ubuntu-%E5%AE%89%E8%A3%85-%E4%B8%BA%E7%9F%A5%E7%AC%94%E8%AE%B0.html</id>
     <published>2023-04-04T01:46:14.496Z</published>
     <updated>2023-04-05T04:40:32.959Z</updated>
     
@@ -195,19 +195,19 @@
     
     
     
-    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/tags/Linux/"/>
     
-    <category term="Ubuntu" scheme="http://example.com/tags/Ubuntu/"/>
+    <category term="Ubuntu" scheme="https://coder.shenchunping.cn/tags/Ubuntu/"/>
     
   </entry>
   
   <entry>
     <title>APK反编译-基础篇</title>
-    <link href="http://example.com/2019-04-21-20180806/04-Android-APK%E5%8F%8D%E7%BC%96%E8%AF%91-%E5%9F%BA%E7%A1%80%E7%AF%87.html"/>
-    <id>http://example.com/2019-04-21-20180806/04-Android-APK%E5%8F%8D%E7%BC%96%E8%AF%91-%E5%9F%BA%E7%A1%80%E7%AF%87.html</id>
+    <link href="https://coder.shenchunping.cn/2019-04-21-20180806/04-Android-APK%E5%8F%8D%E7%BC%96%E8%AF%91-%E5%9F%BA%E7%A1%80%E7%AF%87.html"/>
+    <id>https://coder.shenchunping.cn/2019-04-21-20180806/04-Android-APK%E5%8F%8D%E7%BC%96%E8%AF%91-%E5%9F%BA%E7%A1%80%E7%AF%87.html</id>
     <published>2019-04-21T08:33:21.000Z</published>
     <updated>2023-04-04T15:53:26.784Z</updated>
     
@@ -221,17 +221,17 @@
     
     
     
-    <category term="Android" scheme="http://example.com/categories/Android/"/>
+    <category term="Android" scheme="https://coder.shenchunping.cn/categories/Android/"/>
     
     
-    <category term="Android" scheme="http://example.com/tags/Android/"/>
+    <category term="Android" scheme="https://coder.shenchunping.cn/tags/Android/"/>
     
   </entry>
   
   <entry>
     <title>环境变量配置</title>
-    <link href="http://example.com/2019-04-21-20190421/01-Linux-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html"/>
-    <id>http://example.com/2019-04-21-20190421/01-Linux-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</id>
+    <link href="https://coder.shenchunping.cn/2019-04-21-20190421/01-Linux-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html"/>
+    <id>https://coder.shenchunping.cn/2019-04-21-20190421/01-Linux-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</id>
     <published>2019-04-21T08:21:01.000Z</published>
     <updated>2023-04-04T15:56:33.410Z</updated>
     
@@ -245,19 +245,19 @@
     
     
     
-    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/tags/Linux/"/>
     
-    <category term="Mac" scheme="http://example.com/tags/Mac/"/>
+    <category term="Mac" scheme="https://coder.shenchunping.cn/tags/Mac/"/>
     
   </entry>
   
   <entry>
     <title>Java 内存泄漏监测与定位</title>
-    <link href="http://example.com/2019-04-19-20190419/01-Java-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D.html"/>
-    <id>http://example.com/2019-04-19-20190419/01-Java-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D.html</id>
+    <link href="https://coder.shenchunping.cn/2019-04-19-20190419/01-Java-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D.html"/>
+    <id>https://coder.shenchunping.cn/2019-04-19-20190419/01-Java-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D.html</id>
     <published>2019-04-19T06:59:58.000Z</published>
     <updated>2023-04-04T15:53:58.136Z</updated>
     
@@ -272,21 +272,21 @@
     
     
     
-    <category term="Java" scheme="http://example.com/categories/Java/"/>
+    <category term="Java" scheme="https://coder.shenchunping.cn/categories/Java/"/>
     
     
-    <category term="Java" scheme="http://example.com/tags/Java/"/>
+    <category term="Java" scheme="https://coder.shenchunping.cn/tags/Java/"/>
     
-    <category term="内存" scheme="http://example.com/tags/%E5%86%85%E5%AD%98/"/>
+    <category term="内存" scheme="https://coder.shenchunping.cn/tags/%E5%86%85%E5%AD%98/"/>
     
-    <category term="JVM" scheme="http://example.com/tags/JVM/"/>
+    <category term="JVM" scheme="https://coder.shenchunping.cn/tags/JVM/"/>
     
   </entry>
   
   <entry>
     <title>Cordova 创建项目</title>
-    <link href="http://example.com/2019-04-18-20190418/01-Nodejs-Cordova-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html"/>
-    <id>http://example.com/2019-04-18-20190418/01-Nodejs-Cordova-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html</id>
+    <link href="https://coder.shenchunping.cn/2019-04-18-20190418/01-Nodejs-Cordova-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html"/>
+    <id>https://coder.shenchunping.cn/2019-04-18-20190418/01-Nodejs-Cordova-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html</id>
     <published>2019-04-17T16:00:00.000Z</published>
     <updated>2023-04-04T15:56:00.428Z</updated>
     
@@ -300,19 +300,19 @@
     
     
     
-    <category term="JS" scheme="http://example.com/categories/JS/"/>
+    <category term="JS" scheme="https://coder.shenchunping.cn/categories/JS/"/>
     
     
-    <category term="Cordova" scheme="http://example.com/tags/Cordova/"/>
+    <category term="Cordova" scheme="https://coder.shenchunping.cn/tags/Cordova/"/>
     
-    <category term="JS" scheme="http://example.com/tags/JS/"/>
+    <category term="JS" scheme="https://coder.shenchunping.cn/tags/JS/"/>
     
   </entry>
   
   <entry>
     <title>Homebrew 常用命令-Mac</title>
-    <link href="http://example.com/2019-04-12-20190412/01-Mac-Homebrew-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html"/>
-    <id>http://example.com/2019-04-12-20190412/01-Mac-Homebrew-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</id>
+    <link href="https://coder.shenchunping.cn/2019-04-12-20190412/01-Mac-Homebrew-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html"/>
+    <id>https://coder.shenchunping.cn/2019-04-12-20190412/01-Mac-Homebrew-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</id>
     <published>2019-04-12T05:33:36.000Z</published>
     <updated>2023-04-05T05:54:18.040Z</updated>
     
@@ -326,19 +326,19 @@
     
     
     
-    <category term="Mac" scheme="http://example.com/categories/Mac/"/>
+    <category term="Mac" scheme="https://coder.shenchunping.cn/categories/Mac/"/>
     
     
-    <category term="Mac" scheme="http://example.com/tags/Mac/"/>
+    <category term="Mac" scheme="https://coder.shenchunping.cn/tags/Mac/"/>
     
-    <category term="brew" scheme="http://example.com/tags/brew/"/>
+    <category term="brew" scheme="https://coder.shenchunping.cn/tags/brew/"/>
     
   </entry>
   
   <entry>
     <title>Android源码下载-Centos7</title>
-    <link href="http://example.com/2018-08-06-20180806/02-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7.html"/>
-    <id>http://example.com/2018-08-06-20180806/02-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7.html</id>
+    <link href="https://coder.shenchunping.cn/2018-08-06-20180806/02-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7.html"/>
+    <id>https://coder.shenchunping.cn/2018-08-06-20180806/02-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-04T15:53:12.470Z</updated>
     
@@ -352,17 +352,17 @@
     
     
     
-    <category term="Android" scheme="http://example.com/categories/Android/"/>
+    <category term="Android" scheme="https://coder.shenchunping.cn/categories/Android/"/>
     
     
-    <category term="Android" scheme="http://example.com/tags/Android/"/>
+    <category term="Android" scheme="https://coder.shenchunping.cn/tags/Android/"/>
     
   </entry>
   
   <entry>
     <title>ADB命令实现-隐藏平板任务栏</title>
-    <link href="http://example.com/2018-08-06-20180806/01-Android-ADB%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0-%E9%9A%90%E8%97%8F%E5%B9%B3%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F.html"/>
-    <id>http://example.com/2018-08-06-20180806/01-Android-ADB%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0-%E9%9A%90%E8%97%8F%E5%B9%B3%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F.html</id>
+    <link href="https://coder.shenchunping.cn/2018-08-06-20180806/01-Android-ADB%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0-%E9%9A%90%E8%97%8F%E5%B9%B3%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F.html"/>
+    <id>https://coder.shenchunping.cn/2018-08-06-20180806/01-Android-ADB%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0-%E9%9A%90%E8%97%8F%E5%B9%B3%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-04T15:52:53.928Z</updated>
     
@@ -377,17 +377,17 @@
     
     
     
-    <category term="Android" scheme="http://example.com/categories/Android/"/>
+    <category term="Android" scheme="https://coder.shenchunping.cn/categories/Android/"/>
     
     
-    <category term="Android" scheme="http://example.com/tags/Android/"/>
+    <category term="Android" scheme="https://coder.shenchunping.cn/tags/Android/"/>
     
   </entry>
   
   <entry>
     <title>Android源码下载-Windows</title>
-    <link href="http://example.com/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows.html"/>
-    <id>http://example.com/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows.html</id>
+    <link href="https://coder.shenchunping.cn/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows.html"/>
+    <id>https://coder.shenchunping.cn/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-05T04:40:32.964Z</updated>
     
@@ -401,17 +401,44 @@
     
     
     
-    <category term="Android" scheme="http://example.com/categories/Android/"/>
+    <category term="Android" scheme="https://coder.shenchunping.cn/categories/Android/"/>
     
     
-    <category term="Android" scheme="http://example.com/tags/Android/"/>
+    <category term="Android" scheme="https://coder.shenchunping.cn/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>定制设备-查看已连接蓝牙设备的MAC</title>
+    <link href="https://coder.shenchunping.cn/2018-08-06-20180806/05-Android-%E5%AE%9A%E5%88%B6%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84MAC.html"/>
+    <id>https://coder.shenchunping.cn/2018-08-06-20180806/05-Android-%E5%AE%9A%E5%88%B6%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84MAC.html</id>
+    <published>2018-08-05T16:00:00.000Z</published>
+    <updated>2023-04-04T15:53:26.786Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>开始之前,要Root设备，并先配对蓝牙模块</strong></p><h1 id="使用到的命令"><a href="#使用到的命令" class="headerlink" title="使用到的命令"></a>使用到的命令</h1><p>adb shell  –进入Android Shell命令环境</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">input keyevent 3  //--回到首页</span><br><span class="line">input keyevent 4  // 返回上一页</span><br></pre></td></tr></table></figure><h1 id="查看配对信息"><a href="#查看配对信息" class="headerlink" title="查看配对信息"></a>查看配对信息</h1><p>找到读卡器蓝牙MAC地址，依次执行下面三个命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">adb shell </span><br><span class="line">su </span><br><span class="line">cat /data/misc/bluedroid/bt_config.conf</span><br></pre></td></tr></table></figure><p><em>示例结果,试验中可能是json格式</em></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br></pre></td><td class="code"><pre><span class="line">&lt;Bluedroid&gt;</span><br><span class="line">    &lt;N1 Tag=&quot;Local&quot;&gt;</span><br><span class="line">        &lt;N1 Tag=&quot;Adapter&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;BluezMigrationDone&quot; Type=&quot;int&quot;&gt;1&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;Address&quot; Type=&quot;string&quot;&gt;22:22:58:90:d9:a4&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;LE_LOCAL_KEY_IR&quot; Type=&quot;binary&quot;&gt;5ba8bf27a463c9567c913117276b</span><br><span class="line">2830&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;LE_LOCAL_KEY_IRK&quot; Type=&quot;binary&quot;&gt;656ad1d26de62d43c628b77f16f</span><br><span class="line">e8f86&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;LE_LOCAL_KEY_DHK&quot; Type=&quot;binary&quot;&gt;a9990c91bb98626db3fe7f01d6f</span><br><span class="line">2753f&lt;/N5&gt;</span><br><span class="line">            &lt;N6 Tag=&quot;ScanMode&quot; Type=&quot;int&quot;&gt;1&lt;/N6&gt;</span><br><span class="line">            &lt;N7 Tag=&quot;DiscoveryTimeout&quot; Type=&quot;int&quot;&gt;120&lt;/N7&gt;</span><br><span class="line">        &lt;/N1&gt;</span><br><span class="line">        &lt;N2 Tag=&quot;AutoPairBlacklist&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;AddressBlacklist&quot; Type=&quot;string&quot;&gt;00:02:C7,00:16:FE,00:19:C1,</span><br><span class="line">00:1B:FB,00:1E:3D,00:21:4F,00:23:06,00:24:33,00:A0:79,00:0E:6D,00:13:E0,00:21:E8</span><br><span class="line">,00:60:57,00:0E:9F,00:12:1C,00:18:91,00:18:96,00:13:04,00:16:FD,00:22:A0,00:0B:4</span><br><span class="line">C,00:60:6F,00:23:3D,00:C0:59,00:0A:30,00:1E:AE,00:1C:D7,00:80:F0,00:12:8A,00:09:</span><br><span class="line">93,00:80:37,00:26:7E,00:26:e8&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;ExactNameBlacklist&quot; Type=&quot;string&quot;&gt;Motorola IHF1000,i.TechBl</span><br><span class="line">ueBAND,X5 Stereo v1.3,KML_CAN&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;FixedPinZerosKeyboardBlacklist&quot; Type=&quot;string&quot;&gt;00:0F:F6&lt;/N3&gt;</span><br><span class="line"></span><br><span class="line">            &lt;N4 Tag=&quot;PartialNameBlacklist&quot; Type=&quot;string&quot;&gt;BMW,Audi,Parrot,Car&lt;/N4</span><br><span class="line">&gt;</span><br><span class="line">        &lt;/N2&gt;</span><br><span class="line">    &lt;/N1&gt;</span><br><span class="line">    &lt;N2 Tag=&quot;Remote&quot;&gt;</span><br><span class="line">        &lt;N1 Tag=&quot;68:3e:34:2b:0d:9b&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1482914768&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;MEIZU PRO 5&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;5898764&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N5&gt;</span><br><span class="line">        &lt;/N1&gt;</span><br><span class="line">        &lt;N2 Tag=&quot;9c:f3:87:bd:3c:47&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1482914769&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;APPLE-PC&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;131340&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N5&gt;</span><br><span class="line">        &lt;/N2&gt;</span><br><span class="line">        &lt;N3 Tag=&quot;1c:77:f6:37:f1:67&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1482914769&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;OPPO R9tm&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;5898764&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N5&gt;</span><br><span class="line">        &lt;/N3&gt;</span><br><span class="line">        &lt;N4 Tag=&quot;20:14:00:44:54:12&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1488532736&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;7936&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;iBuy_445412&lt;/N5&gt;</span><br><span class="line">            &lt;N6 Tag=&quot;Manufacturer&quot; Type=&quot;int&quot;&gt;10&lt;/N6&gt;</span><br><span class="line">            &lt;N7 Tag=&quot;LmpVer&quot; Type=&quot;int&quot;&gt;4&lt;/N7&gt;</span><br><span class="line">            &lt;N8 Tag=&quot;LmpSubVer&quot; Type=&quot;int&quot;&gt;4192&lt;/N8&gt;</span><br><span class="line">            &lt;N9 Tag=&quot;LinkKeyType&quot; Type=&quot;int&quot;&gt;0&lt;/N9&gt;</span><br><span class="line">            &lt;N10 Tag=&quot;PinLength&quot; Type=&quot;int&quot;&gt;4&lt;/N10&gt;</span><br><span class="line">            &lt;N11 Tag=&quot;LinkKey&quot; Type=&quot;binary&quot;&gt;58bdeab8a33b96a140842c08e507c3f6&lt;/N</span><br><span class="line">11&gt;</span><br><span class="line">            &lt;N12 Tag=&quot;Service&quot; Type=&quot;string&quot;&gt;00001101-0000-1000-8000-00805f9b34f</span><br><span class="line">b &lt;/N12&gt;</span><br><span class="line">        &lt;/N4&gt;</span><br><span class="line">        &lt;N5 Tag=&quot;ac:c1:ee:10:0a:84&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1488532738&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;5898764&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;小米手机&lt;/N5&gt;</span><br><span class="line">            &lt;N6 Tag=&quot;Manufacturer&quot; Type=&quot;int&quot;&gt;29&lt;/N6&gt;</span><br><span class="line">            &lt;N7 Tag=&quot;LmpVer&quot; Type=&quot;int&quot;&gt;8&lt;/N7&gt;</span><br><span class="line">            &lt;N8 Tag=&quot;LmpSubVer&quot; Type=&quot;int&quot;&gt;602&lt;/N8&gt;</span><br><span class="line">        &lt;/N5&gt;</span><br><span class="line">        &lt;N6 Tag=&quot;22:bf:16:cf:a2:9b&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1488531622&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;5898764&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;Samsung Galaxy S7&lt;/N5&gt;</span><br><span class="line">        &lt;/N6&gt;</span><br><span class="line">    &lt;/N2&gt;</span><br><span class="line">&lt;/Bluedroid&gt;</span><br></pre></td></tr></table></figure><p><em>例如我链接的是“小米手机”那么我们找到的蓝牙mac就是“ac:c1:ee:10:0a:84”</em></p><h1 id="退出Su权限，以免误操作。"><a href="#退出Su权限，以免误操作。" class="headerlink" title="退出Su权限，以免误操作。"></a>退出Su权限，以免误操作。</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exit</span><br></pre></td></tr></table></figure><hr><p><strong>以下为实际项目使用,请看官忽略.</strong></p><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><ul><li><p>创建文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch /sdcard/blueToothAddress.txt</span><br></pre></td></tr></table></figure></li><li><p>假如文件已经存在，或者你想重新执行一遍，请先删除文件。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -f /sdcard/blueToothAddress.txt</span><br></pre></td></tr></table></figure></li><li><p>写入蓝牙MAC地址到文件中</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo ac:c1:ee:10:0a:84 &gt; /sdcard/blueToothAddress.txt</span><br></pre></td></tr></table></figure><p><em>将mac地址换成你的mac地址</em></p></li><li><p>查看写入文件信息是否成功</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /sdcard/blueToothAddress.txt</span><br></pre></td></tr></table></figure><p><em>如果看到你刚刚写的mac地址，则表示成功。</em></p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;&lt;strong&gt;开始之前,要Root设备，并先配对蓝牙模块&lt;/strong&gt;&lt;/p&gt;
+&lt;h1 id=&quot;使用到的命令&quot;&gt;&lt;a href=&quot;#使用到的命令&quot; class=&quot;headerlink&quot; title=&quot;使用到的命令&quot;&gt;&lt;/a&gt;使用到的命令&lt;/h1&gt;&lt;p&gt;adb shel</summary>
+      
+    
+    
+    
+    <category term="Android" scheme="https://coder.shenchunping.cn/categories/Android/"/>
+    
+    
+    <category term="Android" scheme="https://coder.shenchunping.cn/tags/Android/"/>
+    
+    <category term="蓝牙" scheme="https://coder.shenchunping.cn/tags/%E8%93%9D%E7%89%99/"/>
     
   </entry>
   
   <entry>
     <title>Maven-配置镜像地址</title>
-    <link href="http://example.com/2018-08-06-20180806/06-Java-Maven-%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E5%9C%B0%E5%9D%80.html"/>
-    <id>http://example.com/2018-08-06-20180806/06-Java-Maven-%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E5%9C%B0%E5%9D%80.html</id>
+    <link href="https://coder.shenchunping.cn/2018-08-06-20180806/06-Java-Maven-%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E5%9C%B0%E5%9D%80.html"/>
+    <id>https://coder.shenchunping.cn/2018-08-06-20180806/06-Java-Maven-%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E5%9C%B0%E5%9D%80.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-05T06:18:46.845Z</updated>
     
@@ -425,46 +452,47 @@
     
     
     
-    <category term="Java" scheme="http://example.com/categories/Java/"/>
+    <category term="Java" scheme="https://coder.shenchunping.cn/categories/Java/"/>
     
     
-    <category term="Maven" scheme="http://example.com/tags/Maven/"/>
+    <category term="Maven" scheme="https://coder.shenchunping.cn/tags/Maven/"/>
     
-    <category term="Java" scheme="http://example.com/tags/Java/"/>
+    <category term="Java" scheme="https://coder.shenchunping.cn/tags/Java/"/>
     
   </entry>
   
   <entry>
-    <title>Centos7-防火墙Iptables</title>
-    <link href="http://example.com/2018-08-06-20180806/10-Linux-Centos7-%E9%98%B2%E7%81%AB%E5%A2%99Iptables.html"/>
-    <id>http://example.com/2018-08-06-20180806/10-Linux-Centos7-%E9%98%B2%E7%81%AB%E5%A2%99Iptables.html</id>
+    <title>Centos7 JDK安装（SunJDK OpenJDK）</title>
+    <link href="https://coder.shenchunping.cn/2018-08-06-20180806/07-Linux-Centos7-JDK%E5%AE%89%E8%A3%85%EF%BC%88SunJDK-OpenJDK%EF%BC%89.html"/>
+    <id>https://coder.shenchunping.cn/2018-08-06-20180806/07-Linux-Centos7-JDK%E5%AE%89%E8%A3%85%EF%BC%88SunJDK-OpenJDK%EF%BC%89.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
-    <updated>2023-04-04T15:56:33.416Z</updated>
+    <updated>2023-04-04T15:56:00.429Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="命令行设置"><a href="#命令行设置" class="headerlink" title="命令行设置"></a>命令行设置</h1><ul><li>简单操作<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">//关闭默认是防火墙Filerwall</span><br><span class="line">systemctl stop firewalld.service</span><br><span class="line"></span><br><span class="line">//禁用默认防火墙</span><br><span class="line">systemctl disable firewalld.service </span><br><span class="line"></span><br><span class="line">//安装Iptables</span><br><span class="line">yum install iptables-services</span><br><span class="line"></span><br><span class="line">// 启动iptables </span><br><span class="line">service iptables start</span><br><span class="line"></span><br><span class="line">//设置开机启动</span><br><span class="line">systemctl enable iptables.service</span><br><span class="line"></span><br><span class="line">//重启iptables</span><br><span class="line">service iptables restart</span><br></pre></td></tr></table></figure></li></ul><h2 id="基本设置"><a href="#基本设置" class="headerlink" title="基本设置"></a>基本设置</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">//查看iptables现有规则  </span><br><span class="line">iptables -L -n  </span><br><span class="line">//先允许所有,不然有可能会杯具  </span><br><span class="line">iptables -P INPUT ACCEPT  </span><br><span class="line">//清空所有默认规则  </span><br><span class="line">iptables -F  </span><br><span class="line">//清空所有自定义规则  </span><br><span class="line">iptables -X  </span><br><span class="line">//所有计数器归0  </span><br><span class="line">iptables -Z  </span><br><span class="line">//允许来自于lo接口的数据包(本地访问)  </span><br><span class="line">iptables -A INPUT -i lo -j ACCEPT  </span><br><span class="line">//开放22端口  </span><br><span class="line">iptables -A INPUT -p tcp --dport 22 -j ACCEPT  </span><br><span class="line">//开放21端口(FTP)  </span><br><span class="line">iptables -A INPUT -p tcp --dport 21 -j ACCEPT  </span><br><span class="line">//开放80端口(HTTP)  </span><br><span class="line">iptables -A INPUT -p tcp --dport 80 -j ACCEPT  </span><br><span class="line">//开放443端口(HTTPS)  </span><br><span class="line">iptables -A INPUT -p tcp --dport 443 -j ACCEPT  </span><br><span class="line">//允许ping  </span><br><span class="line">iptables -A INPUT -p icmp --icmp-type 8 -j ACCEPT  </span><br><span class="line">//允许接受本机请求之后的返回数据 RELATED,是为FTP设置的  </span><br><span class="line">iptables -A INPUT -m state --state  RELATED,ESTABLISHED -j ACCEPT  </span><br><span class="line">//其他入站一律丢弃  </span><br><span class="line">iptables -P INPUT DROP  </span><br><span class="line">//所有出站一律绿灯  </span><br><span class="line">iptables -P OUTPUT ACCEPT  </span><br><span class="line">//所有转发一律丢弃  </span><br><span class="line">iptables -P FORWARD DROP  </span><br><span class="line"></span><br><span class="line">//保存设置，一定不要忘记</span><br><span class="line">service iptables save</span><br></pre></td></tr></table></figure><h2 id="其他设置"><a href="#其他设置" class="headerlink" title="其他设置"></a>其他设置</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//如果要添加内网ip信任（接受其所有TCP请求）  </span><br><span class="line">iptables -A INPUT -p tcp -s 45.96.174.68 -j ACCEPT  </span><br><span class="line">//过滤所有非以上规则的请求  </span><br><span class="line">iptables -P INPUT DROP  </span><br><span class="line">//要封停一个IP，使用下面这条命令：  </span><br><span class="line">iptables -I INPUT -s ***.***.***.*** -j DROP  </span><br><span class="line">//要解封一个IP，使用下面这条命令:  </span><br><span class="line">iptables -D INPUT -s ***.***.***.*** -j DROP </span><br></pre></td></tr></table></figure><h1 id="手动编辑"><a href="#手动编辑" class="headerlink" title="手动编辑"></a>手动编辑</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/sysconfig/iptables</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"># Generated by iptables-save v1.4.21 on Thu Jan 18 11:55:42 2018</span><br><span class="line">*filter</span><br><span class="line">:INPUT DROP [0:0]</span><br><span class="line">:FORWARD DROP [0:0]</span><br><span class="line">:OUTPUT ACCEPT [8:824]</span><br><span class="line">-A INPUT -i lo -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 22 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 21 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 80 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 443 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 8443 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 1521 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 3306 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 3389 -j ACCEPT</span><br><span class="line">-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT</span><br><span class="line">COMMIT</span><br><span class="line"># Completed on Thu Jan 18 11:55:42 2018</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h1 id="OpenJDK安装"><a href="#OpenJDK安装" class="headerlink" title="OpenJDK安装"></a>OpenJDK安装</h1><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install java-1.7.0-openjdk</span><br></pre></td></tr></table></figure><h1 id="设置环境变量"><a href="#设置环境变量" class="headerlink" title="设置环境变量"></a>设置环境变量</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">//安装目录在/usr/lib/jvm/</span><br><span class="line">vi /etc/profile</span><br><span class="line"></span><br><span class="line">//添加一下内容</span><br><span class="line">#set java environment</span><br><span class="line">JAVA_HOME=/usr/lib/jvm/java-1.7.0-openjdk-1.7.0.75.x86_64</span><br><span class="line">JRE_HOME=$JAVA_HOME/jre</span><br><span class="line">CLASS_PATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib</span><br><span class="line">PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin</span><br><span class="line">export JAVA_HOME JRE_HOME CLASS_PATH PATH</span><br></pre></td></tr></table></figure><h1 id="生效修改的文件"><a href="#生效修改的文件" class="headerlink" title="生效修改的文件"></a>生效修改的文件</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure><h1 id="测试"><a href="#测试" class="headerlink" title="测试"></a>测试</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure><h1 id="SunJDK安装"><a href="#SunJDK安装" class="headerlink" title="SunJDK安装"></a>SunJDK安装</h1><h1 id="创建安装目录"><a href="#创建安装目录" class="headerlink" title="创建安装目录"></a>创建安装目录</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir /usr/java</span><br><span class="line">cd /usr/java</span><br></pre></td></tr></table></figure><h1 id="下载JDK"><a href="#下载JDK" class="headerlink" title="下载JDK"></a>下载JDK</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget http://download.oracle.com/otn-pub/java/jdk/7u79-b15/jdk-7u79-linux-x64.tar.gz </span><br></pre></td></tr></table></figure><h1 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf jdk-7u79-linux-x64.tar.gz</span><br></pre></td></tr></table></figure><h1 id="配置环境变量"><a href="#配置环境变量" class="headerlink" title="配置环境变量"></a>配置环境变量</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/profile</span><br><span class="line"></span><br><span class="line">//添加内容</span><br><span class="line">#set java environment</span><br><span class="line">JAVA_HOME=/usr/java/jdk1.7.0_79</span><br><span class="line">JRE_HOME=/usr/java/jdk1.7.0_79/jre</span><br><span class="line">CLASS_PATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar:$JRE_HOME/lib</span><br><span class="line">PATH=$PATH:$JAVA_HOME/bin:$JRE_HOME/bin</span><br><span class="line">export JAVA_HOME JRE_HOME CLASS_PATH PATH</span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="生效修改的文件-1"><a href="#生效修改的文件-1" class="headerlink" title="生效修改的文件"></a>生效修改的文件</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">source /etc/profile</span><br></pre></td></tr></table></figure><h1 id="测试-1"><a href="#测试-1" class="headerlink" title="测试"></a>测试</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -version</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;命令行设置&quot;&gt;&lt;a href=&quot;#命令行设置&quot; class=&quot;headerlink&quot; title=&quot;命令行设置&quot;&gt;&lt;/a&gt;命令行设置&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;简单操作&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;</summary>
+    <summary type="html">&lt;h1 id=&quot;OpenJDK安装&quot;&gt;&lt;a href=&quot;#OpenJDK安装&quot; class=&quot;headerlink&quot; title=&quot;OpenJDK安装&quot;&gt;&lt;/a&gt;OpenJDK安装&lt;/h1&gt;&lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; </summary>
       
     
     
     
-    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/tags/Linux/"/>
     
-    <category term="CentOS" scheme="http://example.com/tags/CentOS/"/>
+    <category term="CentOS" scheme="https://coder.shenchunping.cn/tags/CentOS/"/>
+    
+    <category term="JDK" scheme="https://coder.shenchunping.cn/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>Centos7-Tomcat安装配置</title>
-    <link href="http://example.com/2018-08-06-20180806/08-Linux-Centos7-Tomcat%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html"/>
-    <id>http://example.com/2018-08-06-20180806/08-Linux-Centos7-Tomcat%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</id>
+    <link href="https://coder.shenchunping.cn/2018-08-06-20180806/08-Linux-Centos7-Tomcat%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html"/>
+    <id>https://coder.shenchunping.cn/2018-08-06-20180806/08-Linux-Centos7-Tomcat%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-04T15:56:33.420Z</updated>
     
@@ -478,21 +506,21 @@
     
     
     
-    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/tags/Linux/"/>
     
-    <category term="CentOS" scheme="http://example.com/tags/CentOS/"/>
+    <category term="CentOS" scheme="https://coder.shenchunping.cn/tags/CentOS/"/>
     
-    <category term="Tomcat" scheme="http://example.com/tags/Tomcat/"/>
+    <category term="Tomcat" scheme="https://coder.shenchunping.cn/tags/Tomcat/"/>
     
   </entry>
   
   <entry>
     <title>Centos7-开机启动网卡</title>
-    <link href="http://example.com/2018-08-06-20180806/09-Linux-Centos7-%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E7%BD%91%E5%8D%A1.html"/>
-    <id>http://example.com/2018-08-06-20180806/09-Linux-Centos7-%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E7%BD%91%E5%8D%A1.html</id>
+    <link href="https://coder.shenchunping.cn/2018-08-06-20180806/09-Linux-Centos7-%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E7%BD%91%E5%8D%A1.html"/>
+    <id>https://coder.shenchunping.cn/2018-08-06-20180806/09-Linux-Centos7-%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E7%BD%91%E5%8D%A1.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-04T15:56:33.413Z</updated>
     
@@ -508,39 +536,12 @@
     
     
     
-    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
+    <category term="Linux" scheme="https://coder.shenchunping.cn/tags/Linux/"/>
     
-    <category term="CentOS" scheme="http://example.com/tags/CentOS/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>定制设备-查看已连接蓝牙设备的MAC</title>
-    <link href="http://example.com/2018-08-06-20180806/05-Android-%E5%AE%9A%E5%88%B6%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84MAC.html"/>
-    <id>http://example.com/2018-08-06-20180806/05-Android-%E5%AE%9A%E5%88%B6%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84MAC.html</id>
-    <published>2018-08-05T16:00:00.000Z</published>
-    <updated>2023-04-04T15:53:26.786Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>开始之前,要Root设备，并先配对蓝牙模块</strong></p><h1 id="使用到的命令"><a href="#使用到的命令" class="headerlink" title="使用到的命令"></a>使用到的命令</h1><p>adb shell  –进入Android Shell命令环境</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">input keyevent 3  //--回到首页</span><br><span class="line">input keyevent 4  // 返回上一页</span><br></pre></td></tr></table></figure><h1 id="查看配对信息"><a href="#查看配对信息" class="headerlink" title="查看配对信息"></a>查看配对信息</h1><p>找到读卡器蓝牙MAC地址，依次执行下面三个命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">adb shell </span><br><span class="line">su </span><br><span class="line">cat /data/misc/bluedroid/bt_config.conf</span><br></pre></td></tr></table></figure><p><em>示例结果,试验中可能是json格式</em></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br></pre></td><td class="code"><pre><span class="line">&lt;Bluedroid&gt;</span><br><span class="line">    &lt;N1 Tag=&quot;Local&quot;&gt;</span><br><span class="line">        &lt;N1 Tag=&quot;Adapter&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;BluezMigrationDone&quot; Type=&quot;int&quot;&gt;1&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;Address&quot; Type=&quot;string&quot;&gt;22:22:58:90:d9:a4&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;LE_LOCAL_KEY_IR&quot; Type=&quot;binary&quot;&gt;5ba8bf27a463c9567c913117276b</span><br><span class="line">2830&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;LE_LOCAL_KEY_IRK&quot; Type=&quot;binary&quot;&gt;656ad1d26de62d43c628b77f16f</span><br><span class="line">e8f86&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;LE_LOCAL_KEY_DHK&quot; Type=&quot;binary&quot;&gt;a9990c91bb98626db3fe7f01d6f</span><br><span class="line">2753f&lt;/N5&gt;</span><br><span class="line">            &lt;N6 Tag=&quot;ScanMode&quot; Type=&quot;int&quot;&gt;1&lt;/N6&gt;</span><br><span class="line">            &lt;N7 Tag=&quot;DiscoveryTimeout&quot; Type=&quot;int&quot;&gt;120&lt;/N7&gt;</span><br><span class="line">        &lt;/N1&gt;</span><br><span class="line">        &lt;N2 Tag=&quot;AutoPairBlacklist&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;AddressBlacklist&quot; Type=&quot;string&quot;&gt;00:02:C7,00:16:FE,00:19:C1,</span><br><span class="line">00:1B:FB,00:1E:3D,00:21:4F,00:23:06,00:24:33,00:A0:79,00:0E:6D,00:13:E0,00:21:E8</span><br><span class="line">,00:60:57,00:0E:9F,00:12:1C,00:18:91,00:18:96,00:13:04,00:16:FD,00:22:A0,00:0B:4</span><br><span class="line">C,00:60:6F,00:23:3D,00:C0:59,00:0A:30,00:1E:AE,00:1C:D7,00:80:F0,00:12:8A,00:09:</span><br><span class="line">93,00:80:37,00:26:7E,00:26:e8&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;ExactNameBlacklist&quot; Type=&quot;string&quot;&gt;Motorola IHF1000,i.TechBl</span><br><span class="line">ueBAND,X5 Stereo v1.3,KML_CAN&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;FixedPinZerosKeyboardBlacklist&quot; Type=&quot;string&quot;&gt;00:0F:F6&lt;/N3&gt;</span><br><span class="line"></span><br><span class="line">            &lt;N4 Tag=&quot;PartialNameBlacklist&quot; Type=&quot;string&quot;&gt;BMW,Audi,Parrot,Car&lt;/N4</span><br><span class="line">&gt;</span><br><span class="line">        &lt;/N2&gt;</span><br><span class="line">    &lt;/N1&gt;</span><br><span class="line">    &lt;N2 Tag=&quot;Remote&quot;&gt;</span><br><span class="line">        &lt;N1 Tag=&quot;68:3e:34:2b:0d:9b&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1482914768&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;MEIZU PRO 5&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;5898764&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N5&gt;</span><br><span class="line">        &lt;/N1&gt;</span><br><span class="line">        &lt;N2 Tag=&quot;9c:f3:87:bd:3c:47&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1482914769&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;APPLE-PC&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;131340&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N5&gt;</span><br><span class="line">        &lt;/N2&gt;</span><br><span class="line">        &lt;N3 Tag=&quot;1c:77:f6:37:f1:67&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1482914769&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;OPPO R9tm&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;5898764&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N5&gt;</span><br><span class="line">        &lt;/N3&gt;</span><br><span class="line">        &lt;N4 Tag=&quot;20:14:00:44:54:12&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1488532736&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;7936&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;iBuy_445412&lt;/N5&gt;</span><br><span class="line">            &lt;N6 Tag=&quot;Manufacturer&quot; Type=&quot;int&quot;&gt;10&lt;/N6&gt;</span><br><span class="line">            &lt;N7 Tag=&quot;LmpVer&quot; Type=&quot;int&quot;&gt;4&lt;/N7&gt;</span><br><span class="line">            &lt;N8 Tag=&quot;LmpSubVer&quot; Type=&quot;int&quot;&gt;4192&lt;/N8&gt;</span><br><span class="line">            &lt;N9 Tag=&quot;LinkKeyType&quot; Type=&quot;int&quot;&gt;0&lt;/N9&gt;</span><br><span class="line">            &lt;N10 Tag=&quot;PinLength&quot; Type=&quot;int&quot;&gt;4&lt;/N10&gt;</span><br><span class="line">            &lt;N11 Tag=&quot;LinkKey&quot; Type=&quot;binary&quot;&gt;58bdeab8a33b96a140842c08e507c3f6&lt;/N</span><br><span class="line">11&gt;</span><br><span class="line">            &lt;N12 Tag=&quot;Service&quot; Type=&quot;string&quot;&gt;00001101-0000-1000-8000-00805f9b34f</span><br><span class="line">b &lt;/N12&gt;</span><br><span class="line">        &lt;/N4&gt;</span><br><span class="line">        &lt;N5 Tag=&quot;ac:c1:ee:10:0a:84&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1488532738&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;5898764&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;小米手机&lt;/N5&gt;</span><br><span class="line">            &lt;N6 Tag=&quot;Manufacturer&quot; Type=&quot;int&quot;&gt;29&lt;/N6&gt;</span><br><span class="line">            &lt;N7 Tag=&quot;LmpVer&quot; Type=&quot;int&quot;&gt;8&lt;/N7&gt;</span><br><span class="line">            &lt;N8 Tag=&quot;LmpSubVer&quot; Type=&quot;int&quot;&gt;602&lt;/N8&gt;</span><br><span class="line">        &lt;/N5&gt;</span><br><span class="line">        &lt;N6 Tag=&quot;22:bf:16:cf:a2:9b&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1488531622&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;5898764&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;Samsung Galaxy S7&lt;/N5&gt;</span><br><span class="line">        &lt;/N6&gt;</span><br><span class="line">    &lt;/N2&gt;</span><br><span class="line">&lt;/Bluedroid&gt;</span><br></pre></td></tr></table></figure><p><em>例如我链接的是“小米手机”那么我们找到的蓝牙mac就是“ac:c1:ee:10:0a:84”</em></p><h1 id="退出Su权限，以免误操作。"><a href="#退出Su权限，以免误操作。" class="headerlink" title="退出Su权限，以免误操作。"></a>退出Su权限，以免误操作。</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exit</span><br></pre></td></tr></table></figure><hr><p><strong>以下为实际项目使用,请看官忽略.</strong></p><h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><ul><li><p>创建文件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch /sdcard/blueToothAddress.txt</span><br></pre></td></tr></table></figure></li><li><p>假如文件已经存在，或者你想重新执行一遍，请先删除文件。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -f /sdcard/blueToothAddress.txt</span><br></pre></td></tr></table></figure></li><li><p>写入蓝牙MAC地址到文件中</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo ac:c1:ee:10:0a:84 &gt; /sdcard/blueToothAddress.txt</span><br></pre></td></tr></table></figure><p><em>将mac地址换成你的mac地址</em></p></li><li><p>查看写入文件信息是否成功</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /sdcard/blueToothAddress.txt</span><br></pre></td></tr></table></figure><p><em>如果看到你刚刚写的mac地址，则表示成功。</em></p></li></ul>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;&lt;strong&gt;开始之前,要Root设备，并先配对蓝牙模块&lt;/strong&gt;&lt;/p&gt;
-&lt;h1 id=&quot;使用到的命令&quot;&gt;&lt;a href=&quot;#使用到的命令&quot; class=&quot;headerlink&quot; title=&quot;使用到的命令&quot;&gt;&lt;/a&gt;使用到的命令&lt;/h1&gt;&lt;p&gt;adb shel</summary>
-      
-    
-    
-    
-    <category term="Android" scheme="http://example.com/categories/Android/"/>
-    
-    
-    <category term="Android" scheme="http://example.com/tags/Android/"/>
-    
-    <category term="蓝牙" scheme="http://example.com/tags/%E8%93%9D%E7%89%99/"/>
+    <category term="CentOS" scheme="https://coder.shenchunping.cn/tags/CentOS/"/>
     
   </entry>
   
