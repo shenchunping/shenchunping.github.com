@@ -3,11 +3,11 @@
   <title>Coder 沈春平</title>
   
   <subtitle>学习笔记</subtitle>
-  <link href="https://shenchunping.github.io/atom.xml" rel="self"/>
+  <link href="http://example.com/atom.xml" rel="self"/>
   
-  <link href="https://shenchunping.github.io/"/>
-  <updated>2023-04-05T07:09:28.057Z</updated>
-  <id>https://shenchunping.github.io/</id>
+  <link href="http://example.com/"/>
+  <updated>2023-04-05T07:54:14.528Z</updated>
+  <id>http://example.com/</id>
   
   <author>
     <name>沈春平</name>
@@ -18,10 +18,10 @@
   
   <entry>
     <title>05-Linux-Mysql安装</title>
-    <link href="https://shenchunping.github.io/2023-04-05-20230405/05-Linux-Mysql%E5%AE%89%E8%A3%85.html"/>
-    <id>https://shenchunping.github.io/2023-04-05-20230405/05-Linux-Mysql%E5%AE%89%E8%A3%85.html</id>
+    <link href="http://example.com/2023-04-05-20230405/05-Linux-Mysql%E5%AE%89%E8%A3%85.html"/>
+    <id>http://example.com/2023-04-05-20230405/05-Linux-Mysql%E5%AE%89%E8%A3%85.html</id>
     <published>2023-04-05T07:06:39.000Z</published>
-    <updated>2023-04-05T07:09:28.057Z</updated>
+    <updated>2023-04-05T07:54:14.528Z</updated>
     
     <content type="html"><![CDATA[<ul><li><p>下载地址 <a href="https://dev.mysql.com/downloads/repo/yum/">https://dev.mysql.com/downloads/repo/yum/</a></p></li><li><p>这里下载的是： <a href="https://repo.mysql.com//mysql80-community-release-el7-7.noarch.rpm">https://repo.mysql.com//mysql80-community-release-el7-7.noarch.rpm</a></p></li><li><p>安装Mysql安装源 <code>rpm -ivh mysql80-community-release-el7-7.noarch.rpm</code></p></li><li><p>更新安装源 <code>yum update -y</code></p></li><li><p>安装Mysql <code>yum install mysql-community-server -y</code></p></li><li><p>开机启动 <code>systemctl enable mysqld</code></p></li><li><p>启动Mysql <code>systemctl start mysqld</code></p></li><li><p>查看初始密码 <code>cat /var/log/mysqld.log | grep password</code> 或者 <code>grep &quot;A temporary password&quot; /var/log/mysqld.log</code></p></li><li><p>登录Mysql <code>mysql -uroot -p</code> 输入密码</p></li><li><p>修改root密码 <code>ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED WITH mysql_native_password BY &#39;你的密码&#39;;</code></p></li><li><p>刷新权限 <code>flush privileges;</code></p></li><li><p>创建新用户 <code>create user &#39;user1&#39;@&#39;%&#39; IDENTIFIED WITH mysql_native_password BY &#39;User@123&#39;;</code></p></li><li><p>创建数据库 <code>create database db_name default character set utf8mb4 collate utf8mb4_unicode_ci</code></p></li><li><p>授予数据库读写权限 <code>grant all privileges on db_name.* to &#39;user1&#39;@&#39;%&#39; with grant option;</code></p></li><li><p>授予数据库增删改查权限 <code>grant SELECT,INSERT,UPDATE,DELETE on db_name.* to &#39;user1&#39;;</code></p></li><li><p>授予所有数据库权限 <code>grant ALL on *.* to &#39;用户名&#39;@&#39;主机名&#39;;</code></p></li><li><p>撤销授权 <code>revoke 权限列表 on 数据库名.表名 from &#39;用户名&#39;@&#39;主机名&#39;;</code></p></li><li><p>查看授权 <code>show grants for &#39;用户名&#39;@‘主机名’;</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mysqld#启动mysql服务</span><br><span class="line">systemctl status mysqld#查看mysql服务状态</span><br><span class="line">systemctl stop mysqld#停止mysql服务</span><br></pre></td></tr></table></figure></li><li><p>全文搜索配置</p>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">shellinnodb_ft_min_token_size=2</span><br><span class="line">ft_min_word_len=2</span><br><span class="line">ngram_token_size=2</span><br></pre></td></tr></table></figure></li></ul>]]></content>
     
@@ -36,19 +36,19 @@
     
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
     
-    <category term="MySql" scheme="https://shenchunping.github.io/tags/MySql/"/>
+    <category term="MySql" scheme="http://example.com/tags/MySql/"/>
     
   </entry>
   
   <entry>
     <title>04-Linux-JDK安装</title>
-    <link href="https://shenchunping.github.io/2023-04-05-20230405/04-Linux-JDK%E5%AE%89%E8%A3%85.html"/>
-    <id>https://shenchunping.github.io/2023-04-05-20230405/04-Linux-JDK%E5%AE%89%E8%A3%85.html</id>
+    <link href="http://example.com/2023-04-05-20230405/04-Linux-JDK%E5%AE%89%E8%A3%85.html"/>
+    <id>http://example.com/2023-04-05-20230405/04-Linux-JDK%E5%AE%89%E8%A3%85.html</id>
     <published>2023-04-05T07:00:39.000Z</published>
     <updated>2023-04-05T07:05:38.351Z</updated>
     
@@ -63,19 +63,19 @@
     
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
     
-    <category term="JDK" scheme="https://shenchunping.github.io/tags/JDK/"/>
+    <category term="JDK" scheme="http://example.com/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>03-Linux-Redis源码安装</title>
-    <link href="https://shenchunping.github.io/2023-04-05-20230405/03-Linux-Redis%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85.html"/>
-    <id>https://shenchunping.github.io/2023-04-05-20230405/03-Linux-Redis%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85.html</id>
+    <link href="http://example.com/2023-04-05-20230405/03-Linux-Redis%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85.html"/>
+    <id>http://example.com/2023-04-05-20230405/03-Linux-Redis%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85.html</id>
     <published>2023-04-05T06:54:38.000Z</published>
     <updated>2023-04-05T06:56:54.556Z</updated>
     
@@ -89,19 +89,19 @@
     
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
     
-    <category term="Redis" scheme="https://shenchunping.github.io/tags/Redis/"/>
+    <category term="Redis" scheme="http://example.com/tags/Redis/"/>
     
   </entry>
   
   <entry>
     <title>02-Linux-挂载磁盘</title>
-    <link href="https://shenchunping.github.io/2023-04-05-20230405/02-Linux-%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98.html"/>
-    <id>https://shenchunping.github.io/2023-04-05-20230405/02-Linux-%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98.html</id>
+    <link href="http://example.com/2023-04-05-20230405/02-Linux-%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98.html"/>
+    <id>http://example.com/2023-04-05-20230405/02-Linux-%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98.html</id>
     <published>2023-04-05T06:44:35.000Z</published>
     <updated>2023-04-05T06:50:24.524Z</updated>
     
@@ -115,19 +115,19 @@
     
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
     
-    <category term="磁盘挂载" scheme="https://shenchunping.github.io/tags/%E7%A3%81%E7%9B%98%E6%8C%82%E8%BD%BD/"/>
+    <category term="磁盘挂载" scheme="http://example.com/tags/%E7%A3%81%E7%9B%98%E6%8C%82%E8%BD%BD/"/>
     
   </entry>
   
   <entry>
     <title>01-Linux-Ubuntu服务器休眠</title>
-    <link href="https://shenchunping.github.io/2023-04-05-20230405/01-Linux-Ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%91%E7%9C%A0.html"/>
-    <id>https://shenchunping.github.io/2023-04-05-20230405/01-Linux-Ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%91%E7%9C%A0.html</id>
+    <link href="http://example.com/2023-04-05-20230405/01-Linux-Ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%91%E7%9C%A0.html"/>
+    <id>http://example.com/2023-04-05-20230405/01-Linux-Ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%91%E7%9C%A0.html</id>
     <published>2023-04-05T06:26:13.000Z</published>
     <updated>2023-04-05T06:29:12.404Z</updated>
     
@@ -141,21 +141,21 @@
     
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
     
-    <category term="Ubuntu" scheme="https://shenchunping.github.io/tags/Ubuntu/"/>
+    <category term="Ubuntu" scheme="http://example.com/tags/Ubuntu/"/>
     
-    <category term="休眠" scheme="https://shenchunping.github.io/tags/%E4%BC%91%E7%9C%A0/"/>
+    <category term="休眠" scheme="http://example.com/tags/%E4%BC%91%E7%9C%A0/"/>
     
   </entry>
   
   <entry>
     <title>Ubuntu 安装&#39;为知笔记&#39;</title>
-    <link href="https://shenchunping.github.io/2023-04-04-20190325/01-Linux-Ubuntu-%E5%AE%89%E8%A3%85-%E4%B8%BA%E7%9F%A5%E7%AC%94%E8%AE%B0.html"/>
-    <id>https://shenchunping.github.io/2023-04-04-20190325/01-Linux-Ubuntu-%E5%AE%89%E8%A3%85-%E4%B8%BA%E7%9F%A5%E7%AC%94%E8%AE%B0.html</id>
+    <link href="http://example.com/2023-04-04-20190325/01-Linux-Ubuntu-%E5%AE%89%E8%A3%85-%E4%B8%BA%E7%9F%A5%E7%AC%94%E8%AE%B0.html"/>
+    <id>http://example.com/2023-04-04-20190325/01-Linux-Ubuntu-%E5%AE%89%E8%A3%85-%E4%B8%BA%E7%9F%A5%E7%AC%94%E8%AE%B0.html</id>
     <published>2023-04-04T01:46:14.496Z</published>
     <updated>2023-04-05T04:40:32.959Z</updated>
     
@@ -169,19 +169,19 @@
     
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
     
-    <category term="Ubuntu" scheme="https://shenchunping.github.io/tags/Ubuntu/"/>
+    <category term="Ubuntu" scheme="http://example.com/tags/Ubuntu/"/>
     
   </entry>
   
   <entry>
     <title>key和pem生成HTTPS证书</title>
-    <link href="https://shenchunping.github.io/2023-04-04-20180806/11-Linux-key%E5%92%8Cpem%E7%94%9F%E6%88%90HTTPS%E8%AF%81%E4%B9%A6.html"/>
-    <id>https://shenchunping.github.io/2023-04-04-20180806/11-Linux-key%E5%92%8Cpem%E7%94%9F%E6%88%90HTTPS%E8%AF%81%E4%B9%A6.html</id>
+    <link href="http://example.com/2023-04-04-20180806/11-Linux-key%E5%92%8Cpem%E7%94%9F%E6%88%90HTTPS%E8%AF%81%E4%B9%A6.html"/>
+    <id>http://example.com/2023-04-04-20180806/11-Linux-key%E5%92%8Cpem%E7%94%9F%E6%88%90HTTPS%E8%AF%81%E4%B9%A6.html</id>
     <published>2023-04-04T01:46:14.496Z</published>
     <updated>2023-04-05T04:40:32.962Z</updated>
     
@@ -195,19 +195,19 @@
     
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
     
     
-    <category term="HTTPS" scheme="https://shenchunping.github.io/tags/HTTPS/"/>
+    <category term="HTTPS" scheme="http://example.com/tags/HTTPS/"/>
     
-    <category term="证书" scheme="https://shenchunping.github.io/tags/%E8%AF%81%E4%B9%A6/"/>
+    <category term="证书" scheme="http://example.com/tags/%E8%AF%81%E4%B9%A6/"/>
     
   </entry>
   
   <entry>
     <title>APK反编译-基础篇</title>
-    <link href="https://shenchunping.github.io/2019-04-21-20180806/04-Android-APK%E5%8F%8D%E7%BC%96%E8%AF%91-%E5%9F%BA%E7%A1%80%E7%AF%87.html"/>
-    <id>https://shenchunping.github.io/2019-04-21-20180806/04-Android-APK%E5%8F%8D%E7%BC%96%E8%AF%91-%E5%9F%BA%E7%A1%80%E7%AF%87.html</id>
+    <link href="http://example.com/2019-04-21-20180806/04-Android-APK%E5%8F%8D%E7%BC%96%E8%AF%91-%E5%9F%BA%E7%A1%80%E7%AF%87.html"/>
+    <id>http://example.com/2019-04-21-20180806/04-Android-APK%E5%8F%8D%E7%BC%96%E8%AF%91-%E5%9F%BA%E7%A1%80%E7%AF%87.html</id>
     <published>2019-04-21T08:33:21.000Z</published>
     <updated>2023-04-04T15:53:26.784Z</updated>
     
@@ -221,17 +221,17 @@
     
     
     
-    <category term="Android" scheme="https://shenchunping.github.io/categories/Android/"/>
+    <category term="Android" scheme="http://example.com/categories/Android/"/>
     
     
-    <category term="Android" scheme="https://shenchunping.github.io/tags/Android/"/>
+    <category term="Android" scheme="http://example.com/tags/Android/"/>
     
   </entry>
   
   <entry>
     <title>环境变量配置</title>
-    <link href="https://shenchunping.github.io/2019-04-21-20190421/01-Linux-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html"/>
-    <id>https://shenchunping.github.io/2019-04-21-20190421/01-Linux-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</id>
+    <link href="http://example.com/2019-04-21-20190421/01-Linux-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html"/>
+    <id>http://example.com/2019-04-21-20190421/01-Linux-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</id>
     <published>2019-04-21T08:21:01.000Z</published>
     <updated>2023-04-04T15:56:33.410Z</updated>
     
@@ -245,19 +245,19 @@
     
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
     
-    <category term="Mac" scheme="https://shenchunping.github.io/tags/Mac/"/>
+    <category term="Mac" scheme="http://example.com/tags/Mac/"/>
     
   </entry>
   
   <entry>
     <title>Java 内存泄漏监测与定位</title>
-    <link href="https://shenchunping.github.io/2019-04-19-20190419/01-Java-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D.html"/>
-    <id>https://shenchunping.github.io/2019-04-19-20190419/01-Java-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D.html</id>
+    <link href="http://example.com/2019-04-19-20190419/01-Java-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D.html"/>
+    <id>http://example.com/2019-04-19-20190419/01-Java-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D.html</id>
     <published>2019-04-19T06:59:58.000Z</published>
     <updated>2023-04-04T15:53:58.136Z</updated>
     
@@ -272,21 +272,21 @@
     
     
     
-    <category term="Java" scheme="https://shenchunping.github.io/categories/Java/"/>
+    <category term="Java" scheme="http://example.com/categories/Java/"/>
     
     
-    <category term="Java" scheme="https://shenchunping.github.io/tags/Java/"/>
+    <category term="Java" scheme="http://example.com/tags/Java/"/>
     
-    <category term="内存" scheme="https://shenchunping.github.io/tags/%E5%86%85%E5%AD%98/"/>
+    <category term="内存" scheme="http://example.com/tags/%E5%86%85%E5%AD%98/"/>
     
-    <category term="JVM" scheme="https://shenchunping.github.io/tags/JVM/"/>
+    <category term="JVM" scheme="http://example.com/tags/JVM/"/>
     
   </entry>
   
   <entry>
     <title>Cordova 创建项目</title>
-    <link href="https://shenchunping.github.io/2019-04-18-20190418/01-Nodejs-Cordova-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html"/>
-    <id>https://shenchunping.github.io/2019-04-18-20190418/01-Nodejs-Cordova-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html</id>
+    <link href="http://example.com/2019-04-18-20190418/01-Nodejs-Cordova-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html"/>
+    <id>http://example.com/2019-04-18-20190418/01-Nodejs-Cordova-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html</id>
     <published>2019-04-17T16:00:00.000Z</published>
     <updated>2023-04-04T15:56:00.428Z</updated>
     
@@ -300,19 +300,19 @@
     
     
     
-    <category term="JS" scheme="https://shenchunping.github.io/categories/JS/"/>
+    <category term="JS" scheme="http://example.com/categories/JS/"/>
     
     
-    <category term="Cordova" scheme="https://shenchunping.github.io/tags/Cordova/"/>
+    <category term="Cordova" scheme="http://example.com/tags/Cordova/"/>
     
-    <category term="JS" scheme="https://shenchunping.github.io/tags/JS/"/>
+    <category term="JS" scheme="http://example.com/tags/JS/"/>
     
   </entry>
   
   <entry>
     <title>Homebrew 常用命令-Mac</title>
-    <link href="https://shenchunping.github.io/2019-04-12-20190412/01-Mac-Homebrew-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html"/>
-    <id>https://shenchunping.github.io/2019-04-12-20190412/01-Mac-Homebrew-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</id>
+    <link href="http://example.com/2019-04-12-20190412/01-Mac-Homebrew-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html"/>
+    <id>http://example.com/2019-04-12-20190412/01-Mac-Homebrew-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</id>
     <published>2019-04-12T05:33:36.000Z</published>
     <updated>2023-04-05T05:54:18.040Z</updated>
     
@@ -326,19 +326,19 @@
     
     
     
-    <category term="Mac" scheme="https://shenchunping.github.io/categories/Mac/"/>
+    <category term="Mac" scheme="http://example.com/categories/Mac/"/>
     
     
-    <category term="Mac" scheme="https://shenchunping.github.io/tags/Mac/"/>
+    <category term="Mac" scheme="http://example.com/tags/Mac/"/>
     
-    <category term="brew" scheme="https://shenchunping.github.io/tags/brew/"/>
+    <category term="brew" scheme="http://example.com/tags/brew/"/>
     
   </entry>
   
   <entry>
     <title>ADB命令实现-隐藏平板任务栏</title>
-    <link href="https://shenchunping.github.io/2018-08-06-20180806/01-Android-ADB%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0-%E9%9A%90%E8%97%8F%E5%B9%B3%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F.html"/>
-    <id>https://shenchunping.github.io/2018-08-06-20180806/01-Android-ADB%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0-%E9%9A%90%E8%97%8F%E5%B9%B3%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F.html</id>
+    <link href="http://example.com/2018-08-06-20180806/01-Android-ADB%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0-%E9%9A%90%E8%97%8F%E5%B9%B3%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F.html"/>
+    <id>http://example.com/2018-08-06-20180806/01-Android-ADB%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0-%E9%9A%90%E8%97%8F%E5%B9%B3%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-04T15:52:53.928Z</updated>
     
@@ -353,45 +353,21 @@
     
     
     
-    <category term="Android" scheme="https://shenchunping.github.io/categories/Android/"/>
+    <category term="Android" scheme="http://example.com/categories/Android/"/>
     
     
-    <category term="Android" scheme="https://shenchunping.github.io/tags/Android/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Android源码下载-Centos7</title>
-    <link href="https://shenchunping.github.io/2018-08-06-20180806/02-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7.html"/>
-    <id>https://shenchunping.github.io/2018-08-06-20180806/02-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7.html</id>
-    <published>2018-08-05T16:00:00.000Z</published>
-    <updated>2023-04-04T15:53:12.470Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="下载-repo"><a href="#下载-repo" class="headerlink" title="下载 repo"></a>下载 repo</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir ~/bin</span><br><span class="line">$ PATH=~/bin:$PATH</span><br><span class="line">$ curl https://storage.googleapis.com/git-repo-downloads/repo &gt; ~/bin/repo</span><br><span class="line">$ chmod a+x ~/bin/repo</span><br></pre></td></tr></table></figure><ul><li>编辑~&#x2F;bin&#x2F;repo文件，改为国内镜像<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">https://gerrit.googlesource.com/git-repo</span><br><span class="line">改为</span><br><span class="line">https://mirrors.tuna.tsinghua.edu.cn/git/git-repo</span><br></pre></td></tr></table></figure></li></ul><h1 id="指定branch，下载代码"><a href="#指定branch，下载代码" class="headerlink" title="指定branch，下载代码"></a>指定branch，下载代码</h1><ul><li>查看所有分支<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd .repo/manifests</span><br><span class="line">git branch -a</span><br></pre></td></tr></table></figure></li><li>同步代码<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd aosp</span><br><span class="line">$ repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b android-6.0.1_r1</span><br><span class="line">$ repo sync</span><br></pre></td></tr></table></figure></li></ul><h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># source 环境</span><br><span class="line">$ . build/envsetup.sh</span><br><span class="line"></span><br><span class="line"># 选择编译项目</span><br><span class="line">$ lunch 2</span><br><span class="line"></span><br><span class="line"># 编译，可以使用-j选项设置并行编译的数量</span><br><span class="line">$ make -j8</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;下载-repo&quot;&gt;&lt;a href=&quot;#下载-repo&quot; class=&quot;headerlink&quot; title=&quot;下载 repo&quot;&gt;&lt;/a&gt;下载 repo&lt;/h1&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td cl</summary>
-      
-    
-    
-    
-    <category term="Android" scheme="https://shenchunping.github.io/categories/Android/"/>
-    
-    
-    <category term="Android" scheme="https://shenchunping.github.io/tags/Android/"/>
+    <category term="Android" scheme="http://example.com/tags/Android/"/>
     
   </entry>
   
   <entry>
     <title>Android源码下载-Windows</title>
-    <link href="https://shenchunping.github.io/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows.html"/>
-    <id>https://shenchunping.github.io/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows.html</id>
+    <link href="http://example.com/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows.html"/>
+    <id>http://example.com/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-05T04:40:32.964Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="安装Python"><a href="#安装Python" class="headerlink" title="安装Python"></a>安装Python</h1><p> <a href="http://www.python.org/">官网地址</a> 我下载的是3.6.3的版本</p><h1 id="安装GIT"><a href="#安装GIT" class="headerlink" title="安装GIT"></a>安装GIT</h1><p> <a href="https://git-scm.com/">官网地址</a> 下载最新版本即可</p><h1 id="克隆主仓库，查看源码版本分支"><a href="#克隆主仓库，查看源码版本分支" class="headerlink" title="克隆主仓库，查看源码版本分支"></a>克隆主仓库，查看源码版本分支</h1><ul><li>找一个容量大的硬盘分区，至少有120G可用空间，克隆仓库。假如你要编译源代码的话，需要更大的空间准备160G以上吧。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\shenchunping&gt;cd E:\</span><br><span class="line"></span><br><span class="line">C:\Users\shenchunping&gt;E:</span><br><span class="line"></span><br><span class="line">E:\&gt;mkdir android</span><br><span class="line"></span><br><span class="line">E:\&gt;cd android</span><br><span class="line"></span><br><span class="line">E:\android&gt;git clone https://aosp.tuna.tsinghua.edu.cn/platform/manifest.git</span><br><span class="line"></span><br></pre></td></tr></table></figure></li></ul><blockquote><p><a href="https://aosp.tuna.tsinghua.edu.cn/platform/manifest.git">https://aosp.tuna.tsinghua.edu.cn/platform/manifest.git</a> 是国内镜像地址，如果不能下载可以翻墙直接通过google官方下载，直接将地址替换为  <a href="https://android.googlesource.com/platform/manifest.git">https://android.googlesource.com/platform/manifest.git</a></p></blockquote><p>执行完成之后将在android文件夹下生成manifest文件夹，该文件夹下还没有代码。</p><ul><li><p>查看版本分支</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">E:\android&gt;cd manifest</span><br><span class="line"></span><br><span class="line">E:\android\manifest&gt;git branch -a</span><br><span class="line">* master</span><br><span class="line">  remotes/origin/HEAD -&gt; origin/master</span><br><span class="line">  remotes/origin/adt_23.0.3</span><br><span class="line">  remotes/origin/afw-test-harness-1.5</span><br><span class="line">  remotes/origin/afw-test-harness-2.1</span><br><span class="line">  remotes/origin/afw-test-harness-marshmallow-dev</span><br><span class="line">  remotes/origin/afw-test-harness-nougat-dev</span><br><span class="line">  remotes/origin/android-1.6_r1</span><br><span class="line">  remotes/origin/android-1.6_r1.1</span><br><span class="line">  remotes/origin/android-1.6_r1.2</span><br><span class="line">  remotes/origin/android-1.6_r1.3</span><br><span class="line">  remotes/origin/android-1.6_r1.4</span><br><span class="line">  remotes/origin/android-1.6_r1.5</span><br><span class="line">  remotes/origin/android-1.6_r2</span><br><span class="line">  remotes/origin/android-2.0.1_r1</span><br><span class="line">  remotes/origin/android-2.0_r1</span><br><span class="line">  remotes/origin/android-2.1_r1</span><br><span class="line">  remotes/origin/android-2.1_r2</span><br><span class="line">  remotes/origin/android-2.1_r2.1p</span><br><span class="line">  remotes/origin/android-2.1_r2.1p2</span><br><span class="line">  remotes/origin/android-2.1_r2.1s</span><br><span class="line">  remotes/origin/android-2.2.1_r1</span><br><span class="line">  remotes/origin/android-2.2.1_r2</span><br><span class="line">  remotes/origin/android-2.2.2_r1</span><br><span class="line">...略</span><br></pre></td></tr></table></figure><p>最后一个“&#x2F;”后面既是版本分支名称，下载我们选择一个分支下载</p></li><li><p>下载前我们注意观察manifest文件夹中的default.xml文件的default标签，大概在第六行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;default revision=&quot;master&quot;</span><br><span class="line">          remote=&quot;aosp&quot;</span><br><span class="line">          sync-j=&quot;4&quot; /&gt;</span><br></pre></td></tr></table></figure></li><li><p>切换到最新的版本分支,你也可以选择你想要的版本。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">E:\android\manifest&gt;git checkout android-8.1.0_r2</span><br><span class="line">Note: checking out &#x27;android-8.1.0_r2&#x27;.</span><br><span class="line"></span><br><span class="line">You are in &#x27;detached HEAD&#x27; state. You can look around, make experimental</span><br><span class="line">changes and commit them, and you can discard any commits you make in this</span><br><span class="line">state without impacting any branches by performing another checkout.</span><br><span class="line"></span><br><span class="line">If you want to create a new branch to retain commits you create, you may</span><br><span class="line">do so (now or later) by using -b with the checkout command again. Example:</span><br><span class="line"></span><br><span class="line">  git checkout -b &lt;new-branch-name&gt;</span><br><span class="line"></span><br><span class="line">HEAD is now at 85739ae... Manifest for Android 8.1.0 Release 2 (OPM2.171019.012)</span><br><span class="line"></span><br><span class="line">E:\android\manifest&gt;</span><br></pre></td></tr></table></figure></li><li><p>再次查看default.xml文件的default标签</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;default revision=&quot;refs/tags/android-8.1.0_r2&quot;</span><br><span class="line">         remote=&quot;aosp&quot;</span><br><span class="line">         sync-j=&quot;4&quot; /&gt;</span><br></pre></td></tr></table></figure><p>此时你已经选择好你想要下载的源码版本了。就来准备开始下载吧。</p></li></ul><h1 id="编辑Python下载脚本"><a href="#编辑Python下载脚本" class="headerlink" title="编辑Python下载脚本"></a>编辑Python下载脚本</h1><ul><li>创建一个文本文档，然后编辑如下代码，保存。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">import xml.dom.minidom</span><br><span class="line">import os</span><br><span class="line">from subprocess import call</span><br><span class="line"></span><br><span class="line"># downloaded source path</span><br><span class="line">#源码根目录，android-8.1.0_r2可以自定义。</span><br><span class="line">rootdir = &quot;E:/android/android-8.1.0_r2&quot;</span><br><span class="line"></span><br><span class="line"># git program path</span><br><span class="line">#GIT 可执行文件路径</span><br><span class="line">git = &quot;D:/Program Files/Git/bin/git.exe&quot;</span><br><span class="line"></span><br><span class="line">#将要解析的文件</span><br><span class="line">dom = xml.dom.minidom.parse(&quot;E:/android/manifest/default.xml&quot;)</span><br><span class="line">root = dom.documentElement</span><br><span class="line"></span><br><span class="line">#GIT命令前缀</span><br><span class="line">prefix = git + &quot; clone https://aosp.tuna.tsinghua.edu.cn/&quot;</span><br><span class="line">#GIT命令后缀</span><br><span class="line">suffix = &quot;.git&quot;</span><br><span class="line">#创建根目录</span><br><span class="line">if not os.path.exists(rootdir):</span><br><span class="line">    os.mkdir(rootdir)</span><br><span class="line">#遍历defualt.xml，执行Git命令克隆源码。</span><br><span class="line">for node in root.getElementsByTagName(&quot;project&quot;):</span><br><span class="line">    os.chdir(rootdir)</span><br><span class="line">    d = node.getAttribute(&quot;path&quot;)</span><br><span class="line">    last = d.rfind(&quot;/&quot;)</span><br><span class="line">    if last != -1:</span><br><span class="line">        d = rootdir + &quot;/&quot; + d[:last]</span><br><span class="line">        if not os.path.exists(d):</span><br><span class="line">            os.makedirs(d)</span><br><span class="line">        os.chdir(d)</span><br><span class="line">    cmd = prefix + node.getAttribute(&quot;name&quot;) + suffix</span><br><span class="line">    call(cmd)</span><br></pre></td></tr></table></figure></li></ul><h1 id="执行Python-开始下载源码。"><a href="#执行Python-开始下载源码。" class="headerlink" title="执行Python 开始下载源码。"></a>执行Python 开始下载源码。</h1><ul><li><p>打开Python IDLE<br><img src="/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows/2093886-2a293e366bdcba76.webp" alt="TIM截图20180102191300.png"></p></li><li><p>打开刚刚编辑的代码文档<br><img src="/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows/2093886-dcbfb890c573a27f.webp" alt="TIM截图20180102192032.png"></p></li></ul><p><img src="/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows/2093886-a856b025d87fedac.webp" alt="TIM截图20180102192255.png"></p><ul><li>执行代码</li></ul><p><img src="/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows/2093886-9aee698760fe6da6.webp" alt="TIM截图20180102192255.png"></p><p>此时将看到命令窗口在不断的下载文件。就算大功告成，等待下载结束即可。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="安装Python"><a href="#安装Python" class="headerlink" title="安装Python"></a>安装Python</h1><p> <a href="http://www.python.org/">官网地址</a> 我下载的是3.6.3的版本</p><h1 id="安装GIT"><a href="#安装GIT" class="headerlink" title="安装GIT"></a>安装GIT</h1><p> <a href="https://git-scm.com/">官网地址</a> 下载最新版本即可</p><h1 id="克隆主仓库，查看源码版本分支"><a href="#克隆主仓库，查看源码版本分支" class="headerlink" title="克隆主仓库，查看源码版本分支"></a>克隆主仓库，查看源码版本分支</h1><ul><li>找一个容量大的硬盘分区，至少有120G可用空间，克隆仓库。假如你要编译源代码的话，需要更大的空间准备160G以上吧。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\shenchunping&gt;cd E:\</span><br><span class="line"></span><br><span class="line">C:\Users\shenchunping&gt;E:</span><br><span class="line"></span><br><span class="line">E:\&gt;mkdir android</span><br><span class="line"></span><br><span class="line">E:\&gt;cd android</span><br><span class="line"></span><br><span class="line">E:\android&gt;git clone https://aosp.tuna.tsinghua.edu.cn/platform/manifest.git</span><br><span class="line"></span><br></pre></td></tr></table></figure></li></ul><blockquote><p><a href="https://aosp.tuna.tsinghua.edu.cn/platform/manifest.git">https://aosp.tuna.tsinghua.edu.cn/platform/manifest.git</a> 是国内镜像地址，如果不能下载可以翻墙直接通过google官方下载，直接将地址替换为  <a href="https://android.googlesource.com/platform/manifest.git">https://android.googlesource.com/platform/manifest.git</a></p></blockquote><p>执行完成之后将在android文件夹下生成manifest文件夹，该文件夹下还没有代码。</p><ul><li><p>查看版本分支</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">E:\android&gt;cd manifest</span><br><span class="line"></span><br><span class="line">E:\android\manifest&gt;git branch -a</span><br><span class="line">* master</span><br><span class="line">  remotes/origin/HEAD -&gt; origin/master</span><br><span class="line">  remotes/origin/adt_23.0.3</span><br><span class="line">  remotes/origin/afw-test-harness-1.5</span><br><span class="line">  remotes/origin/afw-test-harness-2.1</span><br><span class="line">  remotes/origin/afw-test-harness-marshmallow-dev</span><br><span class="line">  remotes/origin/afw-test-harness-nougat-dev</span><br><span class="line">  remotes/origin/android-1.6_r1</span><br><span class="line">  remotes/origin/android-1.6_r1.1</span><br><span class="line">  remotes/origin/android-1.6_r1.2</span><br><span class="line">  remotes/origin/android-1.6_r1.3</span><br><span class="line">  remotes/origin/android-1.6_r1.4</span><br><span class="line">  remotes/origin/android-1.6_r1.5</span><br><span class="line">  remotes/origin/android-1.6_r2</span><br><span class="line">  remotes/origin/android-2.0.1_r1</span><br><span class="line">  remotes/origin/android-2.0_r1</span><br><span class="line">  remotes/origin/android-2.1_r1</span><br><span class="line">  remotes/origin/android-2.1_r2</span><br><span class="line">  remotes/origin/android-2.1_r2.1p</span><br><span class="line">  remotes/origin/android-2.1_r2.1p2</span><br><span class="line">  remotes/origin/android-2.1_r2.1s</span><br><span class="line">  remotes/origin/android-2.2.1_r1</span><br><span class="line">  remotes/origin/android-2.2.1_r2</span><br><span class="line">  remotes/origin/android-2.2.2_r1</span><br><span class="line">...略</span><br></pre></td></tr></table></figure><p>最后一个“&#x2F;”后面既是版本分支名称，下载我们选择一个分支下载</p></li><li><p>下载前我们注意观察manifest文件夹中的default.xml文件的default标签，大概在第六行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;default revision=&quot;master&quot;</span><br><span class="line">          remote=&quot;aosp&quot;</span><br><span class="line">          sync-j=&quot;4&quot; /&gt;</span><br></pre></td></tr></table></figure></li><li><p>切换到最新的版本分支,你也可以选择你想要的版本。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">E:\android\manifest&gt;git checkout android-8.1.0_r2</span><br><span class="line">Note: checking out &#x27;android-8.1.0_r2&#x27;.</span><br><span class="line"></span><br><span class="line">You are in &#x27;detached HEAD&#x27; state. You can look around, make experimental</span><br><span class="line">changes and commit them, and you can discard any commits you make in this</span><br><span class="line">state without impacting any branches by performing another checkout.</span><br><span class="line"></span><br><span class="line">If you want to create a new branch to retain commits you create, you may</span><br><span class="line">do so (now or later) by using -b with the checkout command again. Example:</span><br><span class="line"></span><br><span class="line">  git checkout -b &lt;new-branch-name&gt;</span><br><span class="line"></span><br><span class="line">HEAD is now at 85739ae... Manifest for Android 8.1.0 Release 2 (OPM2.171019.012)</span><br><span class="line"></span><br><span class="line">E:\android\manifest&gt;</span><br></pre></td></tr></table></figure></li><li><p>再次查看default.xml文件的default标签</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;default revision=&quot;refs/tags/android-8.1.0_r2&quot;</span><br><span class="line">         remote=&quot;aosp&quot;</span><br><span class="line">         sync-j=&quot;4&quot; /&gt;</span><br></pre></td></tr></table></figure><p>此时你已经选择好你想要下载的源码版本了。就来准备开始下载吧。</p></li></ul><h1 id="编辑Python下载脚本"><a href="#编辑Python下载脚本" class="headerlink" title="编辑Python下载脚本"></a>编辑Python下载脚本</h1><ul><li>创建一个文本文档，然后编辑如下代码，保存。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">import xml.dom.minidom</span><br><span class="line">import os</span><br><span class="line">from subprocess import call</span><br><span class="line"></span><br><span class="line"># downloaded source path</span><br><span class="line">#源码根目录，android-8.1.0_r2可以自定义。</span><br><span class="line">rootdir = &quot;E:/android/android-8.1.0_r2&quot;</span><br><span class="line"></span><br><span class="line"># git program path</span><br><span class="line">#GIT 可执行文件路径</span><br><span class="line">git = &quot;D:/Program Files/Git/bin/git.exe&quot;</span><br><span class="line"></span><br><span class="line">#将要解析的文件</span><br><span class="line">dom = xml.dom.minidom.parse(&quot;E:/android/manifest/default.xml&quot;)</span><br><span class="line">root = dom.documentElement</span><br><span class="line"></span><br><span class="line">#GIT命令前缀</span><br><span class="line">prefix = git + &quot; clone https://aosp.tuna.tsinghua.edu.cn/&quot;</span><br><span class="line">#GIT命令后缀</span><br><span class="line">suffix = &quot;.git&quot;</span><br><span class="line">#创建根目录</span><br><span class="line">if not os.path.exists(rootdir):</span><br><span class="line">    os.mkdir(rootdir)</span><br><span class="line">#遍历defualt.xml，执行Git命令克隆源码。</span><br><span class="line">for node in root.getElementsByTagName(&quot;project&quot;):</span><br><span class="line">    os.chdir(rootdir)</span><br><span class="line">    d = node.getAttribute(&quot;path&quot;)</span><br><span class="line">    last = d.rfind(&quot;/&quot;)</span><br><span class="line">    if last != -1:</span><br><span class="line">        d = rootdir + &quot;/&quot; + d[:last]</span><br><span class="line">        if not os.path.exists(d):</span><br><span class="line">            os.makedirs(d)</span><br><span class="line">        os.chdir(d)</span><br><span class="line">    cmd = prefix + node.getAttribute(&quot;name&quot;) + suffix</span><br><span class="line">    call(cmd)</span><br></pre></td></tr></table></figure></li></ul><h1 id="执行Python-开始下载源码。"><a href="#执行Python-开始下载源码。" class="headerlink" title="执行Python 开始下载源码。"></a>执行Python 开始下载源码。</h1><ul><li><p>打开Python IDLE<br><img src="/./20180806-03-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows/2093886-2a293e366bdcba76.webp" alt="TIM截图20180102191300.png"></p></li><li><p>打开刚刚编辑的代码文档<br><img src="/./20180806-03-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows/2093886-dcbfb890c573a27f.webp" alt="TIM截图20180102192032.png"></p></li></ul><p><img src="/./20180806-03-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows/2093886-a856b025d87fedac.webp" alt="TIM截图20180102192255.png"></p><ul><li>执行代码</li></ul><p><img src="/./20180806-03-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows/2093886-9aee698760fe6da6.webp" alt="TIM截图20180102192255.png"></p><p>此时将看到命令窗口在不断的下载文件。就算大功告成，等待下载结束即可。</p>]]></content>
     
     
       
@@ -401,17 +377,17 @@
     
     
     
-    <category term="Android" scheme="https://shenchunping.github.io/categories/Android/"/>
+    <category term="Android" scheme="http://example.com/categories/Android/"/>
     
     
-    <category term="Android" scheme="https://shenchunping.github.io/tags/Android/"/>
+    <category term="Android" scheme="http://example.com/tags/Android/"/>
     
   </entry>
   
   <entry>
     <title>定制设备-查看已连接蓝牙设备的MAC</title>
-    <link href="https://shenchunping.github.io/2018-08-06-20180806/05-Android-%E5%AE%9A%E5%88%B6%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84MAC.html"/>
-    <id>https://shenchunping.github.io/2018-08-06-20180806/05-Android-%E5%AE%9A%E5%88%B6%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84MAC.html</id>
+    <link href="http://example.com/2018-08-06-20180806/05-Android-%E5%AE%9A%E5%88%B6%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84MAC.html"/>
+    <id>http://example.com/2018-08-06-20180806/05-Android-%E5%AE%9A%E5%88%B6%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84MAC.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-04T15:53:26.786Z</updated>
     
@@ -426,19 +402,69 @@
     
     
     
-    <category term="Android" scheme="https://shenchunping.github.io/categories/Android/"/>
+    <category term="Android" scheme="http://example.com/categories/Android/"/>
     
     
-    <category term="Android" scheme="https://shenchunping.github.io/tags/Android/"/>
+    <category term="Android" scheme="http://example.com/tags/Android/"/>
     
-    <category term="蓝牙" scheme="https://shenchunping.github.io/tags/%E8%93%9D%E7%89%99/"/>
+    <category term="蓝牙" scheme="http://example.com/tags/%E8%93%9D%E7%89%99/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android源码下载-Centos7</title>
+    <link href="http://example.com/2018-08-06-20180806/02-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7.html"/>
+    <id>http://example.com/2018-08-06-20180806/02-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7.html</id>
+    <published>2018-08-05T16:00:00.000Z</published>
+    <updated>2023-04-04T15:53:12.470Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="下载-repo"><a href="#下载-repo" class="headerlink" title="下载 repo"></a>下载 repo</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir ~/bin</span><br><span class="line">$ PATH=~/bin:$PATH</span><br><span class="line">$ curl https://storage.googleapis.com/git-repo-downloads/repo &gt; ~/bin/repo</span><br><span class="line">$ chmod a+x ~/bin/repo</span><br></pre></td></tr></table></figure><ul><li>编辑~&#x2F;bin&#x2F;repo文件，改为国内镜像<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">https://gerrit.googlesource.com/git-repo</span><br><span class="line">改为</span><br><span class="line">https://mirrors.tuna.tsinghua.edu.cn/git/git-repo</span><br></pre></td></tr></table></figure></li></ul><h1 id="指定branch，下载代码"><a href="#指定branch，下载代码" class="headerlink" title="指定branch，下载代码"></a>指定branch，下载代码</h1><ul><li>查看所有分支<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd .repo/manifests</span><br><span class="line">git branch -a</span><br></pre></td></tr></table></figure></li><li>同步代码<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd aosp</span><br><span class="line">$ repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b android-6.0.1_r1</span><br><span class="line">$ repo sync</span><br></pre></td></tr></table></figure></li></ul><h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># source 环境</span><br><span class="line">$ . build/envsetup.sh</span><br><span class="line"></span><br><span class="line"># 选择编译项目</span><br><span class="line">$ lunch 2</span><br><span class="line"></span><br><span class="line"># 编译，可以使用-j选项设置并行编译的数量</span><br><span class="line">$ make -j8</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;下载-repo&quot;&gt;&lt;a href=&quot;#下载-repo&quot; class=&quot;headerlink&quot; title=&quot;下载 repo&quot;&gt;&lt;/a&gt;下载 repo&lt;/h1&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td cl</summary>
+      
+    
+    
+    
+    <category term="Android" scheme="http://example.com/categories/Android/"/>
+    
+    
+    <category term="Android" scheme="http://example.com/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Maven-配置镜像地址</title>
+    <link href="http://example.com/2018-08-06-20180806/06-Java-Maven-%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E5%9C%B0%E5%9D%80.html"/>
+    <id>http://example.com/2018-08-06-20180806/06-Java-Maven-%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E5%9C%B0%E5%9D%80.html</id>
+    <published>2018-08-05T16:00:00.000Z</published>
+    <updated>2023-04-05T06:18:46.845Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="创建settings-xml文件"><a href="#创建settings-xml文件" class="headerlink" title="创建settings.xml文件"></a>创建settings.xml文件</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">// Windows路径:</span><br><span class="line"></span><br><span class="line">C:\Users\用户名\.m2\settings.xml</span><br><span class="line"></span><br><span class="line">// Linux or Mac</span><br><span class="line"></span><br><span class="line">~/.m2/settings.xml</span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="添加文件内容"><a href="#添加文件内容" class="headerlink" title="添加文件内容"></a>添加文件内容</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 阿里云仓库 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/repositories/central/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 中央仓库1 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>repo1<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>Human Readable Name for this Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://repo1.maven.org/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 中央仓库2 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>repo2<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>Human Readable Name for this Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://repo2.maven.org/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">servers</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 私库配置 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>ptf-rdc-releases<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">username</span>&gt;</span>[replace username]<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">password</span>&gt;</span>[replace pwd]<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">server</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>ptf-rdc-snapshots<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">username</span>&gt;</span>[replace username]<span class="tag">&lt;/<span class="name">username</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">password</span>&gt;</span>[replace pwd]<span class="tag">&lt;/<span class="name">password</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">server</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">servers</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br></pre></td></tr></table></figure><h1 id="项目中加载私库密码"><a href="#项目中加载私库密码" class="headerlink" title="项目中加载私库密码"></a>项目中加载私库密码</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">project</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0&quot;</span> <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">         <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line">    </span><br><span class="line">    <span class="comment">&lt;!-- ... --&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 加载依赖 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">repositories</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 稳定仓库 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>ptf-rdc-releases<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://packages.aliyun.com/maven/repository/2112582-release-lzcGxm/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">releases</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">releases</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">enabled</span>&gt;</span>false<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 迭代仓库 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>ptf-rdc-snapshots<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://packages.aliyun.com/maven/repository/2112582-snapshot-FXoe3y/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">releases</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">enabled</span>&gt;</span>false<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">releases</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">snapshots</span>&gt;</span></span><br><span class="line">                <span class="tag">&lt;<span class="name">enabled</span>&gt;</span>true<span class="tag">&lt;/<span class="name">enabled</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;/<span class="name">snapshots</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">repositories</span>&gt;</span></span><br><span class="line">    <span class="comment">&lt;!-- 发布依赖 --&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 稳定仓库 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">repository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>ptf-rdc-releases<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>Release Repository<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://packages.aliyun.com/maven/repository/2112582-release-lzcGxm/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">uniqueVersion</span>&gt;</span>true<span class="tag">&lt;/<span class="name">uniqueVersion</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">layout</span>&gt;</span>default<span class="tag">&lt;/<span class="name">layout</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">repository</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 迭代仓库 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>ptf-rdc-snapshots<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>Snapshot Repository<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>https://packages.aliyun.com/maven/repository/2112582-snapshot-FXoe3y/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">uniqueVersion</span>&gt;</span>false<span class="tag">&lt;/<span class="name">uniqueVersion</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">layout</span>&gt;</span>default<span class="tag">&lt;/<span class="name">layout</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">snapshotRepository</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">distributionManagement</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">project</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;创建settings-xml文件&quot;&gt;&lt;a href=&quot;#创建settings-xml文件&quot; class=&quot;headerlink&quot; title=&quot;创建settings.xml文件&quot;&gt;&lt;/a&gt;创建settings.xml文件&lt;/h1&gt;&lt;figure class=&quot;hi</summary>
+      
+    
+    
+    
+    <category term="Java" scheme="http://example.com/categories/Java/"/>
+    
+    
+    <category term="Maven" scheme="http://example.com/tags/Maven/"/>
+    
+    <category term="Java" scheme="http://example.com/tags/Java/"/>
     
   </entry>
   
   <entry>
     <title>Centos7 JDK安装（SunJDK OpenJDK）</title>
-    <link href="https://shenchunping.github.io/2018-08-06-20180806/07-Linux-Centos7-JDK%E5%AE%89%E8%A3%85%EF%BC%88SunJDK-OpenJDK%EF%BC%89.html"/>
-    <id>https://shenchunping.github.io/2018-08-06-20180806/07-Linux-Centos7-JDK%E5%AE%89%E8%A3%85%EF%BC%88SunJDK-OpenJDK%EF%BC%89.html</id>
+    <link href="http://example.com/2018-08-06-20180806/07-Linux-Centos7-JDK%E5%AE%89%E8%A3%85%EF%BC%88SunJDK-OpenJDK%EF%BC%89.html"/>
+    <id>http://example.com/2018-08-06-20180806/07-Linux-Centos7-JDK%E5%AE%89%E8%A3%85%EF%BC%88SunJDK-OpenJDK%EF%BC%89.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-04T15:56:00.429Z</updated>
     
@@ -452,49 +478,21 @@
     
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
     
-    <category term="CentOS" scheme="https://shenchunping.github.io/tags/CentOS/"/>
+    <category term="CentOS" scheme="http://example.com/tags/CentOS/"/>
     
-    <category term="JDK" scheme="https://shenchunping.github.io/tags/JDK/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Centos7-Tomcat安装配置</title>
-    <link href="https://shenchunping.github.io/2018-08-06-20180806/08-Linux-Centos7-Tomcat%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html"/>
-    <id>https://shenchunping.github.io/2018-08-06-20180806/08-Linux-Centos7-Tomcat%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</id>
-    <published>2018-08-05T16:00:00.000Z</published>
-    <updated>2023-04-04T15:56:33.420Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Java环境安装（略）"><a href="#Java环境安装（略）" class="headerlink" title="Java环境安装（略）"></a>Java环境安装（略）</h1><h1 id="下载安装Tomcat"><a href="#下载安装Tomcat" class="headerlink" title="下载安装Tomcat"></a>下载安装Tomcat</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//进入opt目录</span><br><span class="line">cd /opt</span><br><span class="line"></span><br><span class="line">//下载</span><br><span class="line">wget http://mirrors.shu.edu.cn/apache/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.zip</span><br><span class="line"></span><br><span class="line">//解压</span><br><span class="line">unzip apache-tomcat-8.5.27.zip</span><br><span class="line"></span><br><span class="line">//修改文件夹名称</span><br><span class="line">mv apache-tomcat-8.5.27 tomcat8</span><br><span class="line"></span><br><span class="line">//手动启动tomcat</span><br><span class="line">./tomcat8/bin/startup.sh</span><br><span class="line"></span><br><span class="line">//可以在浏览器输入localhost:8080测试</span><br><span class="line">//关闭tomcat</span><br><span class="line">./tomcat8/bin/shutdown.sh</span><br></pre></td></tr></table></figure><h1 id="配置tomcat系统服务-及自启动。"><a href="#配置tomcat系统服务-及自启动。" class="headerlink" title="配置tomcat系统服务,及自启动。"></a>配置tomcat系统服务,及自启动。</h1><h2 id="Linux配置"><a href="#Linux配置" class="headerlink" title="Linux配置"></a>Linux配置</h2><ul><li><p>创建服务文件</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cp /tomcat/path/catalina.sh /etc/init.d/</span><br><span class="line">cd /etc/init.d/</span><br><span class="line">mv catalina.sh tomcat</span><br></pre></td></tr></table></figure></li><li><p>添加服务文件内容</p></li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vim tomcat </span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash"><span class="comment"># 在文件开头添加如下内容</span></span></span><br><span class="line">CATALINA_HOME=/tomcat/path</span><br><span class="line">JAVA_HOME=/jdk/home</span><br><span class="line"></span><br></pre></td></tr></table></figure><ul><li>服务开机启动</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chkconfig --add tomcat </span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;Java环境安装（略）&quot;&gt;&lt;a href=&quot;#Java环境安装（略）&quot; class=&quot;headerlink&quot; title=&quot;Java环境安装（略）&quot;&gt;&lt;/a&gt;Java环境安装（略）&lt;/h1&gt;&lt;h1 id=&quot;下载安装Tomcat&quot;&gt;&lt;a href=&quot;#下载安装Tom</summary>
-      
-    
-    
-    
-    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
-    
-    <category term="CentOS" scheme="https://shenchunping.github.io/tags/CentOS/"/>
-    
-    <category term="Tomcat" scheme="https://shenchunping.github.io/tags/Tomcat/"/>
+    <category term="JDK" scheme="http://example.com/tags/JDK/"/>
     
   </entry>
   
   <entry>
     <title>Centos7-开机启动网卡</title>
-    <link href="https://shenchunping.github.io/2018-08-06-20180806/09-Linux-Centos7-%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E7%BD%91%E5%8D%A1.html"/>
-    <id>https://shenchunping.github.io/2018-08-06-20180806/09-Linux-Centos7-%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E7%BD%91%E5%8D%A1.html</id>
+    <link href="http://example.com/2018-08-06-20180806/09-Linux-Centos7-%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E7%BD%91%E5%8D%A1.html"/>
+    <id>http://example.com/2018-08-06-20180806/09-Linux-Centos7-%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E7%BD%91%E5%8D%A1.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-04T15:56:33.413Z</updated>
     
@@ -510,39 +508,40 @@
     
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
     
-    <category term="CentOS" scheme="https://shenchunping.github.io/tags/CentOS/"/>
+    <category term="CentOS" scheme="http://example.com/tags/CentOS/"/>
     
   </entry>
   
   <entry>
-    <title>Centos7-防火墙Iptables</title>
-    <link href="https://shenchunping.github.io/2018-08-06-20180806/10-Linux-Centos7-%E9%98%B2%E7%81%AB%E5%A2%99Iptables.html"/>
-    <id>https://shenchunping.github.io/2018-08-06-20180806/10-Linux-Centos7-%E9%98%B2%E7%81%AB%E5%A2%99Iptables.html</id>
+    <title>Centos7-Tomcat安装配置</title>
+    <link href="http://example.com/2018-08-06-20180806/08-Linux-Centos7-Tomcat%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html"/>
+    <id>http://example.com/2018-08-06-20180806/08-Linux-Centos7-Tomcat%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
-    <updated>2023-04-04T15:56:33.416Z</updated>
+    <updated>2023-04-04T15:56:33.420Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="命令行设置"><a href="#命令行设置" class="headerlink" title="命令行设置"></a>命令行设置</h1><ul><li>简单操作<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">//关闭默认是防火墙Filerwall</span><br><span class="line">systemctl stop firewalld.service</span><br><span class="line"></span><br><span class="line">//禁用默认防火墙</span><br><span class="line">systemctl disable firewalld.service </span><br><span class="line"></span><br><span class="line">//安装Iptables</span><br><span class="line">yum install iptables-services</span><br><span class="line"></span><br><span class="line">// 启动iptables </span><br><span class="line">service iptables start</span><br><span class="line"></span><br><span class="line">//设置开机启动</span><br><span class="line">systemctl enable iptables.service</span><br><span class="line"></span><br><span class="line">//重启iptables</span><br><span class="line">service iptables restart</span><br></pre></td></tr></table></figure></li></ul><h2 id="基本设置"><a href="#基本设置" class="headerlink" title="基本设置"></a>基本设置</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">//查看iptables现有规则  </span><br><span class="line">iptables -L -n  </span><br><span class="line">//先允许所有,不然有可能会杯具  </span><br><span class="line">iptables -P INPUT ACCEPT  </span><br><span class="line">//清空所有默认规则  </span><br><span class="line">iptables -F  </span><br><span class="line">//清空所有自定义规则  </span><br><span class="line">iptables -X  </span><br><span class="line">//所有计数器归0  </span><br><span class="line">iptables -Z  </span><br><span class="line">//允许来自于lo接口的数据包(本地访问)  </span><br><span class="line">iptables -A INPUT -i lo -j ACCEPT  </span><br><span class="line">//开放22端口  </span><br><span class="line">iptables -A INPUT -p tcp --dport 22 -j ACCEPT  </span><br><span class="line">//开放21端口(FTP)  </span><br><span class="line">iptables -A INPUT -p tcp --dport 21 -j ACCEPT  </span><br><span class="line">//开放80端口(HTTP)  </span><br><span class="line">iptables -A INPUT -p tcp --dport 80 -j ACCEPT  </span><br><span class="line">//开放443端口(HTTPS)  </span><br><span class="line">iptables -A INPUT -p tcp --dport 443 -j ACCEPT  </span><br><span class="line">//允许ping  </span><br><span class="line">iptables -A INPUT -p icmp --icmp-type 8 -j ACCEPT  </span><br><span class="line">//允许接受本机请求之后的返回数据 RELATED,是为FTP设置的  </span><br><span class="line">iptables -A INPUT -m state --state  RELATED,ESTABLISHED -j ACCEPT  </span><br><span class="line">//其他入站一律丢弃  </span><br><span class="line">iptables -P INPUT DROP  </span><br><span class="line">//所有出站一律绿灯  </span><br><span class="line">iptables -P OUTPUT ACCEPT  </span><br><span class="line">//所有转发一律丢弃  </span><br><span class="line">iptables -P FORWARD DROP  </span><br><span class="line"></span><br><span class="line">//保存设置，一定不要忘记</span><br><span class="line">service iptables save</span><br></pre></td></tr></table></figure><h2 id="其他设置"><a href="#其他设置" class="headerlink" title="其他设置"></a>其他设置</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">//如果要添加内网ip信任（接受其所有TCP请求）  </span><br><span class="line">iptables -A INPUT -p tcp -s 45.96.174.68 -j ACCEPT  </span><br><span class="line">//过滤所有非以上规则的请求  </span><br><span class="line">iptables -P INPUT DROP  </span><br><span class="line">//要封停一个IP，使用下面这条命令：  </span><br><span class="line">iptables -I INPUT -s ***.***.***.*** -j DROP  </span><br><span class="line">//要解封一个IP，使用下面这条命令:  </span><br><span class="line">iptables -D INPUT -s ***.***.***.*** -j DROP </span><br></pre></td></tr></table></figure><h1 id="手动编辑"><a href="#手动编辑" class="headerlink" title="手动编辑"></a>手动编辑</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim /etc/sysconfig/iptables</span><br></pre></td></tr></table></figure><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"># Generated by iptables-save v1.4.21 on Thu Jan 18 11:55:42 2018</span><br><span class="line">*filter</span><br><span class="line">:INPUT DROP [0:0]</span><br><span class="line">:FORWARD DROP [0:0]</span><br><span class="line">:OUTPUT ACCEPT [8:824]</span><br><span class="line">-A INPUT -i lo -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 22 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 21 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 80 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 443 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 8080 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 8443 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 1521 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 3306 -j ACCEPT</span><br><span class="line">-A INPUT -p tcp -m tcp --dport 3389 -j ACCEPT</span><br><span class="line">-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT</span><br><span class="line">COMMIT</span><br><span class="line"># Completed on Thu Jan 18 11:55:42 2018</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h1 id="Java环境安装（略）"><a href="#Java环境安装（略）" class="headerlink" title="Java环境安装（略）"></a>Java环境安装（略）</h1><h1 id="下载安装Tomcat"><a href="#下载安装Tomcat" class="headerlink" title="下载安装Tomcat"></a>下载安装Tomcat</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">//进入opt目录</span><br><span class="line">cd /opt</span><br><span class="line"></span><br><span class="line">//下载</span><br><span class="line">wget http://mirrors.shu.edu.cn/apache/tomcat/tomcat-8/v8.5.27/bin/apache-tomcat-8.5.27.zip</span><br><span class="line"></span><br><span class="line">//解压</span><br><span class="line">unzip apache-tomcat-8.5.27.zip</span><br><span class="line"></span><br><span class="line">//修改文件夹名称</span><br><span class="line">mv apache-tomcat-8.5.27 tomcat8</span><br><span class="line"></span><br><span class="line">//手动启动tomcat</span><br><span class="line">./tomcat8/bin/startup.sh</span><br><span class="line"></span><br><span class="line">//可以在浏览器输入localhost:8080测试</span><br><span class="line">//关闭tomcat</span><br><span class="line">./tomcat8/bin/shutdown.sh</span><br></pre></td></tr></table></figure><h1 id="配置tomcat系统服务-及自启动。"><a href="#配置tomcat系统服务-及自启动。" class="headerlink" title="配置tomcat系统服务,及自启动。"></a>配置tomcat系统服务,及自启动。</h1><h2 id="Linux配置"><a href="#Linux配置" class="headerlink" title="Linux配置"></a>Linux配置</h2><ul><li><p>创建服务文件</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cp /tomcat/path/catalina.sh /etc/init.d/</span><br><span class="line">cd /etc/init.d/</span><br><span class="line">mv catalina.sh tomcat</span><br></pre></td></tr></table></figure></li><li><p>添加服务文件内容</p></li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">vim tomcat </span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash"><span class="comment"># 在文件开头添加如下内容</span></span></span><br><span class="line">CATALINA_HOME=/tomcat/path</span><br><span class="line">JAVA_HOME=/jdk/home</span><br><span class="line"></span><br></pre></td></tr></table></figure><ul><li>服务开机启动</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chkconfig --add tomcat </span><br></pre></td></tr></table></figure>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;命令行设置&quot;&gt;&lt;a href=&quot;#命令行设置&quot; class=&quot;headerlink&quot; title=&quot;命令行设置&quot;&gt;&lt;/a&gt;命令行设置&lt;/h1&gt;&lt;ul&gt;
-&lt;li&gt;简单操作&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;</summary>
+    <summary type="html">&lt;h1 id=&quot;Java环境安装（略）&quot;&gt;&lt;a href=&quot;#Java环境安装（略）&quot; class=&quot;headerlink&quot; title=&quot;Java环境安装（略）&quot;&gt;&lt;/a&gt;Java环境安装（略）&lt;/h1&gt;&lt;h1 id=&quot;下载安装Tomcat&quot;&gt;&lt;a href=&quot;#下载安装Tom</summary>
       
     
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    <category term="Linux" scheme="http://example.com/categories/Linux/"/>
     
     
-    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    <category term="Linux" scheme="http://example.com/tags/Linux/"/>
     
-    <category term="CentOS" scheme="https://shenchunping.github.io/tags/CentOS/"/>
+    <category term="CentOS" scheme="http://example.com/tags/CentOS/"/>
+    
+    <category term="Tomcat" scheme="http://example.com/tags/Tomcat/"/>
     
   </entry>
   
