@@ -1,25 +1,213 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Kuper Developer</title>
+  <title>Coder 沈春平</title>
   
-  
+  <subtitle>学习笔记</subtitle>
   <link href="https://shenchunping.github.io/atom.xml" rel="self"/>
   
   <link href="https://shenchunping.github.io/"/>
-  <updated>2023-04-04T15:53:26.784Z</updated>
+  <updated>2023-04-05T07:09:28.057Z</updated>
   <id>https://shenchunping.github.io/</id>
   
   <author>
-    <name>Kuper</name>
+    <name>沈春平</name>
     
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>05-Linux-Mysql安装</title>
+    <link href="https://shenchunping.github.io/2023-04-05-20230405/05-Linux-Mysql%E5%AE%89%E8%A3%85.html"/>
+    <id>https://shenchunping.github.io/2023-04-05-20230405/05-Linux-Mysql%E5%AE%89%E8%A3%85.html</id>
+    <published>2023-04-05T07:06:39.000Z</published>
+    <updated>2023-04-05T07:09:28.057Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li><p>下载地址 <a href="https://dev.mysql.com/downloads/repo/yum/">https://dev.mysql.com/downloads/repo/yum/</a></p></li><li><p>这里下载的是： <a href="https://repo.mysql.com//mysql80-community-release-el7-7.noarch.rpm">https://repo.mysql.com//mysql80-community-release-el7-7.noarch.rpm</a></p></li><li><p>安装Mysql安装源 <code>rpm -ivh mysql80-community-release-el7-7.noarch.rpm</code></p></li><li><p>更新安装源 <code>yum update -y</code></p></li><li><p>安装Mysql <code>yum install mysql-community-server -y</code></p></li><li><p>开机启动 <code>systemctl enable mysqld</code></p></li><li><p>启动Mysql <code>systemctl start mysqld</code></p></li><li><p>查看初始密码 <code>cat /var/log/mysqld.log | grep password</code> 或者 <code>grep &quot;A temporary password&quot; /var/log/mysqld.log</code></p></li><li><p>登录Mysql <code>mysql -uroot -p</code> 输入密码</p></li><li><p>修改root密码 <code>ALTER USER &#39;root&#39;@&#39;localhost&#39; IDENTIFIED WITH mysql_native_password BY &#39;你的密码&#39;;</code></p></li><li><p>刷新权限 <code>flush privileges;</code></p></li><li><p>创建新用户 <code>create user &#39;user1&#39;@&#39;%&#39; IDENTIFIED WITH mysql_native_password BY &#39;User@123&#39;;</code></p></li><li><p>创建数据库 <code>create database db_name default character set utf8mb4 collate utf8mb4_unicode_ci</code></p></li><li><p>授予数据库读写权限 <code>grant all privileges on db_name.* to &#39;user1&#39;@&#39;%&#39; with grant option;</code></p></li><li><p>授予数据库增删改查权限 <code>grant SELECT,INSERT,UPDATE,DELETE on db_name.* to &#39;user1&#39;;</code></p></li><li><p>授予所有数据库权限 <code>grant ALL on *.* to &#39;用户名&#39;@&#39;主机名&#39;;</code></p></li><li><p>撤销授权 <code>revoke 权限列表 on 数据库名.表名 from &#39;用户名&#39;@&#39;主机名&#39;;</code></p></li><li><p>查看授权 <code>show grants for &#39;用户名&#39;@‘主机名’;</code></p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">systemctl start mysqld#启动mysql服务</span><br><span class="line">systemctl status mysqld#查看mysql服务状态</span><br><span class="line">systemctl stop mysqld#停止mysql服务</span><br></pre></td></tr></table></figure></li><li><p>全文搜索配置</p>  <figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">shellinnodb_ft_min_token_size=2</span><br><span class="line">ft_min_word_len=2</span><br><span class="line">ngram_token_size=2</span><br></pre></td></tr></table></figure></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;下载地址 &lt;a href=&quot;https://dev.mysql.com/downloads/repo/yum/&quot;&gt;https://dev.mysql.com/downloads/repo/yum/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;这里下载的是： </summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    
+    <category term="MySql" scheme="https://shenchunping.github.io/tags/MySql/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>04-Linux-JDK安装</title>
+    <link href="https://shenchunping.github.io/2023-04-05-20230405/04-Linux-JDK%E5%AE%89%E8%A3%85.html"/>
+    <id>https://shenchunping.github.io/2023-04-05-20230405/04-Linux-JDK%E5%AE%89%E8%A3%85.html</id>
+    <published>2023-04-05T07:00:39.000Z</published>
+    <updated>2023-04-05T07:05:38.351Z</updated>
+    
+    <content type="html"><![CDATA[<ul><li>下载地址： <a href="https://www.oracle.com/java/technologies/downloads/#java8">https://www.oracle.com/java/technologies/downloads/#java8</a></li><li>这里下载的是 <code>jdk-8u361-linux-x64.rpm</code></li><li>安装命令 <code>rpm -ivh jdk-8u361-linux-x64.rpm</code></li><li>现在可以执行Java命令，查看安装版本 <code>java -version</code></li><li>默认安装到 <code>/usr/java/jdk1.8.0_361-amd64</code> 目录</li><li>环境变量配置 <code>vim /etc/profile</code> 添加下面的配置，注意修改到自己的目录</li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">export JAVA_HOME=/usr/java/jdk1.8.0_361-amd64</span><br><span class="line">export PATH=$JAVA_HOME/bin:$PATH</span><br><span class="line">export CLASSPATH=.:$JAVA_HOME/lib/dt.jar:$JAVA_HOME/lib/tools.jar</span><br></pre></td></tr></table></figure><ul><li>生效配置 <code>source /etc/profile</code></li><li>验证是否支持JDK <code>java -version</code></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;下载地址： &lt;a href=&quot;https://www.oracle.com/java/technologies/downloads/#java8&quot;&gt;https://www.oracle.com/java/technologies/downloads/#java8</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    
+    <category term="JDK" scheme="https://shenchunping.github.io/tags/JDK/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>03-Linux-Redis源码安装</title>
+    <link href="https://shenchunping.github.io/2023-04-05-20230405/03-Linux-Redis%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85.html"/>
+    <id>https://shenchunping.github.io/2023-04-05-20230405/03-Linux-Redis%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85.html</id>
+    <published>2023-04-05T06:54:38.000Z</published>
+    <updated>2023-04-05T06:56:54.556Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Redis-源码安装"><a href="#Redis-源码安装" class="headerlink" title="Redis 源码安装"></a>Redis 源码安装</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">mkdir install-program</span><br><span class="line">cd install-program</span><br><span class="line">wget https://download.redis.io/releases/redis-6.2.11.tar.gz</span><br><span class="line">tar -zxvf redis-6.2.11.tar.gz</span><br><span class="line">cd redis-6.2.11/</span><br><span class="line">make install</span><br></pre></td></tr></table></figure><ul><li><p>看到如下提示则表示安装成功</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Hint: It&#x27;s a good idea to run &#x27;make test&#x27; ;)</span><br><span class="line"></span><br><span class="line">    INSTALL redis-server</span><br><span class="line">    INSTALL redis-benchmark</span><br><span class="line">    INSTALL redis-cli</span><br><span class="line"></span><br></pre></td></tr></table></figure></li><li><p>默认安装目录在 <code>/usr/local/bin</code></p></li><li><p>如果安装需要指定目录，执行 <code>make PREFIX=/usr/local/redis install</code></p></li><li><p>复制默认的配置文件到安装目录 <code>cp redis.conf /usr/local/redis/</code></p></li></ul><h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/redis</span><br><span class="line"></span><br><span class="line">vim redis.conf</span><br></pre></td></tr></table></figure><h3 id="配置外网访问（云服务器请开启网络策略）"><a href="#配置外网访问（云服务器请开启网络策略）" class="headerlink" title="配置外网访问（云服务器请开启网络策略）"></a>配置外网访问（云服务器请开启网络策略）</h3><ul><li>在vim查看模式输入 <code>/bind</code> 快速定位到修改位置</li><li>找到 <code>bind 127.0.0.1 -::1</code> 修改为 <code>bind 0.0.0.0</code> 如果前面有#号请去掉</li></ul><h3 id="配置密码"><a href="#配置密码" class="headerlink" title="配置密码"></a>配置密码</h3><ul><li>找到 <code># requirepass foobared</code> 修改为 <code>requirepass 123456</code> 去掉前面的#号</li><li>上面的<code>123456</code>就是密码，替换成你的密码就可以</li></ul><h2 id="验证配置"><a href="#验证配置" class="headerlink" title="验证配置"></a>验证配置</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd /usr/local/redis/bin</span><br><span class="line">./redis-server ../redis.conf</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="开机启动配置"><a href="#开机启动配置" class="headerlink" title="开机启动配置"></a>开机启动配置</h2><h3 id="创建配置文件"><a href="#创建配置文件" class="headerlink" title="创建配置文件"></a>创建配置文件</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi /etc/systemd/system/redis.service</span><br></pre></td></tr></table></figure><h3 id="配置文件内容"><a href="#配置文件内容" class="headerlink" title="配置文件内容"></a>配置文件内容</h3><ul><li><p>键盘点<code>i</code> 然后粘贴下面的内容</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">[Unit]</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Description:描述服务</span></span><br><span class="line">Description=Redis</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">After:描述服务类别</span> </span><br><span class="line">After=network.target</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">服务运行参数的设置</span> </span><br><span class="line">[Service]</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">Type=forking是后台运行的形式</span> </span><br><span class="line">Type=forking</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">ExecStart为服务的具体运行命令，路径必须是绝对路径</span> </span><br><span class="line">ExecStart=/usr/local/redis/bin/redis-server /usr/local/redis/redis.conf</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">ExecReload为重启命令 ，路径必须是绝对路径</span> </span><br><span class="line">ExecReload=/usr/local/redis/bin/redis-server -s reload</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">ExecStop为停止命令 ，路径必须是绝对路径</span> </span><br><span class="line">ExecStop=/usr/local/redis/bin/redis-server -s stop</span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">PrivateTmp=True表示给服务分配独立的临时空间</span> </span><br><span class="line">PrivateTmp=true</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_">#</span><span class="language-bash">运行级别下服务安装的相关设置，可设置为多用户，即系统运行级别为3</span></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br><span class="line"></span><br></pre></td></tr></table></figure></li><li><p>执行开机启动命令 <code>systemctl enable redis.service</code></p></li><li><p>执行手动启动命令 <code>systemctl start redis</code> 或者 <code>service redis start</code></p></li></ul><h2 id="如果出现错误"><a href="#如果出现错误" class="headerlink" title="如果出现错误"></a>如果出现错误</h2><h3 id="启动超时错误"><a href="#启动超时错误" class="headerlink" title="启动超时错误"></a>启动超时错误</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Job for redis.service failed because a timeout was exceeded.</span><br></pre></td></tr></table></figure><ul><li>修改配置文件，注释掉 <code>Type=forking</code></li><li>执行命令 <code>systemctl daemon-reload</code> 然后再次启动服务</li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;Redis-源码安装&quot;&gt;&lt;a href=&quot;#Redis-源码安装&quot; class=&quot;headerlink&quot; title=&quot;Redis 源码安装&quot;&gt;&lt;/a&gt;Redis 源码安装&lt;/h1&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;t</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    
+    <category term="Redis" scheme="https://shenchunping.github.io/tags/Redis/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>02-Linux-挂载磁盘</title>
+    <link href="https://shenchunping.github.io/2023-04-05-20230405/02-Linux-%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98.html"/>
+    <id>https://shenchunping.github.io/2023-04-05-20230405/02-Linux-%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98.html</id>
+    <published>2023-04-05T06:44:35.000Z</published>
+    <updated>2023-04-05T06:50:24.524Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="依赖更新"><a href="#依赖更新" class="headerlink" title="依赖更新"></a>依赖更新</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum update -y </span><br></pre></td></tr></table></figure><h1 id="挂载磁盘（无则忽略）"><a href="#挂载磁盘（无则忽略）" class="headerlink" title="挂载磁盘（无则忽略）"></a>挂载磁盘（无则忽略）</h1><h2 id="查看所有磁盘"><a href="#查看所有磁盘" class="headerlink" title="查看所有磁盘"></a>查看所有磁盘</h2><ul><li>执行命令 <code>fdisk -l</code></li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">磁盘 /dev/vda：64.4 GB, 64424509440 字节，125829120 个扇区</span><br><span class="line">Units = 扇区 of 1 * 512 = 512 bytes</span><br><span class="line">扇区大小(逻辑/物理)：512 字节 / 512 字节</span><br><span class="line">I/O 大小(最小/最佳)：512 字节 / 512 字节</span><br><span class="line">磁盘标签类型：dos</span><br><span class="line">磁盘标识符：0x000b770c</span><br><span class="line"></span><br><span class="line">   设备 Boot      Start         End      Blocks   Id  System</span><br><span class="line">/dev/vda1   *        2048   125829086    62913519+  83  Linux</span><br><span class="line"></span><br><span class="line">磁盘 /dev/vdb：107.4 GB, 107374182400 字节，209715200 个扇区</span><br><span class="line">Units = 扇区 of 1 * 512 = 512 bytes</span><br><span class="line">扇区大小(逻辑/物理)：512 字节 / 512 字节</span><br><span class="line">I/O 大小(最小/最佳)：512 字节 / 512 字节</span><br><span class="line"></span><br></pre></td></tr></table></figure><blockquote><p>&#x2F;dev&#x2F;vda 已经挂载，&#x2F;dev&#x2F;vdb 未挂载</p></blockquote><h2 id="磁盘分区"><a href="#磁盘分区" class="headerlink" title="磁盘分区"></a>磁盘分区</h2><ul><li>执行命令 <code>fdisk /dev/vdb</code></li><li>然后依次输入 <code>n 、p、 1、 回车、回车、wq</code></li></ul><h2 id="磁盘格式化"><a href="#磁盘格式化" class="headerlink" title="磁盘格式化"></a>磁盘格式化</h2><ul><li>执行命令 <code>mkfs.ext3 /dev/vdb1</code></li></ul><h2 id="挂载新分区"><a href="#挂载新分区" class="headerlink" title="挂载新分区"></a>挂载新分区</h2><ul><li>临时挂载(重启后失效) <code>mount /dev/vdb1 /data</code></li><li>永久挂载 <code>echo &#39;/dev/vdb1 /data ext3 defaults 0 0&#39; &gt;&gt;/etc/fstab</code></li></ul><h2 id="查看挂载信息"><a href="#查看挂载信息" class="headerlink" title="查看挂载信息"></a>查看挂载信息</h2><ul><li>查看磁盘信息 <code>fdisk -l</code></li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">磁盘 /dev/vda：64.4 GB, 64424509440 字节，125829120 个扇区</span><br><span class="line">Units = 扇区 of 1 * 512 = 512 bytes</span><br><span class="line">扇区大小(逻辑/物理)：512 字节 / 512 字节</span><br><span class="line">I/O 大小(最小/最佳)：512 字节 / 512 字节</span><br><span class="line">磁盘标签类型：dos</span><br><span class="line">磁盘标识符：0x000b770c</span><br><span class="line"></span><br><span class="line">   设备 Boot      Start         End      Blocks   Id  System</span><br><span class="line">/dev/vda1   *        2048   125829086    62913519+  83  Linux</span><br><span class="line"></span><br><span class="line">磁盘 /dev/vdb：107.4 GB, 107374182400 字节，209715200 个扇区</span><br><span class="line">Units = 扇区 of 1 * 512 = 512 bytes</span><br><span class="line">扇区大小(逻辑/物理)：512 字节 / 512 字节</span><br><span class="line">I/O 大小(最小/最佳)：512 字节 / 512 字节</span><br><span class="line">磁盘标签类型：dos</span><br><span class="line">磁盘标识符：0x4e36872a</span><br><span class="line"></span><br><span class="line">   设备 Boot      Start         End      Blocks   Id  System</span><br><span class="line">/dev/vdb1            2048   209715199   104856576   83  Linux</span><br><span class="line"></span><br></pre></td></tr></table></figure><blockquote><p>磁盘都已挂载</p></blockquote><ul><li>查看磁盘空间 <code>df -h</code></li></ul><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">文件系统        容量  已用  可用 已用% 挂载点</span><br><span class="line">devtmpfs        7.7G     0  7.7G    0% /dev</span><br><span class="line">tmpfs           7.7G     0  7.7G    0% /dev/shm</span><br><span class="line">tmpfs           7.7G  628K  7.7G    1% /run</span><br><span class="line">tmpfs           7.7G     0  7.7G    0% /sys/fs/cgroup</span><br><span class="line">/dev/vda1        59G  6.6G   50G   12% /</span><br><span class="line">tmpfs           1.6G     0  1.6G    0% /run/user/0</span><br><span class="line">/dev/vdb1        99G   60M   94G    1% /data</span><br></pre></td></tr></table></figure><blockquote><p>挂载成功</p></blockquote>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;依赖更新&quot;&gt;&lt;a href=&quot;#依赖更新&quot; class=&quot;headerlink&quot; title=&quot;依赖更新&quot;&gt;&lt;/a&gt;依赖更新&lt;/h1&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pr</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    
+    <category term="磁盘挂载" scheme="https://shenchunping.github.io/tags/%E7%A3%81%E7%9B%98%E6%8C%82%E8%BD%BD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>01-Linux-Ubuntu服务器休眠</title>
+    <link href="https://shenchunping.github.io/2023-04-05-20230405/01-Linux-Ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%91%E7%9C%A0.html"/>
+    <id>https://shenchunping.github.io/2023-04-05-20230405/01-Linux-Ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%91%E7%9C%A0.html</id>
+    <published>2023-04-05T06:26:13.000Z</published>
+    <updated>2023-04-05T06:29:12.404Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="禁用"><a href="#禁用" class="headerlink" title="禁用"></a>禁用</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl mask sleep.target suspend.target hibernate.target hybrid-sleep.target</span><br></pre></td></tr></table></figure><h1 id="启用"><a href="#启用" class="headerlink" title="启用"></a>启用</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl unmask sleep.target suspend.target hibernate.target hybrid-sleep.target</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;禁用&quot;&gt;&lt;a href=&quot;#禁用&quot; class=&quot;headerlink&quot; title=&quot;禁用&quot;&gt;&lt;/a&gt;禁用&lt;/h1&gt;&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span </summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    
+    <category term="Ubuntu" scheme="https://shenchunping.github.io/tags/Ubuntu/"/>
+    
+    <category term="休眠" scheme="https://shenchunping.github.io/tags/%E4%BC%91%E7%9C%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu 安装&#39;为知笔记&#39;</title>
+    <link href="https://shenchunping.github.io/2023-04-04-20190325/01-Linux-Ubuntu-%E5%AE%89%E8%A3%85-%E4%B8%BA%E7%9F%A5%E7%AC%94%E8%AE%B0.html"/>
+    <id>https://shenchunping.github.io/2023-04-04-20190325/01-Linux-Ubuntu-%E5%AE%89%E8%A3%85-%E4%B8%BA%E7%9F%A5%E7%AC%94%E8%AE%B0.html</id>
+    <published>2023-04-04T01:46:14.496Z</published>
+    <updated>2023-04-05T04:40:32.959Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>安装具体步骤可以参考<a href="http://www.wiz.cn/compile-client.html">官方文档</a>,按文档操作即可完成安装.</p><h1 id="无法使用搜狗拼音"><a href="#无法使用搜狗拼音" class="headerlink" title="无法使用搜狗拼音"></a>无法使用搜狗拼音</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装fcitx-libs-dev</span></span><br><span class="line">sudo apt-get install fcitx-libs-dev</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">设置qmake的环境变量</span> </span><br><span class="line">export PATH=&quot;/[Qt5.7_main_path]/5.7/gcc_64/bin&quot;:$PATH</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">下载fcitx-qt5源码,安装</span></span><br><span class="line"> </span><br><span class="line">git clone https://github.com/fcitx/fcitx-qt5.git</span><br><span class="line">cd fcitx-qt5</span><br><span class="line">cmake .</span><br><span class="line">make </span><br><span class="line">sudo make install</span><br><span class="line">Could NOT find XKBCommon_XKBCommon</span><br><span class="line"> </span><br><span class="line">wget http://xkbcommon.org/download/libxkbcommon-0.5.0.tar.xz</span><br><span class="line">tar xf libxkbcommon-0.5.0.tar.xz </span><br><span class="line">./configure —prefix=/usr —libdir=/usr/lib/x86_64-linux-gnu —disable-x11 </span><br><span class="line">make </span><br><span class="line">sudo make install</span><br><span class="line">​</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h1&gt;&lt;p&gt;安装具体步骤可以参考&lt;a href=&quot;http://www.wiz.cn/compile-client.html&quot;&gt;官方文档&lt;/a&gt;,按文档</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    
+    
+    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
+    
+    <category term="Ubuntu" scheme="https://shenchunping.github.io/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>key和pem生成HTTPS证书</title>
+    <link href="https://shenchunping.github.io/2023-04-04-20180806/11-Linux-key%E5%92%8Cpem%E7%94%9F%E6%88%90HTTPS%E8%AF%81%E4%B9%A6.html"/>
+    <id>https://shenchunping.github.io/2023-04-04-20180806/11-Linux-key%E5%92%8Cpem%E7%94%9F%E6%88%90HTTPS%E8%AF%81%E4%B9%A6.html</id>
+    <published>2023-04-04T01:46:14.496Z</published>
+    <updated>2023-04-05T04:40:32.962Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="MAC下直接命令生成-p12文件"><a href="#MAC下直接命令生成-p12文件" class="headerlink" title="MAC下直接命令生成.p12文件"></a>MAC下直接命令生成.p12文件</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl pkcs12 -export -inkey private.key -in full_chain.pem -name tomcat -out tomcat.p12</span><br></pre></td></tr></table></figure><h1 id="通过keytool生成-jks文件"><a href="#通过keytool生成-jks文件" class="headerlink" title="通过keytool生成.jks文件"></a>通过keytool生成.jks文件</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keytool -importkeystore -srckeystore C:\tomcat.p12 -srcstoretype pkcs12 -destkeystore C:\tomcat.jks</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;MAC下直接命令生成-p12文件&quot;&gt;&lt;a href=&quot;#MAC下直接命令生成-p12文件&quot; class=&quot;headerlink&quot; title=&quot;MAC下直接命令生成.p12文件&quot;&gt;&lt;/a&gt;MAC下直接命令生成.p12文件&lt;/h1&gt;&lt;figure class=&quot;hi</summary>
+      
+    
+    
+    
+    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
+    
+    
+    <category term="HTTPS" scheme="https://shenchunping.github.io/tags/HTTPS/"/>
+    
+    <category term="证书" scheme="https://shenchunping.github.io/tags/%E8%AF%81%E4%B9%A6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>APK反编译-基础篇</title>
-    <link href="https://shenchunping.github.io/2019/04/21/android/20180806-04-APK%E5%8F%8D%E7%BC%96%E8%AF%91-%E5%9F%BA%E7%A1%80%E7%AF%87/"/>
-    <id>https://shenchunping.github.io/2019/04/21/android/20180806-04-APK%E5%8F%8D%E7%BC%96%E8%AF%91-%E5%9F%BA%E7%A1%80%E7%AF%87/</id>
+    <link href="https://shenchunping.github.io/2019-04-21-20180806/04-Android-APK%E5%8F%8D%E7%BC%96%E8%AF%91-%E5%9F%BA%E7%A1%80%E7%AF%87.html"/>
+    <id>https://shenchunping.github.io/2019-04-21-20180806/04-Android-APK%E5%8F%8D%E7%BC%96%E8%AF%91-%E5%9F%BA%E7%A1%80%E7%AF%87.html</id>
     <published>2019-04-21T08:33:21.000Z</published>
     <updated>2023-04-04T15:53:26.784Z</updated>
     
@@ -42,8 +230,8 @@
   
   <entry>
     <title>环境变量配置</title>
-    <link href="https://shenchunping.github.io/2019/04/21/linux/20190421-01-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/"/>
-    <id>https://shenchunping.github.io/2019/04/21/linux/20190421-01-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE/</id>
+    <link href="https://shenchunping.github.io/2019-04-21-20190421/01-Linux-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html"/>
+    <id>https://shenchunping.github.io/2019-04-21-20190421/01-Linux-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html</id>
     <published>2019-04-21T08:21:01.000Z</published>
     <updated>2023-04-04T15:56:33.410Z</updated>
     
@@ -68,8 +256,8 @@
   
   <entry>
     <title>Java 内存泄漏监测与定位</title>
-    <link href="https://shenchunping.github.io/2019/04/19/java/20190419-01-Java-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D/"/>
-    <id>https://shenchunping.github.io/2019/04/19/java/20190419-01-Java-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D/</id>
+    <link href="https://shenchunping.github.io/2019-04-19-20190419/01-Java-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D.html"/>
+    <id>https://shenchunping.github.io/2019-04-19-20190419/01-Java-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D.html</id>
     <published>2019-04-19T06:59:58.000Z</published>
     <updated>2023-04-04T15:53:58.136Z</updated>
     
@@ -97,8 +285,8 @@
   
   <entry>
     <title>Cordova 创建项目</title>
-    <link href="https://shenchunping.github.io/2019/04/18/javascript/20190418-01-Cordova-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE/"/>
-    <id>https://shenchunping.github.io/2019/04/18/javascript/20190418-01-Cordova-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE/</id>
+    <link href="https://shenchunping.github.io/2019-04-18-20190418/01-Nodejs-Cordova-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html"/>
+    <id>https://shenchunping.github.io/2019-04-18-20190418/01-Nodejs-Cordova-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html</id>
     <published>2019-04-17T16:00:00.000Z</published>
     <updated>2023-04-04T15:56:00.428Z</updated>
     
@@ -123,12 +311,12 @@
   
   <entry>
     <title>Homebrew 常用命令-Mac</title>
-    <link href="https://shenchunping.github.io/2019/04/12/mac/20190412-01-Homebrew-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-Mac/"/>
-    <id>https://shenchunping.github.io/2019/04/12/mac/20190412-01-Homebrew-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4-Mac/</id>
+    <link href="https://shenchunping.github.io/2019-04-12-20190412/01-Mac-Homebrew-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html"/>
+    <id>https://shenchunping.github.io/2019-04-12-20190412/01-Mac-Homebrew-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html</id>
     <published>2019-04-12T05:33:36.000Z</published>
-    <updated>2023-04-04T15:56:44.953Z</updated>
+    <updated>2023-04-05T05:54:18.040Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="管理软件包"><a href="#管理软件包" class="headerlink" title="管理软件包"></a>管理软件包</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">brew --help         #简洁命令帮助</span><br><span class="line">man brew           #完整命令帮助</span><br><span class="line">brew install git    #安装软件包(这里是示例安装的Git版本控制)</span><br><span class="line">brew uninstall git #卸载软件包</span><br><span class="line">brew search git    #搜索软件包</span><br><span class="line">brew list             #显示已经安装的所有软件包</span><br><span class="line">brew update      #同步远程最新更新情况，对本机已经安装并有更新的软件用*标明</span><br><span class="line">brew outdated      #查看已安装的哪些软件包需要更新</span><br><span class="line">brew upgrade git   #更新单个软件包</span><br><span class="line">brew info git      #查看软件包信息</span><br><span class="line">brew home git      #访问软件包官方站</span><br><span class="line">brew cleanup       #清理所有已安装软件包的历史老版本</span><br><span class="line">brew cleanup git   #清理单个已安装软件包的历史版本</span><br></pre></td></tr></table></figure><h1 id="管理服务"><a href="#管理服务" class="headerlink" title="管理服务"></a>管理服务</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">brew services list  # 查看使用brew安装的服务列表</span><br><span class="line">brew services run formula|--all  # 启动服务（仅启动不注册）</span><br><span class="line">brew services start formula|--all  # 启动服务，并注册</span><br><span class="line">brew services stop formula|--all   # 停止服务，并取消注册</span><br><span class="line">brew services restart formula|--all  # 重启服务，并注册</span><br><span class="line">brew services cleanup  # 清除已卸载应用的无用的配置</span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h1><blockquote><ul><li><a href=""></a></li><li><a href=""></a></li></ul></blockquote>]]></content>
+    <content type="html"><![CDATA[<h1 id="管理软件包"><a href="#管理软件包" class="headerlink" title="管理软件包"></a>管理软件包</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">brew --help         #简洁命令帮助</span><br><span class="line">man brew           #完整命令帮助</span><br><span class="line">brew install git    #安装软件包(这里是示例安装的Git版本控制)</span><br><span class="line">brew uninstall git #卸载软件包</span><br><span class="line">brew search git    #搜索软件包</span><br><span class="line">brew list             #显示已经安装的所有软件包</span><br><span class="line">brew update      #同步远程最新更新情况，对本机已经安装并有更新的软件用*标明</span><br><span class="line">brew outdated      #查看已安装的哪些软件包需要更新</span><br><span class="line">brew upgrade git   #更新单个软件包</span><br><span class="line">brew info git      #查看软件包信息</span><br><span class="line">brew home git      #访问软件包官方站</span><br><span class="line">brew cleanup       #清理所有已安装软件包的历史老版本</span><br><span class="line">brew cleanup git   #清理单个已安装软件包的历史版本</span><br></pre></td></tr></table></figure><h1 id="管理服务"><a href="#管理服务" class="headerlink" title="管理服务"></a>管理服务</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">brew services list  # 查看使用brew安装的服务列表</span><br><span class="line">brew services run formula|--all  # 启动服务（仅启动不注册）</span><br><span class="line">brew services start formula|--all  # 启动服务，并注册</span><br><span class="line">brew services stop formula|--all   # 停止服务，并取消注册</span><br><span class="line">brew services restart formula|--all  # 重启服务，并注册</span><br><span class="line">brew services cleanup  # 清除已卸载应用的无用的配置</span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="自动删除依赖"><a href="#自动删除依赖" class="headerlink" title="自动删除依赖"></a>自动删除依赖</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装rmtree</span></span><br><span class="line">brew tap beeftornado/rmtree</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">删除</span></span><br><span class="line">brew rmtree package</span><br></pre></td></tr></table></figure><h1 id="国内源直接安装"><a href="#国内源直接安装" class="headerlink" title="国内源直接安装"></a>国内源直接安装</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/bin/bash -c &quot;$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install.sh)&quot;</span><br></pre></td></tr></table></figure><h1 id="国内源替换"><a href="#国内源替换" class="headerlink" title="国内源替换"></a>国内源替换</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">中科大镜像 https://mirrors.ustc.edu.cn/</span><br><span class="line">清华镜像 https://mirrors.tuna.tsinghua.edu.cn/#</span><br><span class="line">北京外国语镜像 https://mirrors.bfsu.edu.cn/#</span><br></pre></td></tr></table></figure><h1 id="查看brew当前源"><a href="#查看brew当前源" class="headerlink" title="查看brew当前源"></a>查看brew当前源</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd &quot;$(brew --repo)&quot; &amp;&amp; git remote -v</span><br></pre></td></tr></table></figure><h1 id="查看brew-core当前源"><a href="#查看brew-core当前源" class="headerlink" title="查看brew-core当前源"></a>查看brew-core当前源</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd &quot;$(brew --repo homebrew/core)&quot; &amp;&amp; git remote -v</span><br></pre></td></tr></table></figure><h1 id="替换源"><a href="#替换源" class="headerlink" title="替换源"></a>替换源</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">替换brew</span></span><br><span class="line">cd &quot;$(brew --repo)&quot; &amp;&amp; git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">替换homebrew-core</span></span><br><span class="line">cd &quot;$(brew --repo)/Library/Taps/homebrew/homebrew-core&quot; &amp;&amp; git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">替换homebrew-cask</span></span><br><span class="line">cd &quot;$(brew --repo)/Library/Taps/homebrew/homebrew-cask&quot; &amp;&amp; git remote set-url origin https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-cask.git</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">替换bottles</span></span><br><span class="line">echo &#x27;export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles&#x27; &gt;&gt; ~/.zshrc</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">使其生效</span></span><br><span class="line">source ~/.bash_profile</span><br></pre></td></tr></table></figure>]]></content>
     
     
       
@@ -148,61 +336,9 @@
   </entry>
   
   <entry>
-    <title>key和pem生成HTTPS证书</title>
-    <link href="https://shenchunping.github.io/2019/03/26/linux/20180806-05-key%E5%92%8Cpem%E7%94%9F%E6%88%90HTTPS%E8%AF%81%E4%B9%A6/"/>
-    <id>https://shenchunping.github.io/2019/03/26/linux/20180806-05-key%E5%92%8Cpem%E7%94%9F%E6%88%90HTTPS%E8%AF%81%E4%B9%A6/</id>
-    <published>2019-03-26T05:51:39.000Z</published>
-    <updated>2023-04-04T15:56:33.418Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="MAC下直接命令生成-p12文件"><a href="#MAC下直接命令生成-p12文件" class="headerlink" title="MAC下直接命令生成.p12文件"></a>MAC下直接命令生成.p12文件</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl pkcs12 -export -inkey private.key -in full_chain.pem -name tomcat -out tomcat.p12</span><br></pre></td></tr></table></figure><h1 id="通过keytool生成-jks文件"><a href="#通过keytool生成-jks文件" class="headerlink" title="通过keytool生成.jks文件"></a>通过keytool生成.jks文件</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">keytool -importkeystore -srckeystore C:\tomcat.p12 -srcstoretype pkcs12 -destkeystore C:\tomcat.jks</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;MAC下直接命令生成-p12文件&quot;&gt;&lt;a href=&quot;#MAC下直接命令生成-p12文件&quot; class=&quot;headerlink&quot; title=&quot;MAC下直接命令生成.p12文件&quot;&gt;&lt;/a&gt;MAC下直接命令生成.p12文件&lt;/h1&gt;&lt;figure class=&quot;hi</summary>
-      
-    
-    
-    
-    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
-    
-    
-    <category term="HTTPS" scheme="https://shenchunping.github.io/tags/HTTPS/"/>
-    
-    <category term="证书" scheme="https://shenchunping.github.io/tags/%E8%AF%81%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Ubuntu 安装&#39;为知笔记&#39;</title>
-    <link href="https://shenchunping.github.io/2019/03/25/linux/20190325-01-Ubuntu-%E5%AE%89%E8%A3%85-%E4%B8%BA%E7%9F%A5%E7%AC%94%E8%AE%B0/"/>
-    <id>https://shenchunping.github.io/2019/03/25/linux/20190325-01-Ubuntu-%E5%AE%89%E8%A3%85-%E4%B8%BA%E7%9F%A5%E7%AC%94%E8%AE%B0/</id>
-    <published>2019-03-25T08:26:44.000Z</published>
-    <updated>2023-04-04T15:56:33.414Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>安装具体步骤可以参考<a href="http://www.wiz.cn/compile-client.html">官方文档</a>,按文档操作即可完成安装.</p><h1 id="无法使用搜狗拼音"><a href="#无法使用搜狗拼音" class="headerlink" title="无法使用搜狗拼音"></a>无法使用搜狗拼音</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_"># </span><span class="language-bash">安装fcitx-libs-dev</span></span><br><span class="line">sudo apt-get install fcitx-libs-dev</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">设置qmake的环境变量</span> </span><br><span class="line">export PATH=&quot;/[Qt5.7_main_path]/5.7/gcc_64/bin&quot;:$PATH</span><br><span class="line"><span class="meta prompt_"></span></span><br><span class="line"><span class="meta prompt_"># </span><span class="language-bash">下载fcitx-qt5源码,安装</span></span><br><span class="line"> </span><br><span class="line">git clone https://github.com/fcitx/fcitx-qt5.git</span><br><span class="line">cd fcitx-qt5</span><br><span class="line">cmake .</span><br><span class="line">make </span><br><span class="line">sudo make install</span><br><span class="line">Could NOT find XKBCommon_XKBCommon</span><br><span class="line"> </span><br><span class="line">wget http://xkbcommon.org/download/libxkbcommon-0.5.0.tar.xz</span><br><span class="line">tar xf libxkbcommon-0.5.0.tar.xz </span><br><span class="line">./configure —prefix=/usr —libdir=/usr/lib/x86_64-linux-gnu —disable-x11 </span><br><span class="line">make </span><br><span class="line">sudo make install</span><br><span class="line">​</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h1&gt;&lt;p&gt;安装具体步骤可以参考&lt;a href=&quot;http://www.wiz.cn/compile-client.html&quot;&gt;官方文档&lt;/a&gt;,按文档</summary>
-      
-    
-    
-    
-    <category term="Linux" scheme="https://shenchunping.github.io/categories/Linux/"/>
-    
-    
-    <category term="Linux" scheme="https://shenchunping.github.io/tags/Linux/"/>
-    
-    <category term="Ubuntu" scheme="https://shenchunping.github.io/tags/Ubuntu/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ADB命令实现-隐藏平板任务栏</title>
-    <link href="https://shenchunping.github.io/2018/08/06/android/20180806-01-ADB%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0-%E9%9A%90%E8%97%8F%E5%B9%B3%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F/"/>
-    <id>https://shenchunping.github.io/2018/08/06/android/20180806-01-ADB%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0-%E9%9A%90%E8%97%8F%E5%B9%B3%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F/</id>
+    <link href="https://shenchunping.github.io/2018-08-06-20180806/01-Android-ADB%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0-%E9%9A%90%E8%97%8F%E5%B9%B3%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F.html"/>
+    <id>https://shenchunping.github.io/2018-08-06-20180806/01-Android-ADB%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0-%E9%9A%90%E8%97%8F%E5%B9%B3%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-04T15:52:53.928Z</updated>
     
@@ -226,8 +362,8 @@
   
   <entry>
     <title>Android源码下载-Centos7</title>
-    <link href="https://shenchunping.github.io/2018/08/06/android/20180806-02-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7/"/>
-    <id>https://shenchunping.github.io/2018/08/06/android/20180806-02-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7/</id>
+    <link href="https://shenchunping.github.io/2018-08-06-20180806/02-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7.html"/>
+    <id>https://shenchunping.github.io/2018-08-06-20180806/02-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-04T15:53:12.470Z</updated>
     
@@ -250,12 +386,12 @@
   
   <entry>
     <title>Android源码下载-Windows</title>
-    <link href="https://shenchunping.github.io/2018/08/06/android/20180806-03-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows/"/>
-    <id>https://shenchunping.github.io/2018/08/06/android/20180806-03-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows/</id>
+    <link href="https://shenchunping.github.io/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows.html"/>
+    <id>https://shenchunping.github.io/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
-    <updated>2023-04-04T15:53:12.472Z</updated>
+    <updated>2023-04-05T04:40:32.964Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="安装Python"><a href="#安装Python" class="headerlink" title="安装Python"></a>安装Python</h1><p> <a href="http://www.python.org/">官网地址</a> 我下载的是3.6.3的版本</p><h1 id="安装GIT"><a href="#安装GIT" class="headerlink" title="安装GIT"></a>安装GIT</h1><p> <a href="https://git-scm.com/">官网地址</a> 下载最新版本即可</p><h1 id="克隆主仓库，查看源码版本分支"><a href="#克隆主仓库，查看源码版本分支" class="headerlink" title="克隆主仓库，查看源码版本分支"></a>克隆主仓库，查看源码版本分支</h1><ul><li>找一个容量大的硬盘分区，至少有120G可用空间，克隆仓库。假如你要编译源代码的话，需要更大的空间准备160G以上吧。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\shenchunping&gt;cd E:\</span><br><span class="line"></span><br><span class="line">C:\Users\shenchunping&gt;E:</span><br><span class="line"></span><br><span class="line">E:\&gt;mkdir android</span><br><span class="line"></span><br><span class="line">E:\&gt;cd android</span><br><span class="line"></span><br><span class="line">E:\android&gt;git clone https://aosp.tuna.tsinghua.edu.cn/platform/manifest.git</span><br><span class="line"></span><br></pre></td></tr></table></figure></li></ul><blockquote><p><a href="https://aosp.tuna.tsinghua.edu.cn/platform/manifest.git">https://aosp.tuna.tsinghua.edu.cn/platform/manifest.git</a> 是国内镜像地址，如果不能下载可以翻墙直接通过google官方下载，直接将地址替换为  <a href="https://android.googlesource.com/platform/manifest.git">https://android.googlesource.com/platform/manifest.git</a></p></blockquote><p>执行完成之后将在android文件夹下生成manifest文件夹，该文件夹下还没有代码。</p><ul><li><p>查看版本分支</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">E:\android&gt;cd manifest</span><br><span class="line"></span><br><span class="line">E:\android\manifest&gt;git branch -a</span><br><span class="line">* master</span><br><span class="line">  remotes/origin/HEAD -&gt; origin/master</span><br><span class="line">  remotes/origin/adt_23.0.3</span><br><span class="line">  remotes/origin/afw-test-harness-1.5</span><br><span class="line">  remotes/origin/afw-test-harness-2.1</span><br><span class="line">  remotes/origin/afw-test-harness-marshmallow-dev</span><br><span class="line">  remotes/origin/afw-test-harness-nougat-dev</span><br><span class="line">  remotes/origin/android-1.6_r1</span><br><span class="line">  remotes/origin/android-1.6_r1.1</span><br><span class="line">  remotes/origin/android-1.6_r1.2</span><br><span class="line">  remotes/origin/android-1.6_r1.3</span><br><span class="line">  remotes/origin/android-1.6_r1.4</span><br><span class="line">  remotes/origin/android-1.6_r1.5</span><br><span class="line">  remotes/origin/android-1.6_r2</span><br><span class="line">  remotes/origin/android-2.0.1_r1</span><br><span class="line">  remotes/origin/android-2.0_r1</span><br><span class="line">  remotes/origin/android-2.1_r1</span><br><span class="line">  remotes/origin/android-2.1_r2</span><br><span class="line">  remotes/origin/android-2.1_r2.1p</span><br><span class="line">  remotes/origin/android-2.1_r2.1p2</span><br><span class="line">  remotes/origin/android-2.1_r2.1s</span><br><span class="line">  remotes/origin/android-2.2.1_r1</span><br><span class="line">  remotes/origin/android-2.2.1_r2</span><br><span class="line">  remotes/origin/android-2.2.2_r1</span><br><span class="line">...略</span><br></pre></td></tr></table></figure><p>最后一个“&#x2F;”后面既是版本分支名称，下载我们选择一个分支下载</p></li><li><p>下载前我们注意观察manifest文件夹中的default.xml文件的default标签，大概在第六行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;default revision=&quot;master&quot;</span><br><span class="line">          remote=&quot;aosp&quot;</span><br><span class="line">          sync-j=&quot;4&quot; /&gt;</span><br></pre></td></tr></table></figure></li><li><p>切换到最新的版本分支,你也可以选择你想要的版本。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">E:\android\manifest&gt;git checkout android-8.1.0_r2</span><br><span class="line">Note: checking out &#x27;android-8.1.0_r2&#x27;.</span><br><span class="line"></span><br><span class="line">You are in &#x27;detached HEAD&#x27; state. You can look around, make experimental</span><br><span class="line">changes and commit them, and you can discard any commits you make in this</span><br><span class="line">state without impacting any branches by performing another checkout.</span><br><span class="line"></span><br><span class="line">If you want to create a new branch to retain commits you create, you may</span><br><span class="line">do so (now or later) by using -b with the checkout command again. Example:</span><br><span class="line"></span><br><span class="line">  git checkout -b &lt;new-branch-name&gt;</span><br><span class="line"></span><br><span class="line">HEAD is now at 85739ae... Manifest for Android 8.1.0 Release 2 (OPM2.171019.012)</span><br><span class="line"></span><br><span class="line">E:\android\manifest&gt;</span><br></pre></td></tr></table></figure></li><li><p>再次查看default.xml文件的default标签</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;default revision=&quot;refs/tags/android-8.1.0_r2&quot;</span><br><span class="line">         remote=&quot;aosp&quot;</span><br><span class="line">         sync-j=&quot;4&quot; /&gt;</span><br></pre></td></tr></table></figure><p>此时你已经选择好你想要下载的源码版本了。就来准备开始下载吧。</p></li></ul><h1 id="编辑Python下载脚本"><a href="#编辑Python下载脚本" class="headerlink" title="编辑Python下载脚本"></a>编辑Python下载脚本</h1><ul><li>创建一个文本文档，然后编辑如下代码，保存。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">import xml.dom.minidom</span><br><span class="line">import os</span><br><span class="line">from subprocess import call</span><br><span class="line"></span><br><span class="line"># downloaded source path</span><br><span class="line">#源码根目录，android-8.1.0_r2可以自定义。</span><br><span class="line">rootdir = &quot;E:/android/android-8.1.0_r2&quot;</span><br><span class="line"></span><br><span class="line"># git program path</span><br><span class="line">#GIT 可执行文件路径</span><br><span class="line">git = &quot;D:/Program Files/Git/bin/git.exe&quot;</span><br><span class="line"></span><br><span class="line">#将要解析的文件</span><br><span class="line">dom = xml.dom.minidom.parse(&quot;E:/android/manifest/default.xml&quot;)</span><br><span class="line">root = dom.documentElement</span><br><span class="line"></span><br><span class="line">#GIT命令前缀</span><br><span class="line">prefix = git + &quot; clone https://aosp.tuna.tsinghua.edu.cn/&quot;</span><br><span class="line">#GIT命令后缀</span><br><span class="line">suffix = &quot;.git&quot;</span><br><span class="line">#创建根目录</span><br><span class="line">if not os.path.exists(rootdir):</span><br><span class="line">    os.mkdir(rootdir)</span><br><span class="line">#遍历defualt.xml，执行Git命令克隆源码。</span><br><span class="line">for node in root.getElementsByTagName(&quot;project&quot;):</span><br><span class="line">    os.chdir(rootdir)</span><br><span class="line">    d = node.getAttribute(&quot;path&quot;)</span><br><span class="line">    last = d.rfind(&quot;/&quot;)</span><br><span class="line">    if last != -1:</span><br><span class="line">        d = rootdir + &quot;/&quot; + d[:last]</span><br><span class="line">        if not os.path.exists(d):</span><br><span class="line">            os.makedirs(d)</span><br><span class="line">        os.chdir(d)</span><br><span class="line">    cmd = prefix + node.getAttribute(&quot;name&quot;) + suffix</span><br><span class="line">    call(cmd)</span><br></pre></td></tr></table></figure></li></ul><h1 id="执行Python-开始下载源码。"><a href="#执行Python-开始下载源码。" class="headerlink" title="执行Python 开始下载源码。"></a>执行Python 开始下载源码。</h1><ul><li><p>打开Python IDLE<br><img src="http://upload-images.jianshu.io/upload_images/2093886-2a293e366bdcba76.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="TIM截图20180102191300.png"></p></li><li><p>打开刚刚编辑的代码文档<br><img src="http://upload-images.jianshu.io/upload_images/2093886-dcbfb890c573a27f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="TIM截图20180102192032.png"></p></li></ul><p><img src="http://upload-images.jianshu.io/upload_images/2093886-a856b025d87fedac.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="TIM截图20180102192255.png"></p><ul><li>执行代码<br><img src="http://upload-images.jianshu.io/upload_images/2093886-9aee698760fe6da6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="TIM截图20180102192543.png"></li></ul><p>此时将看到命令窗口在不断的下载文件。就算大功告成，等待下载结束即可。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="安装Python"><a href="#安装Python" class="headerlink" title="安装Python"></a>安装Python</h1><p> <a href="http://www.python.org/">官网地址</a> 我下载的是3.6.3的版本</p><h1 id="安装GIT"><a href="#安装GIT" class="headerlink" title="安装GIT"></a>安装GIT</h1><p> <a href="https://git-scm.com/">官网地址</a> 下载最新版本即可</p><h1 id="克隆主仓库，查看源码版本分支"><a href="#克隆主仓库，查看源码版本分支" class="headerlink" title="克隆主仓库，查看源码版本分支"></a>克隆主仓库，查看源码版本分支</h1><ul><li>找一个容量大的硬盘分区，至少有120G可用空间，克隆仓库。假如你要编译源代码的话，需要更大的空间准备160G以上吧。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\shenchunping&gt;cd E:\</span><br><span class="line"></span><br><span class="line">C:\Users\shenchunping&gt;E:</span><br><span class="line"></span><br><span class="line">E:\&gt;mkdir android</span><br><span class="line"></span><br><span class="line">E:\&gt;cd android</span><br><span class="line"></span><br><span class="line">E:\android&gt;git clone https://aosp.tuna.tsinghua.edu.cn/platform/manifest.git</span><br><span class="line"></span><br></pre></td></tr></table></figure></li></ul><blockquote><p><a href="https://aosp.tuna.tsinghua.edu.cn/platform/manifest.git">https://aosp.tuna.tsinghua.edu.cn/platform/manifest.git</a> 是国内镜像地址，如果不能下载可以翻墙直接通过google官方下载，直接将地址替换为  <a href="https://android.googlesource.com/platform/manifest.git">https://android.googlesource.com/platform/manifest.git</a></p></blockquote><p>执行完成之后将在android文件夹下生成manifest文件夹，该文件夹下还没有代码。</p><ul><li><p>查看版本分支</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">E:\android&gt;cd manifest</span><br><span class="line"></span><br><span class="line">E:\android\manifest&gt;git branch -a</span><br><span class="line">* master</span><br><span class="line">  remotes/origin/HEAD -&gt; origin/master</span><br><span class="line">  remotes/origin/adt_23.0.3</span><br><span class="line">  remotes/origin/afw-test-harness-1.5</span><br><span class="line">  remotes/origin/afw-test-harness-2.1</span><br><span class="line">  remotes/origin/afw-test-harness-marshmallow-dev</span><br><span class="line">  remotes/origin/afw-test-harness-nougat-dev</span><br><span class="line">  remotes/origin/android-1.6_r1</span><br><span class="line">  remotes/origin/android-1.6_r1.1</span><br><span class="line">  remotes/origin/android-1.6_r1.2</span><br><span class="line">  remotes/origin/android-1.6_r1.3</span><br><span class="line">  remotes/origin/android-1.6_r1.4</span><br><span class="line">  remotes/origin/android-1.6_r1.5</span><br><span class="line">  remotes/origin/android-1.6_r2</span><br><span class="line">  remotes/origin/android-2.0.1_r1</span><br><span class="line">  remotes/origin/android-2.0_r1</span><br><span class="line">  remotes/origin/android-2.1_r1</span><br><span class="line">  remotes/origin/android-2.1_r2</span><br><span class="line">  remotes/origin/android-2.1_r2.1p</span><br><span class="line">  remotes/origin/android-2.1_r2.1p2</span><br><span class="line">  remotes/origin/android-2.1_r2.1s</span><br><span class="line">  remotes/origin/android-2.2.1_r1</span><br><span class="line">  remotes/origin/android-2.2.1_r2</span><br><span class="line">  remotes/origin/android-2.2.2_r1</span><br><span class="line">...略</span><br></pre></td></tr></table></figure><p>最后一个“&#x2F;”后面既是版本分支名称，下载我们选择一个分支下载</p></li><li><p>下载前我们注意观察manifest文件夹中的default.xml文件的default标签，大概在第六行</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;default revision=&quot;master&quot;</span><br><span class="line">          remote=&quot;aosp&quot;</span><br><span class="line">          sync-j=&quot;4&quot; /&gt;</span><br></pre></td></tr></table></figure></li><li><p>切换到最新的版本分支,你也可以选择你想要的版本。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">E:\android\manifest&gt;git checkout android-8.1.0_r2</span><br><span class="line">Note: checking out &#x27;android-8.1.0_r2&#x27;.</span><br><span class="line"></span><br><span class="line">You are in &#x27;detached HEAD&#x27; state. You can look around, make experimental</span><br><span class="line">changes and commit them, and you can discard any commits you make in this</span><br><span class="line">state without impacting any branches by performing another checkout.</span><br><span class="line"></span><br><span class="line">If you want to create a new branch to retain commits you create, you may</span><br><span class="line">do so (now or later) by using -b with the checkout command again. Example:</span><br><span class="line"></span><br><span class="line">  git checkout -b &lt;new-branch-name&gt;</span><br><span class="line"></span><br><span class="line">HEAD is now at 85739ae... Manifest for Android 8.1.0 Release 2 (OPM2.171019.012)</span><br><span class="line"></span><br><span class="line">E:\android\manifest&gt;</span><br></pre></td></tr></table></figure></li><li><p>再次查看default.xml文件的default标签</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;default revision=&quot;refs/tags/android-8.1.0_r2&quot;</span><br><span class="line">         remote=&quot;aosp&quot;</span><br><span class="line">         sync-j=&quot;4&quot; /&gt;</span><br></pre></td></tr></table></figure><p>此时你已经选择好你想要下载的源码版本了。就来准备开始下载吧。</p></li></ul><h1 id="编辑Python下载脚本"><a href="#编辑Python下载脚本" class="headerlink" title="编辑Python下载脚本"></a>编辑Python下载脚本</h1><ul><li>创建一个文本文档，然后编辑如下代码，保存。<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line">import xml.dom.minidom</span><br><span class="line">import os</span><br><span class="line">from subprocess import call</span><br><span class="line"></span><br><span class="line"># downloaded source path</span><br><span class="line">#源码根目录，android-8.1.0_r2可以自定义。</span><br><span class="line">rootdir = &quot;E:/android/android-8.1.0_r2&quot;</span><br><span class="line"></span><br><span class="line"># git program path</span><br><span class="line">#GIT 可执行文件路径</span><br><span class="line">git = &quot;D:/Program Files/Git/bin/git.exe&quot;</span><br><span class="line"></span><br><span class="line">#将要解析的文件</span><br><span class="line">dom = xml.dom.minidom.parse(&quot;E:/android/manifest/default.xml&quot;)</span><br><span class="line">root = dom.documentElement</span><br><span class="line"></span><br><span class="line">#GIT命令前缀</span><br><span class="line">prefix = git + &quot; clone https://aosp.tuna.tsinghua.edu.cn/&quot;</span><br><span class="line">#GIT命令后缀</span><br><span class="line">suffix = &quot;.git&quot;</span><br><span class="line">#创建根目录</span><br><span class="line">if not os.path.exists(rootdir):</span><br><span class="line">    os.mkdir(rootdir)</span><br><span class="line">#遍历defualt.xml，执行Git命令克隆源码。</span><br><span class="line">for node in root.getElementsByTagName(&quot;project&quot;):</span><br><span class="line">    os.chdir(rootdir)</span><br><span class="line">    d = node.getAttribute(&quot;path&quot;)</span><br><span class="line">    last = d.rfind(&quot;/&quot;)</span><br><span class="line">    if last != -1:</span><br><span class="line">        d = rootdir + &quot;/&quot; + d[:last]</span><br><span class="line">        if not os.path.exists(d):</span><br><span class="line">            os.makedirs(d)</span><br><span class="line">        os.chdir(d)</span><br><span class="line">    cmd = prefix + node.getAttribute(&quot;name&quot;) + suffix</span><br><span class="line">    call(cmd)</span><br></pre></td></tr></table></figure></li></ul><h1 id="执行Python-开始下载源码。"><a href="#执行Python-开始下载源码。" class="headerlink" title="执行Python 开始下载源码。"></a>执行Python 开始下载源码。</h1><ul><li><p>打开Python IDLE<br><img src="/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows/2093886-2a293e366bdcba76.webp" alt="TIM截图20180102191300.png"></p></li><li><p>打开刚刚编辑的代码文档<br><img src="/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows/2093886-dcbfb890c573a27f.webp" alt="TIM截图20180102192032.png"></p></li></ul><p><img src="/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows/2093886-a856b025d87fedac.webp" alt="TIM截图20180102192255.png"></p><ul><li>执行代码</li></ul><p><img src="/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows/2093886-9aee698760fe6da6.webp" alt="TIM截图20180102192255.png"></p><p>此时将看到命令窗口在不断的下载文件。就算大功告成，等待下载结束即可。</p>]]></content>
     
     
       
@@ -274,8 +410,8 @@
   
   <entry>
     <title>定制设备-查看已连接蓝牙设备的MAC</title>
-    <link href="https://shenchunping.github.io/2018/08/06/android/20180806-05-%E5%AE%9A%E5%88%B6%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84MAC/"/>
-    <id>https://shenchunping.github.io/2018/08/06/android/20180806-05-%E5%AE%9A%E5%88%B6%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84MAC/</id>
+    <link href="https://shenchunping.github.io/2018-08-06-20180806/05-Android-%E5%AE%9A%E5%88%B6%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84MAC.html"/>
+    <id>https://shenchunping.github.io/2018-08-06-20180806/05-Android-%E5%AE%9A%E5%88%B6%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84MAC.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-04T15:53:26.786Z</updated>
     
@@ -300,35 +436,9 @@
   </entry>
   
   <entry>
-    <title>Maven-配置镜像地址</title>
-    <link href="https://shenchunping.github.io/2018/08/06/java/20180806-01-Maven-%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E5%9C%B0%E5%9D%80/"/>
-    <id>https://shenchunping.github.io/2018/08/06/java/20180806-01-Maven-%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E5%9C%B0%E5%9D%80/</id>
-    <published>2018-08-05T16:00:00.000Z</published>
-    <updated>2023-04-04T15:53:40.233Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="创建settings-xml文件"><a href="#创建settings-xml文件" class="headerlink" title="创建settings.xml文件"></a>创建settings.xml文件</h1><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">// Windows路径:</span><br><span class="line"></span><br><span class="line">C:\Users\用户名\.m2\settings.xml</span><br><span class="line"></span><br></pre></td></tr></table></figure><h1 id="添加文件内容"><a href="#添加文件内容" class="headerlink" title="添加文件内容"></a>添加文件内容</h1><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">settings</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">          <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">mirrors</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!-- 阿里云仓库 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>alimaven<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>aliyun maven<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://maven.aliyun.com/nexus/content/repositories/central/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 中央仓库1 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>repo1<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>Human Readable Name for this Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://repo1.maven.org/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!-- 中央仓库2 --&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">mirror</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span>&gt;</span>repo2<span class="tag">&lt;/<span class="name">id</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">mirrorOf</span>&gt;</span>central<span class="tag">&lt;/<span class="name">mirrorOf</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">name</span>&gt;</span>Human Readable Name for this Mirror.<span class="tag">&lt;/<span class="name">name</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">url</span>&gt;</span>http://repo2.maven.org/maven2/<span class="tag">&lt;/<span class="name">url</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">mirror</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">mirrors</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;/<span class="name">settings</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;创建settings-xml文件&quot;&gt;&lt;a href=&quot;#创建settings-xml文件&quot; class=&quot;headerlink&quot; title=&quot;创建settings.xml文件&quot;&gt;&lt;/a&gt;创建settings.xml文件&lt;/h1&gt;&lt;figure class=&quot;hi</summary>
-      
-    
-    
-    
-    <category term="Java" scheme="https://shenchunping.github.io/categories/Java/"/>
-    
-    
-    <category term="Maven" scheme="https://shenchunping.github.io/tags/Maven/"/>
-    
-    <category term="Java" scheme="https://shenchunping.github.io/tags/Java/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Centos7 JDK安装（SunJDK OpenJDK）</title>
-    <link href="https://shenchunping.github.io/2018/08/06/linux/20180806-01-Centos7-JDK%E5%AE%89%E8%A3%85%EF%BC%88SunJDK-OpenJDK%EF%BC%89/"/>
-    <id>https://shenchunping.github.io/2018/08/06/linux/20180806-01-Centos7-JDK%E5%AE%89%E8%A3%85%EF%BC%88SunJDK-OpenJDK%EF%BC%89/</id>
+    <link href="https://shenchunping.github.io/2018-08-06-20180806/07-Linux-Centos7-JDK%E5%AE%89%E8%A3%85%EF%BC%88SunJDK-OpenJDK%EF%BC%89.html"/>
+    <id>https://shenchunping.github.io/2018-08-06-20180806/07-Linux-Centos7-JDK%E5%AE%89%E8%A3%85%EF%BC%88SunJDK-OpenJDK%EF%BC%89.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-04T15:56:00.429Z</updated>
     
@@ -355,8 +465,8 @@
   
   <entry>
     <title>Centos7-Tomcat安装配置</title>
-    <link href="https://shenchunping.github.io/2018/08/06/linux/20180806-02-Centos7-Tomcat%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/"/>
-    <id>https://shenchunping.github.io/2018/08/06/linux/20180806-02-Centos7-Tomcat%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE/</id>
+    <link href="https://shenchunping.github.io/2018-08-06-20180806/08-Linux-Centos7-Tomcat%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html"/>
+    <id>https://shenchunping.github.io/2018-08-06-20180806/08-Linux-Centos7-Tomcat%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-04T15:56:33.420Z</updated>
     
@@ -383,8 +493,8 @@
   
   <entry>
     <title>Centos7-开机启动网卡</title>
-    <link href="https://shenchunping.github.io/2018/08/06/linux/20180806-03-Centos7-%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E7%BD%91%E5%8D%A1/"/>
-    <id>https://shenchunping.github.io/2018/08/06/linux/20180806-03-Centos7-%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E7%BD%91%E5%8D%A1/</id>
+    <link href="https://shenchunping.github.io/2018-08-06-20180806/09-Linux-Centos7-%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E7%BD%91%E5%8D%A1.html"/>
+    <id>https://shenchunping.github.io/2018-08-06-20180806/09-Linux-Centos7-%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E7%BD%91%E5%8D%A1.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-04T15:56:33.413Z</updated>
     
@@ -411,8 +521,8 @@
   
   <entry>
     <title>Centos7-防火墙Iptables</title>
-    <link href="https://shenchunping.github.io/2018/08/06/linux/20180806-04-Centos7-%E9%98%B2%E7%81%AB%E5%A2%99Iptables/"/>
-    <id>https://shenchunping.github.io/2018/08/06/linux/20180806-04-Centos7-%E9%98%B2%E7%81%AB%E5%A2%99Iptables/</id>
+    <link href="https://shenchunping.github.io/2018-08-06-20180806/10-Linux-Centos7-%E9%98%B2%E7%81%AB%E5%A2%99Iptables.html"/>
+    <id>https://shenchunping.github.io/2018-08-06-20180806/10-Linux-Centos7-%E9%98%B2%E7%81%AB%E5%A2%99Iptables.html</id>
     <published>2018-08-05T16:00:00.000Z</published>
     <updated>2023-04-04T15:56:33.416Z</updated>
     

@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang=zh>
+<head>
+    <meta charset="utf-8">
+    
+    <title>定制设备-查看已连接蓝牙设备的MAC | Coder 沈春平</title>
+    
+    
+        <meta name="keywords" content="Android,蓝牙" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="开始之前,要Root设备，并先配对蓝牙模块 使用到的命令adb shell  –进入Android Shell命令环境 12input keyevent 3  &#x2F;&#x2F;--回到首页input keyevent 4  &#x2F;&#x2F; 返回上一页   查看配对信息找到读卡器蓝牙MAC地址，依次执行下面三个命令 123adb shell su cat &#x2F;data&#x2F;misc&#x2F;bluedroid&#x2F;bt_config.co">
+<meta property="og:type" content="article">
+<meta property="og:title" content="定制设备-查看已连接蓝牙设备的MAC">
+<meta property="og:url" content="https://shenchunping.github.io/2018-08-06-20180806/05-Android-%E5%AE%9A%E5%88%B6%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84MAC.html">
+<meta property="og:site_name" content="Coder 沈春平">
+<meta property="og:description" content="开始之前,要Root设备，并先配对蓝牙模块 使用到的命令adb shell  –进入Android Shell命令环境 12input keyevent 3  &#x2F;&#x2F;--回到首页input keyevent 4  &#x2F;&#x2F; 返回上一页   查看配对信息找到读卡器蓝牙MAC地址，依次执行下面三个命令 123adb shell su cat &#x2F;data&#x2F;misc&#x2F;bluedroid&#x2F;bt_config.co">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2018-08-05T16:00:00.000Z">
+<meta property="article:modified_time" content="2023-04-04T15:53:26.786Z">
+<meta property="article:author" content="沈春平">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="蓝牙">
+<meta name="twitter:card" content="summary">
+    
+
+    
+        <link rel="alternate" href="/atom.xml" title="Coder 沈春平" type="application/atom+xml" />
+    
+
+    
+        <link rel="icon" href="/favicon.ico" />
+    
+
+    
+<link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
+
+    
+<link rel="stylesheet" href="/libs/open-sans/styles.css">
+
+    
+<link rel="stylesheet" href="/libs/source-code-pro/styles.css">
+
+
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    
+<script src="/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    
+<script src="/libs/jquery/plugins/cookie/1.4.1/jquery.cookie.js"></script>
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/lightgallery/css/lightgallery.min.css">
+
+    
+    
+        
+<link rel="stylesheet" href="/libs/justified-gallery/justifiedGallery.min.css">
+
+    
+    
+    
+    
+
+
+    
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+    <div id="container">
+        <header id="header">
+    <div id="header-main" class="header-inner">
+        <div class="outer">
+            <a href="/" id="logo">
+                <i class="logo"></i>
+                <span class="site-title">Coder 沈春平</span>
+            </a>
+            <nav id="main-nav">
+                
+                    <a class="main-nav-link" href="/">首页</a>
+                
+                    <a class="main-nav-link" href="/archives">归档</a>
+                
+                    <a class="main-nav-link" href="/categories">分类</a>
+                
+                    <a class="main-nav-link" href="/tags">标签</a>
+                
+                    <a class="main-nav-link" href="/about">关于</a>
+                
+            </nav>
+            
+            <div id="search-form-wrap">
+
+    <form class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+        <button type="submit" class="search-form-submit"></button>
+    </form>
+    <div class="ins-search">
+    <div class="ins-search-mask"></div>
+    <div class="ins-search-container">
+        <div class="ins-input-wrapper">
+            <input type="text" class="ins-search-input" placeholder="想要查找什么..." />
+            <span class="ins-close ins-selectable"><i class="fa fa-times-circle"></i></span>
+        </div>
+        <div class="ins-section-wrapper">
+            <div class="ins-section-container"></div>
+        </div>
+    </div>
+</div>
+<script>
+(function (window) {
+    var INSIGHT_CONFIG = {
+        TRANSLATION: {
+            POSTS: '文章',
+            PAGES: '页面',
+            CATEGORIES: '分类',
+            TAGS: '标签',
+            UNTITLED: '(未命名)',
+        },
+        ROOT_URL: '/',
+        CONTENT_URL: '/content.json',
+    };
+    window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+})(window);
+</script>
+
+<script src="/js/insight.js"></script>
+
+
+</div>
+        </div>
+    </div>
+    <div id="main-nav-mobile" class="header-sub header-inner">
+        <table class="menu outer">
+            <tr>
+                
+                    <td><a class="main-nav-link" href="/">首页</a></td>
+                
+                    <td><a class="main-nav-link" href="/archives">归档</a></td>
+                
+                    <td><a class="main-nav-link" href="/categories">分类</a></td>
+                
+                    <td><a class="main-nav-link" href="/tags">标签</a></td>
+                
+                    <td><a class="main-nav-link" href="/about">关于</a></td>
+                
+                <td>
+                    
+    <div class="search-form">
+        <input type="text" class="ins-search-input search-form-input" placeholder="搜索" />
+    </div>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+</header>
+
+        <div class="outer">
+            
+            
+                <aside id="sidebar">
+   
+        
+    <div class="widget-wrap" id='categories'>
+        <h3 class="widget-title">
+            <span>分类</span>
+            &nbsp;
+            <a id='allExpand' href="#">
+                <i class="fa fa-angle-double-down fa-2x"></i>
+            </a>
+        </h3>
+        
+        
+        
+         <ul class="unstyled" id="tree" > 
+                    <li class="directory open">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder-open"></i>
+                            &nbsp;
+                            Android
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2018-08-06-20180806/01-Android-ADB%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0-%E9%9A%90%E8%97%8F%E5%B9%B3%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F.html">ADB命令实现-隐藏平板任务栏</a></li>  <li class="file"><a href="/2018-08-06-20180806/02-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7.html">Android源码下载-Centos7</a></li>  <li class="file"><a href="/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows.html">Android源码下载-Windows</a></li>  <li class="file active"><a href="/2018-08-06-20180806/05-Android-%E5%AE%9A%E5%88%B6%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84MAC.html">定制设备-查看已连接蓝牙设备的MAC</a></li>  <li class="file"><a href="/2019-04-21-20180806/04-Android-APK%E5%8F%8D%E7%BC%96%E8%AF%91-%E5%9F%BA%E7%A1%80%E7%AF%87.html">APK反编译-基础篇</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            JS
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2019-04-18-20190418/01-Nodejs-Cordova-%E5%88%9B%E5%BB%BA%E9%A1%B9%E7%9B%AE.html">Cordova 创建项目</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Java
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2018-08-06-20180806/06-Java-Maven-%E9%85%8D%E7%BD%AE%E9%95%9C%E5%83%8F%E5%9C%B0%E5%9D%80.html">Maven-配置镜像地址</a></li>  <li class="file"><a href="/2019-04-19-20190419/01-Java-%E5%86%85%E5%AD%98%E6%B3%84%E6%BC%8F%E7%9B%91%E6%B5%8B%E4%B8%8E%E5%AE%9A%E4%BD%8D.html">Java 内存泄漏监测与定位</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Linux
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2018-08-06-20180806/07-Linux-Centos7-JDK%E5%AE%89%E8%A3%85%EF%BC%88SunJDK-OpenJDK%EF%BC%89.html">Centos7 JDK安装（SunJDK OpenJDK）</a></li>  <li class="file"><a href="/2018-08-06-20180806/08-Linux-Centos7-Tomcat%E5%AE%89%E8%A3%85%E9%85%8D%E7%BD%AE.html">Centos7-Tomcat安装配置</a></li>  <li class="file"><a href="/2018-08-06-20180806/09-Linux-Centos7-%E5%BC%80%E6%9C%BA%E5%90%AF%E5%8A%A8%E7%BD%91%E5%8D%A1.html">Centos7-开机启动网卡</a></li>  <li class="file"><a href="/2018-08-06-20180806/10-Linux-Centos7-%E9%98%B2%E7%81%AB%E5%A2%99Iptables.html">Centos7-防火墙Iptables</a></li>  <li class="file"><a href="/2019-04-21-20190421/01-Linux-%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F%E9%85%8D%E7%BD%AE.html">环境变量配置</a></li>  <li class="file"><a href="/2023-04-04-20190325/01-Linux-Ubuntu-%E5%AE%89%E8%A3%85-%E4%B8%BA%E7%9F%A5%E7%AC%94%E8%AE%B0.html">Ubuntu 安装'为知笔记'</a></li>  <li class="file"><a href="/2023-04-04-20180806/11-Linux-key%E5%92%8Cpem%E7%94%9F%E6%88%90HTTPS%E8%AF%81%E4%B9%A6.html">key和pem生成HTTPS证书</a></li>  <li class="file"><a href="/2023-04-05-20230405/01-Linux-Ubuntu%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%BC%91%E7%9C%A0.html">01-Linux-Ubuntu服务器休眠</a></li>  <li class="file"><a href="/2023-04-05-20230405/02-Linux-%E6%8C%82%E8%BD%BD%E7%A3%81%E7%9B%98.html">02-Linux-挂载磁盘</a></li>  <li class="file"><a href="/2023-04-05-20230405/03-Linux-Redis%E6%BA%90%E7%A0%81%E5%AE%89%E8%A3%85.html">03-Linux-Redis源码安装</a></li>  <li class="file"><a href="/2023-04-05-20230405/04-Linux-JDK%E5%AE%89%E8%A3%85.html">04-Linux-JDK安装</a></li>  <li class="file"><a href="/2023-04-05-20230405/05-Linux-Mysql%E5%AE%89%E8%A3%85.html">05-Linux-Mysql安装</a></li>  </ul> 
+                    </li> 
+                    
+                    <li class="directory">
+                        <a href="#" data-role="directory">
+                            <i class="fa fa-folder"></i>
+                            &nbsp;
+                            Mac
+                        </a>
+                         <ul class="unstyled" id="tree" >  <li class="file"><a href="/2019-04-12-20190412/01-Mac-Homebrew-%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4.html">Homebrew 常用命令-Mac</a></li>  </ul> 
+                    </li> 
+                     </ul> 
+    </div>
+    <script>
+        $(document).ready(function() {
+            var iconFolderOpenClass  = 'fa-folder-open';
+            var iconFolderCloseClass = 'fa-folder';
+            var iconAllExpandClass = 'fa-angle-double-down';
+            var iconAllPackClass = 'fa-angle-double-up';
+            // Handle directory-tree expansion:
+            // 左键单独展开目录
+            $(document).on('click', '#categories a[data-role="directory"]', function (event) {
+                event.preventDefault();
+
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var subtree = $(this).siblings('ul');
+                icon.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if (expanded) {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideUp({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderCloseClass);
+                } else {
+                    if (typeof subtree != 'undefined') {
+                        subtree.slideDown({ duration: 100 });
+                    }
+                    icon.addClass(iconFolderOpenClass);
+                }
+            });
+            // 右键展开下属所有目录
+            $('#categories a[data-role="directory"]').bind("contextmenu", function(event){
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconFolderOpenClass);
+                var listNode = $(this).siblings('ul');
+                var subtrees = $.merge(listNode.find('li ul'), listNode);
+                var icons = $.merge(listNode.find('.fa'), icon);
+                icons.removeClass(iconFolderOpenClass).removeClass(iconFolderCloseClass);
+                if(expanded) {
+                    subtrees.slideUp({ duration: 100 });
+                    icons.addClass(iconFolderCloseClass);
+                } else {
+                    subtrees.slideDown({ duration: 100 });
+                    icons.addClass(iconFolderOpenClass);
+                }
+            })
+            // 展开关闭所有目录按钮
+            $(document).on('click', '#allExpand', function (event) {
+                event.preventDefault();
+                
+                var icon = $(this).children('.fa');
+                var expanded = icon.hasClass(iconAllExpandClass);
+                icon.removeClass(iconAllExpandClass).removeClass(iconAllPackClass);
+                if(expanded) {
+                    $('#sidebar .fa.fa-folder').removeClass('fa-folder').addClass('fa-folder-open')
+                    $('#categories li ul').slideDown({ duration: 100 });
+                    icon.addClass(iconAllPackClass);
+                } else {
+                    $('#sidebar .fa.fa-folder-open').removeClass('fa-folder-open').addClass('fa-folder')
+                    $('#categories li ul').slideUp({ duration: 100 });
+                    icon.addClass(iconAllExpandClass);
+                }
+            });  
+        });
+    </script>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title"><span>归档</span></h3>
+        <div class="widget">
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/04/">四月 2023</a><span class="archive-list-count">7</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/04/">四月 2019</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/08/">八月 2018</a><span class="archive-list-count">9</span></li></ul>
+        </div>
+    </div>
+
+    
+        
+    <div class="widget-wrap">
+        <h3 class="widget-title"><span>标签</span></h3>
+        <div class="widget">
+            <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/" rel="tag">Android</a><span class="tag-list-count">5</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/CentOS/" rel="tag">CentOS</a><span class="tag-list-count">4</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Cordova/" rel="tag">Cordova</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTTPS/" rel="tag">HTTPS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JDK/" rel="tag">JDK</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JS/" rel="tag">JS</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/JVM/" rel="tag">JVM</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Java/" rel="tag">Java</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Linux/" rel="tag">Linux</a><span class="tag-list-count">11</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/" rel="tag">Mac</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Maven/" rel="tag">Maven</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MySql/" rel="tag">MySql</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Redis/" rel="tag">Redis</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Tomcat/" rel="tag">Tomcat</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Ubuntu/" rel="tag">Ubuntu</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/brew/" rel="tag">brew</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E4%BC%91%E7%9C%A0/" rel="tag">休眠</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%86%85%E5%AD%98/" rel="tag">内存</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%A3%81%E7%9B%98%E6%8C%82%E8%BD%BD/" rel="tag">磁盘挂载</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%93%9D%E7%89%99/" rel="tag">蓝牙</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%AF%81%E4%B9%A6/" rel="tag">证书</a><span class="tag-list-count">1</span></li></ul>
+        </div>
+    </div>
+
+    
+    <div id="toTop" class="fa fa-angle-up"></div>
+</aside>
+            
+            <section id="main"><article id="post-20180806/05-Android-定制设备-查看已连接蓝牙设备的MAC" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+                    <div class="article-meta">
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Android/">Android</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link-link" href="/tags/Android/" rel="tag">Android</a>, <a class="tag-link-link" href="/tags/%E8%93%9D%E7%89%99/" rel="tag">蓝牙</a>
+    </div>
+
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2018-08-06-20180806/05-Android-%E5%AE%9A%E5%88%B6%E8%AE%BE%E5%A4%87-%E6%9F%A5%E7%9C%8B%E5%B7%B2%E8%BF%9E%E6%8E%A5%E8%93%9D%E7%89%99%E8%AE%BE%E5%A4%87%E7%9A%84MAC.html">
+            <time datetime="2018-08-05T16:00:00.000Z" itemprop="datePublished">2018-08-06</time>
+        </a>
+    </div>
+
+
+                        
+                            <i class="fa fa-bar-chart"></i>
+                            <span id="busuanzi_container_site_pv"><span id="busuanzi_value_page_pv"></span></span>    
+                        
+                        
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/shenchunping/kblog/raw/master/source/_posts/20180806/05-Android-定制设备-查看已连接蓝牙设备的MAC.md'> Source </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/shenchunping/kblog/edit/master/source/_posts/20180806/05-Android-定制设备-查看已连接蓝牙设备的MAC.md'> Edit </a>
+                            </div>
+                            <div class="article-meta-button">
+                                <a target="_blank" rel="noopener" href='https://github.com/shenchunping/kblog/commits/master/source/_posts/20180806/05-Android-定制设备-查看已连接蓝牙设备的MAC.md'> History </a>
+                            </div>
+                        
+                    </div>
+                
+                
+    
+        <h1 class="article-title" itemprop="name">
+            定制设备-查看已连接蓝牙设备的MAC
+        </h1>
+    
+
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+        
+            
+                <div id="toc" class="toc-article">
+                <strong class="toc-title">文章目录</strong>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8%E5%88%B0%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">使用到的命令</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E9%85%8D%E5%AF%B9%E4%BF%A1%E6%81%AF"><span class="toc-number">2.</span> <span class="toc-text">查看配对信息</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%80%80%E5%87%BASu%E6%9D%83%E9%99%90%EF%BC%8C%E4%BB%A5%E5%85%8D%E8%AF%AF%E6%93%8D%E4%BD%9C%E3%80%82"><span class="toc-number">3.</span> <span class="toc-text">退出Su权限，以免误操作。</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E7%A4%BA%E4%BE%8B"><span class="toc-number">4.</span> <span class="toc-text">示例</span></a></li></ol>
+                </div>
+            
+        
+        
+            <p><strong>开始之前,要Root设备，并先配对蓝牙模块</strong></p>
+<h1 id="使用到的命令"><a href="#使用到的命令" class="headerlink" title="使用到的命令"></a>使用到的命令</h1><p>adb shell  –进入Android Shell命令环境</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">input keyevent 3  //--回到首页</span><br><span class="line">input keyevent 4  // 返回上一页</span><br></pre></td></tr></table></figure>
+
+
+<h1 id="查看配对信息"><a href="#查看配对信息" class="headerlink" title="查看配对信息"></a>查看配对信息</h1><p>找到读卡器蓝牙MAC地址，依次执行下面三个命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">adb shell </span><br><span class="line">su </span><br><span class="line">cat /data/misc/bluedroid/bt_config.conf</span><br></pre></td></tr></table></figure>
+
+
+<p><em>示例结果,试验中可能是json格式</em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br></pre></td><td class="code"><pre><span class="line">&lt;Bluedroid&gt;</span><br><span class="line">    &lt;N1 Tag=&quot;Local&quot;&gt;</span><br><span class="line">        &lt;N1 Tag=&quot;Adapter&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;BluezMigrationDone&quot; Type=&quot;int&quot;&gt;1&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;Address&quot; Type=&quot;string&quot;&gt;22:22:58:90:d9:a4&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;LE_LOCAL_KEY_IR&quot; Type=&quot;binary&quot;&gt;5ba8bf27a463c9567c913117276b</span><br><span class="line">2830&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;LE_LOCAL_KEY_IRK&quot; Type=&quot;binary&quot;&gt;656ad1d26de62d43c628b77f16f</span><br><span class="line">e8f86&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;LE_LOCAL_KEY_DHK&quot; Type=&quot;binary&quot;&gt;a9990c91bb98626db3fe7f01d6f</span><br><span class="line">2753f&lt;/N5&gt;</span><br><span class="line">            &lt;N6 Tag=&quot;ScanMode&quot; Type=&quot;int&quot;&gt;1&lt;/N6&gt;</span><br><span class="line">            &lt;N7 Tag=&quot;DiscoveryTimeout&quot; Type=&quot;int&quot;&gt;120&lt;/N7&gt;</span><br><span class="line">        &lt;/N1&gt;</span><br><span class="line">        &lt;N2 Tag=&quot;AutoPairBlacklist&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;AddressBlacklist&quot; Type=&quot;string&quot;&gt;00:02:C7,00:16:FE,00:19:C1,</span><br><span class="line">00:1B:FB,00:1E:3D,00:21:4F,00:23:06,00:24:33,00:A0:79,00:0E:6D,00:13:E0,00:21:E8</span><br><span class="line">,00:60:57,00:0E:9F,00:12:1C,00:18:91,00:18:96,00:13:04,00:16:FD,00:22:A0,00:0B:4</span><br><span class="line">C,00:60:6F,00:23:3D,00:C0:59,00:0A:30,00:1E:AE,00:1C:D7,00:80:F0,00:12:8A,00:09:</span><br><span class="line">93,00:80:37,00:26:7E,00:26:e8&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;ExactNameBlacklist&quot; Type=&quot;string&quot;&gt;Motorola IHF1000,i.TechBl</span><br><span class="line">ueBAND,X5 Stereo v1.3,KML_CAN&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;FixedPinZerosKeyboardBlacklist&quot; Type=&quot;string&quot;&gt;00:0F:F6&lt;/N3&gt;</span><br><span class="line"></span><br><span class="line">            &lt;N4 Tag=&quot;PartialNameBlacklist&quot; Type=&quot;string&quot;&gt;BMW,Audi,Parrot,Car&lt;/N4</span><br><span class="line">&gt;</span><br><span class="line">        &lt;/N2&gt;</span><br><span class="line">    &lt;/N1&gt;</span><br><span class="line">    &lt;N2 Tag=&quot;Remote&quot;&gt;</span><br><span class="line">        &lt;N1 Tag=&quot;68:3e:34:2b:0d:9b&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1482914768&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;MEIZU PRO 5&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;5898764&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N5&gt;</span><br><span class="line">        &lt;/N1&gt;</span><br><span class="line">        &lt;N2 Tag=&quot;9c:f3:87:bd:3c:47&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1482914769&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;APPLE-PC&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;131340&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N5&gt;</span><br><span class="line">        &lt;/N2&gt;</span><br><span class="line">        &lt;N3 Tag=&quot;1c:77:f6:37:f1:67&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1482914769&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;OPPO R9tm&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;5898764&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N5&gt;</span><br><span class="line">        &lt;/N3&gt;</span><br><span class="line">        &lt;N4 Tag=&quot;20:14:00:44:54:12&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1488532736&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;7936&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;iBuy_445412&lt;/N5&gt;</span><br><span class="line">            &lt;N6 Tag=&quot;Manufacturer&quot; Type=&quot;int&quot;&gt;10&lt;/N6&gt;</span><br><span class="line">            &lt;N7 Tag=&quot;LmpVer&quot; Type=&quot;int&quot;&gt;4&lt;/N7&gt;</span><br><span class="line">            &lt;N8 Tag=&quot;LmpSubVer&quot; Type=&quot;int&quot;&gt;4192&lt;/N8&gt;</span><br><span class="line">            &lt;N9 Tag=&quot;LinkKeyType&quot; Type=&quot;int&quot;&gt;0&lt;/N9&gt;</span><br><span class="line">            &lt;N10 Tag=&quot;PinLength&quot; Type=&quot;int&quot;&gt;4&lt;/N10&gt;</span><br><span class="line">            &lt;N11 Tag=&quot;LinkKey&quot; Type=&quot;binary&quot;&gt;58bdeab8a33b96a140842c08e507c3f6&lt;/N</span><br><span class="line">11&gt;</span><br><span class="line">            &lt;N12 Tag=&quot;Service&quot; Type=&quot;string&quot;&gt;00001101-0000-1000-8000-00805f9b34f</span><br><span class="line">b &lt;/N12&gt;</span><br><span class="line">        &lt;/N4&gt;</span><br><span class="line">        &lt;N5 Tag=&quot;ac:c1:ee:10:0a:84&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1488532738&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;5898764&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;小米手机&lt;/N5&gt;</span><br><span class="line">            &lt;N6 Tag=&quot;Manufacturer&quot; Type=&quot;int&quot;&gt;29&lt;/N6&gt;</span><br><span class="line">            &lt;N7 Tag=&quot;LmpVer&quot; Type=&quot;int&quot;&gt;8&lt;/N7&gt;</span><br><span class="line">            &lt;N8 Tag=&quot;LmpSubVer&quot; Type=&quot;int&quot;&gt;602&lt;/N8&gt;</span><br><span class="line">        &lt;/N5&gt;</span><br><span class="line">        &lt;N6 Tag=&quot;22:bf:16:cf:a2:9b&quot;&gt;</span><br><span class="line">            &lt;N1 Tag=&quot;Timestamp&quot; Type=&quot;int&quot;&gt;1488531622&lt;/N1&gt;</span><br><span class="line">            &lt;N2 Tag=&quot;DevClass&quot; Type=&quot;int&quot;&gt;5898764&lt;/N2&gt;</span><br><span class="line">            &lt;N3 Tag=&quot;DevType&quot; Type=&quot;int&quot;&gt;1&lt;/N3&gt;</span><br><span class="line">            &lt;N4 Tag=&quot;AddrType&quot; Type=&quot;int&quot;&gt;0&lt;/N4&gt;</span><br><span class="line">            &lt;N5 Tag=&quot;Name&quot; Type=&quot;string&quot;&gt;Samsung Galaxy S7&lt;/N5&gt;</span><br><span class="line">        &lt;/N6&gt;</span><br><span class="line">    &lt;/N2&gt;</span><br><span class="line">&lt;/Bluedroid&gt;</span><br></pre></td></tr></table></figure>
+
+<p><em>例如我链接的是“小米手机”那么我们找到的蓝牙mac就是“ac:c1:ee:10:0a:84”</em></p>
+<h1 id="退出Su权限，以免误操作。"><a href="#退出Su权限，以免误操作。" class="headerlink" title="退出Su权限，以免误操作。"></a>退出Su权限，以免误操作。</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">exit</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p><strong>以下为实际项目使用,请看官忽略.</strong></p>
+<h1 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h1><ul>
+<li><p>创建文件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">touch /sdcard/blueToothAddress.txt</span><br></pre></td></tr></table></figure></li>
+<li><p>假如文件已经存在，或者你想重新执行一遍，请先删除文件。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rm -f /sdcard/blueToothAddress.txt</span><br></pre></td></tr></table></figure></li>
+<li><p>写入蓝牙MAC地址到文件中</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo ac:c1:ee:10:0a:84 &gt; /sdcard/blueToothAddress.txt</span><br></pre></td></tr></table></figure>
+<p><em>将mac地址换成你的mac地址</em></p>
+</li>
+<li><p>查看写入文件信息是否成功</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /sdcard/blueToothAddress.txt</span><br></pre></td></tr></table></figure>
+<p><em>如果看到你刚刚写的mac地址，则表示成功。</em></p>
+</li>
+</ul>
+
+            </div>
+        
+        <footer class="article-footer">
+        </footer>
+    </div>
+</article>
+
+
+    
+<nav id="article-nav">
+    
+        <a href="/2018-08-06-20180806/03-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Windows.html" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">上一篇</strong>
+            <div class="article-nav-title">
+                
+                    Android源码下载-Windows
+                
+            </div>
+        </a>
+    
+    
+        <a href="/2018-08-06-20180806/07-Linux-Centos7-JDK%E5%AE%89%E8%A3%85%EF%BC%88SunJDK-OpenJDK%EF%BC%89.html" id="article-nav-older" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">下一篇</strong>
+            <div class="article-nav-title">Centos7 JDK安装（SunJDK OpenJDK）</div>
+        </a>
+    
+</nav>
+
+
+
+
+
+    
+    
+
+
+
+
+<!-- baidu url auto push script -->
+<script type="text/javascript">
+    !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=window.location.href,o=document.referrer;if(!e.test(r)){var n="//api.share.baidu.com/s.gif";o?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var t=new Image;t.src=n}}(window);
+</script>     
+</section>
+        </div>
+        <footer id="footer">
+    <div class="outer">
+        <div id="footer-info" class="inner">
+            <!-- 沈春平 &copy; 2023 
+            <a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/80x15.png" /></a> -->
+            <!-- <br>  -->
+            &copy; 2023 
+            Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>. Theme - <a target="_blank" rel="noopener" href="https://github.com/zthxxx/hexo-theme-Wikitten">wikitten</a>
+            
+                <br>
+                <span id="busuanzi_container_site_pv"><i class="fa fa-eye"></i> <span id="busuanzi_value_site_pv"></span></span>
+                &nbsp;|&nbsp;
+                <span id="busuanzi_container_site_pv"><i class="fa fa-user"></i> <span id="busuanzi_value_site_uv"></span></span>
+            
+        </div>
+    </div>
+</footer>
+
+        
+
+    
+        
+<script src="/libs/lightgallery/js/lightgallery.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-thumbnail.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-pager.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-autoplay.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-fullscreen.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-zoom.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-hash.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-share.min.js"></script>
+
+        
+<script src="/libs/lightgallery/js/lg-video.min.js"></script>
+
+    
+    
+        
+<script src="/libs/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+    
+    
+        <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true,
+            TeX: {
+                equationNumbers: {
+                  autoNumber: 'AMS'
+                }
+            }
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+
+
+<!-- Custom Scripts -->
+
+<script src="/js/main.js"></script>
+
+
+    </div>
+</body>
+</html>
