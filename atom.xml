@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Coder 沈春平</title>
+  <title>码农 Kuper</title>
   
-  <subtitle>学习笔记</subtitle>
+  <subtitle>学习/工作笔记</subtitle>
   <link href="https://coder.shenchunping.cn/atom.xml" rel="self"/>
   
   <link href="https://coder.shenchunping.cn/"/>
@@ -10,7 +10,7 @@
   <id>https://coder.shenchunping.cn/</id>
   
   <author>
-    <name>沈春平</name>
+    <name>Kuper</name>
     
   </author>
   
@@ -336,30 +336,6 @@
   </entry>
   
   <entry>
-    <title>Android源码下载-Centos7</title>
-    <link href="https://coder.shenchunping.cn/2018-08-06-20180806/02-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7.html"/>
-    <id>https://coder.shenchunping.cn/2018-08-06-20180806/02-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7.html</id>
-    <published>2018-08-05T16:00:00.000Z</published>
-    <updated>2023-04-04T15:53:12.470Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="下载-repo"><a href="#下载-repo" class="headerlink" title="下载 repo"></a>下载 repo</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir ~/bin</span><br><span class="line">$ PATH=~/bin:$PATH</span><br><span class="line">$ curl https://storage.googleapis.com/git-repo-downloads/repo &gt; ~/bin/repo</span><br><span class="line">$ chmod a+x ~/bin/repo</span><br></pre></td></tr></table></figure><ul><li>编辑~&#x2F;bin&#x2F;repo文件，改为国内镜像<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">https://gerrit.googlesource.com/git-repo</span><br><span class="line">改为</span><br><span class="line">https://mirrors.tuna.tsinghua.edu.cn/git/git-repo</span><br></pre></td></tr></table></figure></li></ul><h1 id="指定branch，下载代码"><a href="#指定branch，下载代码" class="headerlink" title="指定branch，下载代码"></a>指定branch，下载代码</h1><ul><li>查看所有分支<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd .repo/manifests</span><br><span class="line">git branch -a</span><br></pre></td></tr></table></figure></li><li>同步代码<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd aosp</span><br><span class="line">$ repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b android-6.0.1_r1</span><br><span class="line">$ repo sync</span><br></pre></td></tr></table></figure></li></ul><h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># source 环境</span><br><span class="line">$ . build/envsetup.sh</span><br><span class="line"></span><br><span class="line"># 选择编译项目</span><br><span class="line">$ lunch 2</span><br><span class="line"></span><br><span class="line"># 编译，可以使用-j选项设置并行编译的数量</span><br><span class="line">$ make -j8</span><br></pre></td></tr></table></figure>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;下载-repo&quot;&gt;&lt;a href=&quot;#下载-repo&quot; class=&quot;headerlink&quot; title=&quot;下载 repo&quot;&gt;&lt;/a&gt;下载 repo&lt;/h1&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td cl</summary>
-      
-    
-    
-    
-    <category term="Android" scheme="https://coder.shenchunping.cn/categories/Android/"/>
-    
-    
-    <category term="Android" scheme="https://coder.shenchunping.cn/tags/Android/"/>
-    
-  </entry>
-  
-  <entry>
     <title>ADB命令实现-隐藏平板任务栏</title>
     <link href="https://coder.shenchunping.cn/2018-08-06-20180806/01-Android-ADB%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0-%E9%9A%90%E8%97%8F%E5%B9%B3%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F.html"/>
     <id>https://coder.shenchunping.cn/2018-08-06-20180806/01-Android-ADB%E5%91%BD%E4%BB%A4%E5%AE%9E%E7%8E%B0-%E9%9A%90%E8%97%8F%E5%B9%B3%E6%9D%BF%E4%BB%BB%E5%8A%A1%E6%A0%8F.html</id>
@@ -373,6 +349,30 @@
       
     <summary type="html">&lt;p&gt;&lt;strong&gt;请先ROOT设备&lt;/strong&gt;&lt;/p&gt;
 &lt;h1 id=&quot;进入shell环境&quot;&gt;&lt;a href=&quot;#进入shell环境&quot; class=&quot;headerlink&quot; title=&quot;进入shell环境&quot;&gt;&lt;/a&gt;进入shell环境&lt;/h1&gt;&lt;figure clas</summary>
+      
+    
+    
+    
+    <category term="Android" scheme="https://coder.shenchunping.cn/categories/Android/"/>
+    
+    
+    <category term="Android" scheme="https://coder.shenchunping.cn/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android源码下载-Centos7</title>
+    <link href="https://coder.shenchunping.cn/2018-08-06-20180806/02-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7.html"/>
+    <id>https://coder.shenchunping.cn/2018-08-06-20180806/02-Android-Android%E6%BA%90%E7%A0%81%E4%B8%8B%E8%BD%BD-Centos7.html</id>
+    <published>2018-08-05T16:00:00.000Z</published>
+    <updated>2023-04-04T15:53:12.470Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="下载-repo"><a href="#下载-repo" class="headerlink" title="下载 repo"></a>下载 repo</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir ~/bin</span><br><span class="line">$ PATH=~/bin:$PATH</span><br><span class="line">$ curl https://storage.googleapis.com/git-repo-downloads/repo &gt; ~/bin/repo</span><br><span class="line">$ chmod a+x ~/bin/repo</span><br></pre></td></tr></table></figure><ul><li>编辑~&#x2F;bin&#x2F;repo文件，改为国内镜像<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">https://gerrit.googlesource.com/git-repo</span><br><span class="line">改为</span><br><span class="line">https://mirrors.tuna.tsinghua.edu.cn/git/git-repo</span><br></pre></td></tr></table></figure></li></ul><h1 id="指定branch，下载代码"><a href="#指定branch，下载代码" class="headerlink" title="指定branch，下载代码"></a>指定branch，下载代码</h1><ul><li>查看所有分支<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd .repo/manifests</span><br><span class="line">git branch -a</span><br></pre></td></tr></table></figure></li><li>同步代码<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ cd aosp</span><br><span class="line">$ repo init -u https://aosp.tuna.tsinghua.edu.cn/platform/manifest -b android-6.0.1_r1</span><br><span class="line">$ repo sync</span><br></pre></td></tr></table></figure></li></ul><h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"># source 环境</span><br><span class="line">$ . build/envsetup.sh</span><br><span class="line"></span><br><span class="line"># 选择编译项目</span><br><span class="line">$ lunch 2</span><br><span class="line"></span><br><span class="line"># 编译，可以使用-j选项设置并行编译的数量</span><br><span class="line">$ make -j8</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;下载-repo&quot;&gt;&lt;a href=&quot;#下载-repo&quot; class=&quot;headerlink&quot; title=&quot;下载 repo&quot;&gt;&lt;/a&gt;下载 repo&lt;/h1&gt;&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td cl</summary>
       
     
     
