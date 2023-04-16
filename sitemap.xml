@@ -200,7 +200,7 @@
   </url>
   
   <url>
-    <loc>https://coder.shenchunping.cn/categories/index.html</loc>
+    <loc>https://coder.shenchunping.cn/tags/index.html</loc>
     
     <lastmod>2023-04-04</lastmod>
     
@@ -209,7 +209,7 @@
   </url>
   
   <url>
-    <loc>https://coder.shenchunping.cn/tags/index.html</loc>
+    <loc>https://coder.shenchunping.cn/categories/index.html</loc>
     
     <lastmod>2023-04-04</lastmod>
     
@@ -234,21 +234,21 @@
   </url>
   
   <url>
-    <loc>https://coder.shenchunping.cn/tags/Mac/</loc>
-    <lastmod>2023-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://coder.shenchunping.cn/tags/brew/</loc>
-    <lastmod>2023-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://coder.shenchunping.cn/tags/%E8%93%9D%E7%89%99/</loc>
+    <lastmod>2023-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder.shenchunping.cn/tags/Maven/</loc>
+    <lastmod>2023-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder.shenchunping.cn/tags/Java/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -276,27 +276,6 @@
   </url>
   
   <url>
-    <loc>https://coder.shenchunping.cn/tags/Tomcat/</loc>
-    <lastmod>2023-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://coder.shenchunping.cn/tags/Maven/</loc>
-    <lastmod>2023-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://coder.shenchunping.cn/tags/Java/</loc>
-    <lastmod>2023-04-16</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://coder.shenchunping.cn/tags/HTTPS/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
@@ -311,7 +290,21 @@
   </url>
   
   <url>
-    <loc>https://coder.shenchunping.cn/tags/Ubuntu/</loc>
+    <loc>https://coder.shenchunping.cn/tags/Mac/</loc>
+    <lastmod>2023-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder.shenchunping.cn/tags/brew/</loc>
+    <lastmod>2023-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder.shenchunping.cn/tags/Tomcat/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -340,6 +333,13 @@
   
   <url>
     <loc>https://coder.shenchunping.cn/tags/JVM/</loc>
+    <lastmod>2023-04-16</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://coder.shenchunping.cn/tags/Ubuntu/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -383,7 +383,7 @@
   </url>
   
   <url>
-    <loc>https://coder.shenchunping.cn/categories/Mac/</loc>
+    <loc>https://coder.shenchunping.cn/categories/Java/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -397,7 +397,7 @@
   </url>
   
   <url>
-    <loc>https://coder.shenchunping.cn/categories/Java/</loc>
+    <loc>https://coder.shenchunping.cn/categories/Mac/</loc>
     <lastmod>2023-04-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
